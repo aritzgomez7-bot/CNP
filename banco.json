@@ -1,0 +1,362 @@
+[
+  {
+    "q": "¿Qué artículo de la Constitución describe la bandera de España?",
+    "options": ["Artículo 3", "Artículo 4", "Artículo 5", "Artículo 2"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿En qué se fundamenta la Constitución según el artículo 2?",
+    "options": ["En la soberanía popular", "En la indisoluble unidad de la Nación española", "En la monarquía parlamentaria", "En el estado de las autonomías"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Qué misión tienen las Fuerzas Armadas según el artículo 8?",
+    "options": ["Garantizar la seguridad ciudadana", "Defender el ordenamiento jurídico", "Garantizar la soberanía e independencia de España", "Proteger el libre ejercicio de derechos"],
+    "correct": 2,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "Los ciudadanos y los poderes públicos están sujetos a:",
+    "options": ["La Constitución y al resto del ordenamiento jurídico", "La Ley y los Reglamentos", "El Código Penal y la Constitución", "La voluntad del Rey"],
+    "correct": 0,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Quién nombra a los miembros del Tribunal Constitucional?",
+    "options": ["El Presidente del Gobierno", "El Rey", "El Consejo General del Poder Judicial", "El Presidente del Congreso"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Cuántos miembros componen el Tribunal Constitucional?",
+    "options": ["10", "12", "15", "20"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Qué mayoría del Congreso se necesita para proponer a los 4 miembros del TC que le corresponden?",
+    "options": ["Mayoría absoluta", "Mayoría simple", "3/5", "2/3"],
+    "correct": 2,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Cuál es la duración del mandato de los miembros del Tribunal Constitucional?",
+    "options": ["5 años", "4 años", "9 años", "Vitalicio"],
+    "correct": 2,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Quién preside el Tribunal Constitucional?",
+    "options": ["El miembro de mayor edad", "Uno de sus miembros nombrado por el Rey", "El Presidente del Tribunal Supremo", "El Fiscal General del Estado"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Quién está legitimado para interponer recurso de inconstitucionalidad?",
+    "options": ["Cualquier ciudadano", "El Defensor del Pueblo", "Un Juez de Instrucción", "El Rey"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Qué recurso protege a los ciudadanos ante la violación de derechos fundamentales?",
+    "options": ["Recurso de casación", "Recurso de inconstitucionalidad", "Recurso de amparo", "Cuestión de confianza"],
+    "correct": 2,
+    "topic": "Garantías Constitucionales"
+  },
+  {
+    "q": "¿Qué derechos son susceptibles de recurso de amparo?",
+    "options": ["Todos los del Título I", "Los del Cap. II, Sec. 1ª, art. 14 y art. 30.2", "Solo los de la Sección 1ª", "Los principios rectores"],
+    "correct": 1,
+    "topic": "Garantías Constitucionales"
+  },
+  {
+    "q": "¿Quién puede suspender el derecho a la huelga?",
+    "options": ["El Gobierno en estado de alarma", "Solo en estado de excepción o sitio", "El empresario", "El Ministerio de Trabajo"],
+    "correct": 1,
+    "topic": "Suspensión Derechos"
+  },
+  {
+    "q": "La declaración del estado de alarma corresponde a:",
+    "options": ["El Congreso", "El Gobierno mediante decreto", "El Rey", "El Senado"],
+    "correct": 1,
+    "topic": "Estados Excepcionales"
+  },
+  {
+    "q": "¿Cuál es el plazo máximo del estado de alarma sin prórroga?",
+    "options": ["30 días", "15 días", "60 días", "Indefinido"],
+    "correct": 1,
+    "topic": "Estados Excepcionales"
+  },
+  {
+    "q": "¿Quién autoriza la prórroga del estado de alarma?",
+    "options": ["El Gobierno", "El Rey", "El Congreso de los Diputados", "El Senado"],
+    "correct": 2,
+    "topic": "Estados Excepcionales"
+  },
+  {
+    "q": "¿Quién declara el estado de sitio?",
+    "options": ["El Gobierno", "El Congreso por mayoría absoluta", "El Rey", "Las Cortes Generales"],
+    "correct": 1,
+    "topic": "Estados Excepcionales"
+  },
+  {
+    "q": "¿Qué derechos NO pueden suspenderse en estado de excepción?",
+    "options": ["Habeas Corpus", "Secreto de comunicaciones", "Derecho de reunión", "Derecho de huelga"],
+    "correct": 0,
+    "topic": "Suspensión Derechos"
+  },
+  {
+    "q": "¿Qué artículo regula la detención preventiva?",
+    "options": ["Artículo 15", "Artículo 17", "Artículo 18", "Artículo 24"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Es obligatoria la declaración sobre ideología, religión o creencias?",
+    "options": ["Sí, ante un juez", "Sí, en el censo", "No, nadie puede ser obligado", "Solo en estado de sitio"],
+    "correct": 2,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "El domicilio es inviolable. Ninguna entrada podrá hacerse sin:",
+    "options": ["Presencia policial", "Consentimiento del titular o resolución judicial", "Orden del Fiscal", "Testigos"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Qué tipo de asociaciones están prohibidas por la Constitución?",
+    "options": ["Las políticas", "Las secretas y de carácter paramilitar", "Las religiosas", "Las deportivas"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Quién nombra al Presidente del Gobierno?",
+    "options": ["El Congreso", "El Rey", "El pueblo", "El Presidente saliente"],
+    "correct": 1,
+    "topic": "Gobierno"
+  },
+  {
+    "q": "¿Ante quién responde políticamente el Gobierno?",
+    "options": ["Ante el Rey", "Ante el Senado", "Ante el Congreso de los Diputados", "Ante el Tribunal Constitucional"],
+    "correct": 2,
+    "topic": "Gobierno"
+  },
+  {
+    "q": "¿Quién refrenda los actos del Rey en general?",
+    "options": ["El Presidente del Gobierno y, en su caso, los Ministros competentes", "La Reina", "El Jefe de la Casa Real", "El Presidente del Congreso siempre"],
+    "correct": 0,
+    "topic": "Corona"
+  },
+  {
+    "q": "¿Qué ocurre si el Congreso no otorga la confianza en la primera votación de investidura?",
+    "options": ["Se disuelven las Cortes", "Se vota 48 horas después requiriendo mayoría simple", "El Rey propone otro candidato inmediatamente", "Gobierna el partido más votado"],
+    "correct": 1,
+    "topic": "Gobierno"
+  },
+  {
+    "q": "¿Qué plazo tiene el Senado para vetar o enmendar un proyecto de ley ordinario?",
+    "options": ["1 mes", "2 meses", "3 meses", "15 días"],
+    "correct": 1,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "Las Leyes Orgánicas requieren para su aprobación:",
+    "options": ["Mayoría simple del Congreso", "Mayoría absoluta del Senado", "Mayoría absoluta del Congreso en votación final", "Mayoría de 3/5 de ambas cámaras"],
+    "correct": 2,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Quién sanciona las leyes aprobadas por las Cortes?",
+    "options": ["El Presidente del Gobierno", "El Presidente del Congreso", "El Rey", "El Ministro de Justicia"],
+    "correct": 2,
+    "topic": "Corona"
+  },
+  {
+    "q": "¿Cuál es el plazo para que el Rey sancione las leyes?",
+    "options": ["15 días", "20 días", "1 mes", "Inmediatamente"],
+    "correct": 0,
+    "topic": "Corona"
+  },
+  {
+    "q": "¿Qué artículo de la Constitución habla de las Fuerzas y Cuerpos de Seguridad?",
+    "options": ["Artículo 8", "Artículo 104", "Artículo 126", "Artículo 149"],
+    "correct": 1,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿De quién dependen las Fuerzas y Cuerpos de Seguridad según el art. 104?",
+    "options": ["Del Rey", "Del Gobierno", "De los Jueces", "Del Congreso"],
+    "correct": 1,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿Qué principio rige el acceso a la función pública?",
+    "options": ["Mérito y capacidad", "Antigüedad", "Elección directa", "Confianza política"],
+    "correct": 0,
+    "topic": "Administración Pública"
+  },
+  {
+    "q": "¿Quién es el supremo órgano consultivo del Gobierno?",
+    "options": ["El Consejo General del Poder Judicial", "El Tribunal de Cuentas", "El Consejo de Estado", "El Defensor del Pueblo"],
+    "correct": 2,
+    "topic": "Gobierno"
+  },
+  {
+    "q": "¿Quién nombra al Fiscal General del Estado?",
+    "options": ["El Rey a propuesta del Gobierno", "El CGPJ", "El Congreso", "El Ministro de Justicia directamente"],
+    "correct": 0,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Cuál es la función del Ministerio Fiscal?",
+    "options": ["Juzgar y hacer ejecutar lo juzgado", "Promover la acción de la justicia en defensa de la legalidad", "Defender al acusado", "Dictar sentencias"],
+    "correct": 1,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Quién preside el Consejo General del Poder Judicial?",
+    "options": ["El Presidente del Gobierno", "El Ministro de Justicia", "El Presidente del Tribunal Supremo", "El Rey"],
+    "correct": 2,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Cuántos vocales tiene el CGPJ?",
+    "options": ["12", "20", "21", "25"],
+    "correct": 1,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Está permitida la entrada en domicilio sin orden judicial?",
+    "options": ["Nunca", "Sí, en caso de flagrante delito", "Sí, si lo autoriza la policía", "Sí, si hay sospechas fundadas"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Se pueden disolver las Cortes durante el estado de alarma?",
+    "options": ["Sí", "No", "Solo el Senado", "Solo el Congreso"],
+    "correct": 1,
+    "topic": "Estados Excepcionales"
+  },
+  {
+    "q": "¿Qué artículo regula la reforma constitucional agravada?",
+    "options": ["Artículo 166", "Artículo 167", "Artículo 168", "Artículo 169"],
+    "correct": 2,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Qué materias requieren el procedimiento de reforma agravada?",
+    "options": ["Título I completo", "Título Preliminar, Sección 1ª Cap II Título I, o Corona", "Cualquier artículo", "Los Estatutos de Autonomía"],
+    "correct": 1,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Es obligatorio el referéndum en la reforma agravada?",
+    "options": ["No, es opcional", "Sí, para su ratificación", "Solo si lo pide el 10%", "Solo si no hay consenso"],
+    "correct": 1,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Quién tiene la iniciativa de reforma constitucional?",
+    "options": ["Solo el Gobierno", "Gobierno, Congreso, Senado y Asambleas CCAA", "Solo el Congreso", "El Rey"],
+    "correct": 1,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Qué tipo de sufragio se utiliza para el Congreso de los Diputados?",
+    "options": ["Universal, libre, igual, directo y secreto", "Censitario", "Indirecto", "Público"],
+    "correct": 0,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Cuál es la circunscripción electoral para el Congreso y Senado?",
+    "options": ["El municipio", "La Comunidad Autónoma", "La provincia", "El Estado"],
+    "correct": 2,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Qué cámara ostenta la representación territorial?",
+    "options": ["El Congreso", "El Senado", "Ambas", "La Asamblea Autonómica"],
+    "correct": 1,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Quién convalida los Decretos-Leyes?",
+    "options": ["El Senado", "El Rey", "El Congreso de los Diputados", "El Tribunal Constitucional"],
+    "correct": 2,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿En qué plazo debe convalidarse un Decreto-Ley?",
+    "options": ["15 días", "30 días", "2 meses", "Inmediatamente"],
+    "correct": 1,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Qué materias NO puede regular un Decreto-Ley?",
+    "options": ["Impuestos", "Instituciones básicas del Estado y derechos del Título I", "Comercio", "Transporte"],
+    "correct": 1,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Quién ejerce el mando supremo de las Fuerzas Armadas?",
+    "options": ["El Presidente del Gobierno", "El Ministro de Defensa", "El Rey", "El JEMAD"],
+    "correct": 2,
+    "topic": "Corona"
+  },
+  {
+    "q": "¿La persona del Rey es responsable?",
+    "options": ["Sí, ante el Tribunal Supremo", "Sí, ante las Cortes", "No, es inviolable y no sujeta a responsabilidad", "Solo en actos privados"],
+    "correct": 2,
+    "topic": "Corona"
+  },
+  {
+    "q": "¿Qué artículo establece la igualdad de todos los españoles ante la ley?",
+    "options": ["Artículo 10", "Artículo 12", "Artículo 14", "Artículo 24"],
+    "correct": 2,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Qué confesión religiosa menciona expresamente la Constitución?",
+    "options": ["Ninguna", "La Iglesia Católica", "El Cristianismo", "Todas por igual"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Se permite la censura previa?",
+    "options": ["Sí, en casos de emergencia", "No, está prohibida", "Sí, para proteger la infancia", "Depende del juez"],
+    "correct": 1,
+    "topic": "Derechos Fundamentales"
+  },
+  {
+    "q": "¿Quién gestiona el régimen económico de la Seguridad Social según el art. 149?",
+    "options": ["Las Comunidades Autónomas", "Los Ayuntamientos", "El Estado (competencia exclusiva)", "Las empresas privadas"],
+    "correct": 2,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Qué principio rige las relaciones entre CCAA?",
+    "options": ["Jerarquía", "Solidaridad", "Competencia", "Independencia"],
+    "correct": 1,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Quién nombra al Defensor del Pueblo?",
+    "options": ["El Gobierno", "El Rey", "Las Cortes Generales", "El Poder Judicial"],
+    "correct": 2,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "¿Cuál es la mayoría necesaria para elegir al Defensor del Pueblo en el Congreso?",
+    "options": ["Mayoría absoluta", "3/5", "2/3", "Mayoría simple"],
+    "correct": 1,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "¿Puede el Defensor del Pueblo interponer recurso de inconstitucionalidad?",
+    "options": ["No", "Sí, está legitimado", "Solo si lo pide el Gobierno", "Solo recurso de amparo"],
+    "correct": 1,
+    "topic": "Defensor del Pueblo"
+  }
+]
