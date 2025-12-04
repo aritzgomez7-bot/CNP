@@ -179,16 +179,15 @@
         let userAnswers = {};
         let totalTime = 0;
         let timerInterval;
-        let selectedCount = 20;
+        let selectedCount = 15;
 
         function init() {
             lucide.createIcons();
             loadQuestionsFromFile();
         }
 
-        // --- NEW: AUTO LOAD LOGIC ---
+        // --- AUTO LOAD LOGIC ---
         function loadQuestionsFromFile() {
-            // Intenta cargar questions.json desde la misma carpeta
             fetch('questions.json')
                 .then(response => {
                     if (!response.ok) throw new Error("No se encontró el archivo");
@@ -199,7 +198,6 @@
                         fullQuestionBank = data;
                         document.getElementById('loaded-count').innerText = fullQuestionBank.length;
                         setupCountButtons(fullQuestionBank.length);
-                        // Pequeño delay para que se vea la carga si es muy rápido
                         setTimeout(() => switchScreen('screen-setup'), 500);
                     } else {
                         throw new Error("Formato JSON inválido");
@@ -215,16 +213,21 @@
             const container = document.getElementById('count-buttons-container');
             container.innerHTML = '';
             
-            let steps = [10, 20, 50, 100];
+            // Opciones solicitadas: 15, 30, 50. Se elimina opción "Todo".
+            let steps = [15, 30, 50];
+            
+            // Filtramos las opciones que exceden el total disponible
             steps = steps.filter(s => s <= total);
-            if (steps.length === 0 || steps[steps.length-1] !== total) {
-                steps.push(total); 
+            
+            // Fallback por si hay muy pocas preguntas (menos de 15)
+            if (steps.length === 0 && total > 0) {
+                steps = [total];
             }
 
             steps.forEach(num => {
                 const btn = document.createElement('button');
                 btn.className = `q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold ${num === steps[0] ? 'bg-blue-100 border-blue-500 text-blue-700 active-count' : ''}`;
-                btn.innerText = num === total ? `Todo (${num})` : num;
+                btn.innerText = num;
                 btn.dataset.count = num;
                 btn.onclick = () => selectQuestionCount(num, btn);
                 container.appendChild(btn);
@@ -248,7 +251,7 @@
                 document.getElementById(id).classList.add('hidden');
             });
             document.getElementById(screenId).classList.remove('hidden');
-            lucide.createIcons(); // Re-render icons if needed
+            lucide.createIcons(); 
         }
 
         function startQuiz() {
