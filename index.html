@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Oposiciones CNP - Depol Resumen</title>
+    <title>Test Oposiciones CNP - Auto Load</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,7 +14,6 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        /* Custom scrollbar for question list */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 4px; }
@@ -27,10 +26,10 @@
     <header class="bg-blue-900 text-white shadow-lg z-10">
         <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i data-lucide="shield" class="h-6 w-6 text-yellow-400"></i>
+                <i data-lucide="shield-check" class="h-6 w-6 text-yellow-400"></i>
                 <div>
                     <h1 class="font-bold text-lg leading-tight">Test Oposiciones CNP</h1>
-                    <p class="text-xs text-blue-200">Basado en Cuaderno Resumen Plus</p>
+                    <p class="text-xs text-blue-200">Banco de Preguntas Remoto</p>
                 </div>
             </div>
             <div id="timer-container" class="hidden flex items-center bg-blue-800 px-3 py-1 rounded-full border border-blue-700">
@@ -43,56 +42,71 @@
     <!-- Main Content -->
     <main class="flex-1 overflow-y-auto relative w-full max-w-5xl mx-auto p-4" id="main-container">
         
-        <!-- Screen: Home -->
-        <div id="screen-home" class="flex flex-col items-center justify-center h-full space-y-8 slide-in">
-            <div class="text-center space-y-4 max-w-md">
-                <div class="bg-blue-100 p-4 rounded-full inline-block mb-2">
-                    <i data-lucide="book-open" class="h-12 w-12 text-blue-900"></i>
-                </div>
-                <h2 class="text-3xl font-bold text-slate-900">Generador de Tests</h2>
-                <p class="text-slate-600">
-                    Preguntas extraídas del temario jurídico y sociológico (Constitución, UE, Interior, Extranjería...).
+        <!-- Screen: Loading -->
+        <div id="screen-loading" class="flex flex-col items-center justify-center h-full space-y-4">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900"></div>
+            <p class="text-slate-600 font-medium">Cargando banco de preguntas...</p>
+        </div>
+
+        <!-- Screen: Error (CORS/File Not Found) -->
+        <div id="screen-error" class="hidden flex flex-col items-center justify-center h-full space-y-6 slide-in text-center px-4">
+            <div class="bg-red-100 p-4 rounded-full inline-block">
+                <i data-lucide="alert-triangle" class="h-10 w-10 text-red-600"></i>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-slate-900">Error de Carga</h2>
+                <p class="text-slate-600 mt-2 max-w-md mx-auto">
+                    No se pudo cargar el archivo <code>questions.json</code> automáticamente.
                 </p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-left text-sm text-yellow-800 max-w-md">
+                <p class="font-bold mb-1"><i data-lucide="info" class="inline h-4 w-4 mr-1"></i> Posible causa:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Estás abriendo el archivo localmente (doble clic) y el navegador bloquea la carga por seguridad (CORS).</li>
+                    <li>El archivo <code>questions.json</code> no está en la misma carpeta.</li>
+                </ul>
+            </div>
+            <button onclick="location.reload()" class="px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors">
+                Reintentar
+            </button>
+        </div>
+
+        <!-- Screen: Setup -->
+        <div id="screen-setup" class="hidden flex flex-col items-center justify-center h-full space-y-8 slide-in">
+            <div class="text-center space-y-2">
+                <div class="bg-green-100 p-3 rounded-full inline-block mb-2">
+                    <i data-lucide="database" class="h-8 w-8 text-green-700"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">Configuración del Test</h2>
+                <p class="text-slate-600">Preguntas disponibles: <span id="loaded-count" class="font-bold text-blue-600">0</span></p>
             </div>
 
             <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm border border-slate-200">
-                <label class="block text-sm font-medium text-slate-700 mb-2">Número de preguntas</label>
-                <div class="grid grid-cols-3 gap-2 mb-6">
-                    <button onclick="selectQuestionCount(10)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold active-count" data-count="10">10</button>
-                    <button onclick="selectQuestionCount(20)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold" data-count="20">20</button>
-                    <button onclick="selectQuestionCount(50)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold" data-count="50">50</button>
+                <label class="block text-sm font-medium text-slate-700 mb-2">Cantidad a responder</label>
+                <div class="grid grid-cols-3 gap-2 mb-6" id="count-buttons-container">
+                    <!-- Buttons injected by JS -->
                 </div>
 
                 <button onclick="startQuiz()" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg shadow-lg transform transition hover:-translate-y-0.5 flex justify-center items-center">
-                    <span class="mr-2">Comenzar Examen</span>
-                    <i data-lucide="arrow-right" class="h-5 w-5"></i>
+                    <span class="mr-2">Comenzar</span>
+                    <i data-lucide="play" class="h-5 w-5"></i>
                 </button>
             </div>
-            
-            <p class="text-xs text-slate-400 mt-8">Algoritmo de corrección: A - [E / (n-1)]</p>
         </div>
 
         <!-- Screen: Quiz -->
         <div id="screen-quiz" class="hidden h-full flex flex-col">
-            <!-- Progress Bar -->
             <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
                 <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
             </div>
-
-            <!-- Questions Container -->
-            <div id="questions-list" class="flex-1 overflow-y-auto space-y-6 pb-20 pr-2">
-                <!-- Questions injected by JS -->
-            </div>
-
-            <!-- Sticky Footer Action -->
+            <div id="questions-list" class="flex-1 overflow-y-auto space-y-6 pb-20 pr-2"></div>
             <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-lg z-20">
                 <div class="max-w-5xl mx-auto flex justify-between items-center">
                     <div class="text-sm text-slate-500">
                         Contestadas: <span id="answered-count" class="font-bold text-blue-900">0</span> / <span id="total-count">0</span>
                     </div>
                     <button onclick="requestFinish()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg shadow transition-colors flex items-center">
-                        <i data-lucide="check-circle" class="h-5 w-5 mr-2"></i>
-                        Finalizar y Corregir
+                        <i data-lucide="check-circle" class="h-5 w-5 mr-2"></i> Finalizar
                     </button>
                 </div>
             </div>
@@ -100,20 +114,14 @@
 
         <!-- Screen: Results -->
         <div id="screen-results" class="hidden pb-10 slide-in">
-            
-            <!-- Score Card -->
             <div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-6 mb-8 text-center relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">Resultados del Examen</h2>
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Resultados</h2>
                 
                 <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-6">
-                    <!-- Donut Chart Simulation -->
                     <div class="relative h-32 w-32">
                         <svg class="h-full w-full transform -rotate-90" viewBox="0 0 36 36">
-                            <!-- Background Circle -->
                             <path class="text-slate-100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8" />
-                            <!-- Progress Circle -->
                             <path id="score-circle" class="text-blue-600 transition-all duration-1000 ease-out" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8" />
                         </svg>
                         <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -121,8 +129,6 @@
                             <span class="text-xs text-slate-500 font-semibold">NOTA</span>
                         </div>
                     </div>
-
-                    <!-- Stats Grid -->
                     <div class="grid grid-cols-2 gap-4 text-left">
                         <div class="bg-green-50 p-3 rounded-lg border border-green-100">
                             <p class="text-xs text-green-600 font-bold uppercase">Aciertos</p>
@@ -142,444 +148,123 @@
                         </div>
                     </div>
                 </div>
-
-                <button onclick="resetApp()" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
-                    <i data-lucide="refresh-cw" class="h-4 w-4 mr-2"></i> Realizar otro test
-                </button>
-            </div>
-
-            <!-- Review Section -->
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-slate-800 px-2 border-l-4 border-blue-600">Revisión de Preguntas</h3>
-                <div id="review-list" class="space-y-4">
-                    <!-- Review items injected by JS -->
+                <div class="flex justify-center gap-4">
+                    <button onclick="restartQuiz()" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-semibold hover:bg-slate-200 flex items-center">
+                        <i data-lucide="rotate-ccw" class="h-4 w-4 mr-2"></i> Repetir Test
+                    </button>
                 </div>
             </div>
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-slate-800 px-2 border-l-4 border-blue-600">Revisión</h3>
+                <div id="review-list" class="space-y-4"></div>
+            </div>
         </div>
-
     </main>
 
-    <!-- Custom Modal -->
-    <div id="modal-confirm" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity duration-300">
-        <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 text-center transform transition-all scale-100">
-            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 mb-4">
-                <i data-lucide="help-circle" class="h-6 w-6 text-blue-600"></i>
-            </div>
-            <h3 class="text-lg leading-6 font-bold text-slate-900 mb-2">¿Finalizar Examen?</h3>
-            <p class="text-sm text-slate-500 mb-6">
-                Si finalizas ahora, se calculará tu nota y no podrás cambiar tus respuestas.
-            </p>
+    <!-- Modal -->
+    <div id="modal-confirm" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 text-center">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">¿Finalizar Examen?</h3>
+            <p class="text-sm text-slate-500 mb-6">No podrás cambiar tus respuestas.</p>
             <div class="flex justify-center gap-3">
-                <button onclick="closeModal()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-medium transition-colors w-full">
-                    Cancelar
-                </button>
-                <button onclick="confirmFinish()" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors w-full">
-                    Finalizar
-                </button>
+                <button onclick="closeModal()" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg w-full">Cancelar</button>
+                <button onclick="confirmFinish()" class="px-4 py-2 bg-blue-600 text-white rounded-lg w-full">Finalizar</button>
             </div>
         </div>
     </div>
 
-    <!-- Question Data & Logic -->
     <script>
-        // --- DATA ---
-        // Extracted from "Cuaderno Resumen Plus Depol CNP.pdf"
-        const questionBank = [
-            {
-                q: "¿En quién reside la soberanía nacional según la Constitución Española?",
-                options: ["En el Rey", "En las Cortes Generales", "En el pueblo español", "En el Gobierno"],
-                correct: 2,
-                topic: "Constitución"
-            },
-            {
-                q: "¿Cuál es la forma política del Estado español?",
-                options: ["República parlamentaria", "Monarquía parlamentaria", "Monarquía constitucional", "Estado federal"],
-                correct: 1,
-                topic: "Constitución"
-            },
-            {
-                q: "¿Quién ratificó la Constitución Española de 1978?",
-                options: ["Las Cortes Generales", "El Rey", "El pueblo español", "El Gobierno"],
-                correct: 2, 
-                topic: "Constitución"
-            },
-            {
-                q: "¿Qué artículo de la Constitución establece que el castellano es la lengua española oficial del Estado?",
-                options: ["Artículo 2", "Artículo 3", "Artículo 4", "Artículo 5"],
-                correct: 1,
-                topic: "Constitución"
-            },
-            {
-                q: "¿A quién corresponde sancionar y promulgar las leyes?",
-                options: ["Al Presidente del Gobierno", "Al Presidente del Congreso", "Al Rey", "Al Ministro de Justicia"],
-                correct: 2,
-                topic: "Corona"
-            },
-            {
-                q: "¿Cuál es el plazo máximo de la detención preventiva según el art. 17 de la CE?",
-                options: ["24 horas", "48 horas", "72 horas", "7 días"],
-                correct: 2,
-                topic: "Derechos"
-            },
-            {
-                q: "¿Quién nombra al Fiscal General del Estado?",
-                options: ["El Rey, a propuesta del Gobierno, oído el CGPJ", "El Congreso de los Diputados", "El Presidente del Gobierno directamente", "El Consejo General del Poder Judicial"],
-                correct: 0,
-                topic: "Poder Judicial"
-            },
-            {
-                q: "¿Cuántos miembros componen el Consejo General del Poder Judicial (CGPJ)?",
-                options: ["12 miembros más el Presidente", "20 miembros más el Presidente", "25 miembros", "20 miembros elegidos por el Rey"],
-                correct: 1,
-                topic: "Poder Judicial"
-            },
-            {
-                q: "¿Qué mayoría requiere la aprobación de una Ley Orgánica en el Congreso?",
-                options: ["Mayoría simple", "Mayoría absoluta", "Mayoría de 3/5", "Mayoría de 2/3"],
-                correct: 1,
-                topic: "Elaboración de Leyes"
-            },
-            {
-                q: "El Cuerpo Nacional de Policía es un instituto armado de naturaleza:",
-                options: ["Militar", "Civil", "Híbrida", "Administrativa"],
-                correct: 1,
-                topic: "Fuerzas y Cuerpos de Seguridad"
-            },
-            {
-                q: "¿De quién depende el Cuerpo Nacional de Policía?",
-                options: ["Del Ministerio de Defensa", "Del Ministerio del Interior", "De las Comunidades Autónomas", "Del Ministerio de Justicia"],
-                correct: 1,
-                topic: "Fuerzas y Cuerpos de Seguridad"
-            },
-            {
-                q: "¿Cuál es la Escala superior en la estructura del Cuerpo Nacional de Policía?",
-                options: ["Escala Ejecutiva", "Escala Superior", "Escala de Mando", "Escala Técnica"],
-                correct: 1,
-                topic: "CNP"
-            },
-            {
-                q: "¿Qué categorías componen la Escala Básica del CNP?",
-                options: ["Policía y Oficial de Policía", "Policía", "Policía y Agente", "Policía de primera y Policía de segunda"],
-                correct: 0,
-                topic: "CNP"
-            },
-            {
-                q: "¿En qué ciudad tiene su sede el Parlamento Europeo?",
-                options: ["Bruselas", "Luxemburgo", "Estrasburgo", "Frankfurt"],
-                correct: 2,
-                topic: "Unión Europea"
-            },
-            {
-                q: "¿Cuál es la mayoría de edad establecida en la Constitución Española?",
-                options: ["16 años", "18 años", "21 años", "25 años"],
-                correct: 1,
-                topic: "Derechos"
-            },
-            {
-                q: "Según la LO 2/1986, el mantenimiento de la seguridad pública corresponde a:",
-                options: ["Las Fuerzas y Cuerpos de Seguridad", "El Gobierno", "Los Jueces y Tribunales", "El Ministerio del Interior"],
-                correct: 1,
-                topic: "LOFCS"
-            },
-            {
-                q: "¿Qué órgano ejerce el mando directo de la Policía Nacional bajo la autoridad del Secretario de Estado de Seguridad?",
-                options: ["El Director Adjunto Operativo", "El Director General de la Policía", "El Ministro del Interior", "El Comisario General"],
-                correct: 1,
-                topic: "Ministerio Interior"
-            },
-            {
-                q: "¿Qué tratado suprimió los controles en las fronteras interiores de la UE?",
-                options: ["Tratado de Maastricht", "Acuerdo de Schengen", "Tratado de Lisboa", "Tratado de Roma"],
-                correct: 1,
-                topic: "UE"
-            },
-            {
-                q: "La nacionalidad española se adquiere, conserva y pierde...",
-                options: ["Según lo establecido por la ley", "Según lo establecido por el Rey", "Según lo establecido en la Constitución", "No se puede perder si es de origen"],
-                correct: 0,
-                topic: "Derechos"
-            },
-            {
-                q: "¿Qué recurso cabe contra las sentencias del Tribunal Constitucional?",
-                options: ["Recurso de casación", "Recurso de amparo", "No cabe recurso alguno", "Recurso de súplica"],
-                correct: 2,
-                topic: "Tribunal Constitucional"
-            },
-            {
-                q: "¿Quién preside el Consejo de Política de Seguridad?",
-                options: ["El Rey", "El Presidente del Gobierno", "El Ministro del Interior", "El Secretario de Estado de Seguridad"],
-                correct: 2,
-                topic: "Coordinación"
-            },
-            {
-                q: "¿Cuál es el plazo para solicitar la Tarjeta de Identidad de Extranjero tras la entrada en vigor de la autorización?",
-                options: ["15 días", "1 mes", "3 meses", "6 meses"],
-                correct: 1,
-                topic: "Extranjería"
-            },
-            {
-                q: "¿Qué institución europea representa a los ciudadanos de la Unión?",
-                options: ["La Comisión Europea", "El Consejo de la UE", "El Parlamento Europeo", "El Tribunal de Justicia"],
-                correct: 2,
-                topic: "Unión Europea"
-            },
-            {
-                q: "Los miembros de las Fuerzas y Cuerpos de Seguridad no podrán ejercer el derecho de:",
-                options: ["Voto", "Sindicación (CNP)", "Huelga", "Petición"],
-                correct: 2,
-                topic: "LOFCS"
-            },
-            {
-                q: "¿Quién propone al candidato a Presidente del Gobierno?",
-                options: ["El Congreso", "El Presidente saliente", "El Rey", "Los partidos políticos"],
-                correct: 2,
-                topic: "Gobierno"
-            },
-            {
-                q: "La suspensión de los derechos de huelga y conflicto colectivo puede producirse en los estados de:",
-                options: ["Alarma, Excepción y Sitio", "Excepción y Sitio", "Solo Sitio", "Alarma y Excepción"],
-                correct: 1,
-                topic: "Suspensión Derechos"
-            },
-            {
-                q: "¿Quién nombra a los Delegados del Gobierno en las CCAA?",
-                options: ["El Rey", "El Presidente de la CA", "El Consejo de Ministros", "El Ministro del Interior"],
-                correct: 2,
-                topic: "AGE"
-            },
-            {
-                q: "¿Qué rango tiene el Secretario de Estado de Seguridad?",
-                options: ["Ministro", "Subsecretario", "Director General", "Órgano Superior"],
-                correct: 3,
-                topic: "Ministerio Interior"
-            },
-            {
-                q: "La tarjeta de residencia de familiar de ciudadano de la Unión tiene una validez de:",
-                options: ["1 año", "2 años", "5 años", "10 años"],
-                correct: 2,
-                topic: "Extranjería"
-            },
-            {
-                q: "El Tribunal Europeo de Derechos Humanos tiene su sede en:",
-                options: ["Luxemburgo", "Estrasburgo", "Bruselas", "La Haya"],
-                correct: 1,
-                topic: "Instituciones Internacionales"
-            },
-            // NUEVAS PREGUNTAS AÑADIDAS
-            {
-                q: "¿Qué mayoría se requiere para la reforma constitucional por el procedimiento agravado (art. 168)?",
-                options: ["Mayoría absoluta", "3/5 de cada Cámara", "2/3 de cada Cámara", "1/10 de los diputados"],
-                correct: 2,
-                topic: "Reforma Constitucional"
-            },
-            {
-                q: "¿Cuál es la duración del mandato del Defensor del Pueblo?",
-                options: ["3 años", "4 años", "5 años", "9 años"],
-                correct: 2,
-                topic: "Defensor del Pueblo"
-            },
-            {
-                q: "¿Quién elige al Presidente del Consejo Europeo?",
-                options: ["Los ciudadanos europeos", "El propio Consejo Europeo", "El Parlamento Europeo", "La Comisión Europea"],
-                correct: 1,
-                topic: "UE"
-            },
-            {
-                q: "¿Qué Tratado instituyó la ciudadanía europea?",
-                options: ["Tratado de Roma", "Acta Única Europea", "Tratado de Maastricht", "Tratado de Lisboa"],
-                correct: 2,
-                topic: "UE"
-            },
-            {
-                q: "¿De quién depende orgánicamente el Centro de Inteligencia contra el Terrorismo y el Crimen Organizado (CITCO)?",
-                options: ["Del Ministro del Interior", "De la Secretaría de Estado de Seguridad", "De la Dirección General de la Policía", "De la Dirección General de Coordinación y Estudios"],
-                correct: 1,
-                topic: "Ministerio Interior"
-            },
-            {
-                q: "¿A qué edad se produce la jubilación forzosa en la Policía Nacional?",
-                options: ["60 años", "62 años", "65 años", "70 años"],
-                correct: 2,
-                topic: "CNP"
-            },
-            {
-                q: "¿Quién preside las Juntas Locales de Seguridad?",
-                options: ["El Jefe de la Policía Local", "El Delegado del Gobierno exclusivamente", "El Alcalde (o compartido con Delegado/Subdelegado)", "El Concejal de Seguridad"],
-                correct: 2,
-                topic: "Coordinación"
-            },
-            {
-                q: "¿Cuál es el plazo máximo de estancia para extranjeros en régimen de turista sin prórroga?",
-                options: ["30 días", "60 días", "90 días", "6 meses"],
-                correct: 2,
-                topic: "Extranjería"
-            },
-            {
-                q: "¿Cuántos años de residencia continuada se requieren generalmente para obtener la residencia de larga duración?",
-                options: ["2 años", "3 años", "5 años", "10 años"],
-                correct: 2,
-                topic: "Extranjería"
-            },
-            {
-                q: "¿Qué Ley Orgánica regula las medidas de protección integral contra la violencia de género?",
-                options: ["LO 1/2004", "LO 3/2007", "LO 4/2000", "LO 2/1986"],
-                correct: 0,
-                topic: "Violencia de Género"
-            },
-            {
-                q: "¿A qué cuerpo corresponde el control de las entidades y servicios privados de seguridad?",
-                options: ["Guardia Civil", "Cuerpo Nacional de Policía", "Policía Local", "Seguridad Privada"],
-                correct: 1,
-                topic: "LOFCS"
-            },
-            {
-                q: "¿Cuáles son los valores superiores del ordenamiento jurídico según el art. 1.1 CE?",
-                options: ["Libertad, justicia, igualdad y fraternidad", "Libertad, justicia, igualdad y pluralismo político", "Libertad, igualdad y solidaridad", "Soberanía, democracia y justicia"],
-                correct: 1,
-                topic: "Constitución"
-            },
-            {
-                q: "¿Qué protege específicamente el recurso de amparo ante el Tribunal Constitucional?",
-                options: ["Las leyes orgánicas", "Los derechos y libertades fundamentales (arts. 14-29 y 30.2)", "Los estatutos de autonomía", "Cualquier derecho constitucional"],
-                correct: 1,
-                topic: "Garantías Constitucionales"
-            },
-            {
-                q: "¿De quién son responsables los actos del Rey según la Constitución?",
-                options: ["Del propio Rey", "De la Casa Real", "De las personas que los refrenden", "Del Tribunal Supremo"],
-                correct: 2,
-                topic: "Corona"
-            },
-            {
-                q: "¿Qué principio es la base de la organización y funcionamiento de los Tribunales?",
-                options: ["Unidad jurisdiccional", "Doble instancia", "Gratuidad", "Oralidad"],
-                correct: 0,
-                topic: "Poder Judicial"
-            },
-            {
-                q: "¿En qué título de la Constitución se regula la Corona?",
-                options: ["Título Preliminar", "Título I", "Título II", "Título III"],
-                correct: 2,
-                topic: "Constitución"
-            },
-            {
-                q: "¿Cuántos senadores se eligen por cada provincia peninsular?",
-                options: ["2", "3", "4", "Variable según población"],
-                correct: 2,
-                topic: "Cortes Generales"
-            },
-            {
-                q: "¿Qué órgano aprueba la Oferta de Empleo Público?",
-                options: ["El Ministerio de Hacienda", "El Congreso", "El Gobierno", "El Ministro de Función Pública"],
-                correct: 2,
-                topic: "Funcionarios"
-            },
-            {
-                q: "¿Qué situación administrativa conlleva la reserva del puesto de trabajo durante los dos primeros años?",
-                options: ["Excedencia voluntaria por interés particular", "Excedencia por cuidado de familiares", "Servicios especiales", "Suspensión de funciones"],
-                correct: 1,
-                topic: "Funcionarios"
-            },
-            {
-                q: "¿Quién nombra al Director General de la Policía?",
-                options: ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Rey", "El Consejo de Ministros a propuesta del Ministro del Interior"],
-                correct: 3,
-                topic: "Ministerio Interior"
-            },
-            {
-                q: "¿Cuál es la capital del Estado según el artículo 5 de la Constitución?",
-                options: ["Madrid", "La villa de Madrid", "La Comunidad de Madrid", "El reino de España"],
-                correct: 1,
-                topic: "Constitución"
-            },
-            {
-                q: "¿Se permite la federación de Comunidades Autónomas?",
-                options: ["Sí, con autorización de las Cortes", "Sí, si son limítrofes", "No, en ningún caso", "Solo las históricas"],
-                correct: 2,
-                topic: "Organización Territorial"
-            },
-            {
-                q: "¿Dónde tiene su sede el Tribunal de Justicia de la Unión Europea?",
-                options: ["Estrasburgo", "Bruselas", "La Haya", "Luxemburgo"],
-                correct: 3,
-                topic: "UE"
-            },
-            {
-                q: "¿Cuál es el plazo de detención máximo para identificaciones según la LOPSC 4/2015?",
-                options: ["6 horas", "10 horas", "24 horas", "72 horas"],
-                correct: 0,
-                topic: "Seguridad Ciudadana"
-            },
-            {
-                q: "¿Qué mayoría se necesita para aprobar una moción de censura?",
-                options: ["Mayoría simple", "Mayoría absoluta", "3/5", "2/3"],
-                correct: 1,
-                topic: "Gobierno"
-            },
-            {
-                q: "La renuncia a la condición de funcionario en la Policía Nacional debe ser aceptada en un plazo máximo de:",
-                options: ["1 mes", "2 meses", "3 meses", "6 meses"],
-                correct: 2,
-                topic: "CNP"
-            }
-        ];
-
-        // --- STATE ---
+        let fullQuestionBank = [];
         let currentQuestions = [];
-        let userAnswers = {}; // Map question index -> selected option index
+        let userAnswers = {};
         let totalTime = 0;
         let timerInterval;
-        let selectedCount = 10;
-
-        // --- FUNCTIONS ---
+        let selectedCount = 20;
 
         function init() {
             lucide.createIcons();
-            updateCountButtons();
+            loadQuestionsFromFile();
         }
 
-        function selectQuestionCount(count) {
-            selectedCount = count;
-            updateCountButtons();
+        // --- NEW: AUTO LOAD LOGIC ---
+        function loadQuestionsFromFile() {
+            // Intenta cargar questions.json desde la misma carpeta
+            fetch('questions.json')
+                .then(response => {
+                    if (!response.ok) throw new Error("No se encontró el archivo");
+                    return response.json();
+                })
+                .then(data => {
+                    if (Array.isArray(data) && data.length > 0) {
+                        fullQuestionBank = data;
+                        document.getElementById('loaded-count').innerText = fullQuestionBank.length;
+                        setupCountButtons(fullQuestionBank.length);
+                        // Pequeño delay para que se vea la carga si es muy rápido
+                        setTimeout(() => switchScreen('screen-setup'), 500);
+                    } else {
+                        throw new Error("Formato JSON inválido");
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    switchScreen('screen-error');
+                });
         }
 
-        function updateCountButtons() {
-            document.querySelectorAll('.q-btn').forEach(btn => {
-                const count = parseInt(btn.dataset.count);
-                if (count === selectedCount) {
-                    btn.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');
-                    btn.classList.remove('border-slate-300');
-                } else {
-                    btn.classList.remove('bg-blue-100', 'border-blue-500', 'text-blue-700');
-                    btn.classList.add('border-slate-300');
-                }
+        function setupCountButtons(total) {
+            const container = document.getElementById('count-buttons-container');
+            container.innerHTML = '';
+            
+            let steps = [10, 20, 50, 100];
+            steps = steps.filter(s => s <= total);
+            if (steps.length === 0 || steps[steps.length-1] !== total) {
+                steps.push(total); 
+            }
+
+            steps.forEach(num => {
+                const btn = document.createElement('button');
+                btn.className = `q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold ${num === steps[0] ? 'bg-blue-100 border-blue-500 text-blue-700 active-count' : ''}`;
+                btn.innerText = num === total ? `Todo (${num})` : num;
+                btn.dataset.count = num;
+                btn.onclick = () => selectQuestionCount(num, btn);
+                container.appendChild(btn);
             });
+            
+            if(steps.length > 0) selectedCount = steps[0];
+        }
+
+        function selectQuestionCount(count, btnElement) {
+            selectedCount = count;
+            document.querySelectorAll('.q-btn').forEach(b => {
+                b.classList.remove('bg-blue-100', 'border-blue-500', 'text-blue-700');
+                b.classList.add('border-slate-300');
+            });
+            btnElement.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');
+            btnElement.classList.remove('border-slate-300');
+        }
+
+        function switchScreen(screenId) {
+            ['screen-loading', 'screen-error', 'screen-setup', 'screen-quiz', 'screen-results'].forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+            document.getElementById(screenId).classList.remove('hidden');
+            lucide.createIcons(); // Re-render icons if needed
         }
 
         function startQuiz() {
-            // Logic to get random questions
-            const shuffled = [...questionBank].sort(() => 0.5 - Math.random());
+            const shuffled = [...fullQuestionBank].sort(() => 0.5 - Math.random());
             currentQuestions = shuffled.slice(0, selectedCount);
-            
-            // Reset state
             userAnswers = {};
             
-            // Switch screens
-            document.getElementById('screen-home').classList.add('hidden');
-            document.getElementById('screen-quiz').classList.remove('hidden');
+            switchScreen('screen-quiz');
             document.getElementById('timer-container').classList.remove('hidden');
-
-            // Render Questions
             renderQuestions();
-
-            // Start timer
             startTimer();
         }
 
         function renderQuestions() {
             const list = document.getElementById('questions-list');
             list.innerHTML = '';
-
             currentQuestions.forEach((q, index) => {
                 const qEl = document.createElement('div');
                 qEl.className = 'bg-white p-6 rounded-xl shadow-sm border border-slate-200 mx-4';
@@ -594,7 +279,7 @@
                     <div class="space-y-2 ml-2">
                         ${q.options.map((opt, optIndex) => `
                             <label class="flex items-center p-3 rounded-lg border border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors group">
-                                <input type="radio" name="q-${index}" value="${optIndex}" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300" onchange="selectAnswer(${index}, ${optIndex})">
+                                <input type="radio" name="q-${index}" value="${optIndex}" class="h-4 w-4 text-blue-600" onchange="selectAnswer(${index}, ${optIndex})">
                                 <span class="ml-3 text-slate-700 group-hover:text-slate-900 text-sm">${opt}</span>
                             </label>
                         `).join('')}
@@ -607,17 +292,10 @@
 
         function selectAnswer(qIndex, optIndex) {
             userAnswers[qIndex] = optIndex;
-            updateProgress();
-        }
-
-        function updateProgress() {
-            const answered = Object.keys(userAnswers).length;
-            const total = currentQuestions.length;
-            const percentage = (answered / total) * 100;
-            
+            const percentage = (Object.keys(userAnswers).length / currentQuestions.length) * 100;
             document.getElementById('progress-bar').style.width = `${percentage}%`;
-            document.getElementById('answered-count').innerText = answered;
-            document.getElementById('total-count').innerText = total;
+            document.getElementById('answered-count').innerText = Object.keys(userAnswers).length;
+            document.getElementById('total-count').innerText = currentQuestions.length;
         }
 
         function startTimer() {
@@ -625,152 +303,84 @@
             totalTime = 0;
             timerInterval = setInterval(() => {
                 totalTime++;
-                const mins = Math.floor(totalTime / 60).toString().padStart(2, '0');
-                const secs = (totalTime % 60).toString().padStart(2, '0');
-                timerEl.innerText = `${mins}:${secs}`;
+                timerEl.innerText = `${Math.floor(totalTime / 60).toString().padStart(2, '0')}:${(totalTime % 60).toString().padStart(2, '0')}`;
             }, 1000);
         }
 
-        // New Modal Handling
-        function requestFinish() {
-            const modal = document.getElementById('modal-confirm');
-            modal.classList.remove('hidden');
-            // Triggering reflow for animation if needed, or simply let CSS handle visibility
-        }
-
-        function closeModal() {
-            document.getElementById('modal-confirm').classList.add('hidden');
-        }
-
+        function requestFinish() { document.getElementById('modal-confirm').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('modal-confirm').classList.add('hidden'); }
+        
         function confirmFinish() {
             closeModal();
             clearInterval(timerInterval);
             calculateResults();
-            
-            document.getElementById('screen-quiz').classList.add('hidden');
+            switchScreen('screen-results');
             document.getElementById('timer-container').classList.add('hidden');
-            document.getElementById('screen-results').classList.remove('hidden');
         }
 
         function calculateResults() {
-            let correct = 0;
-            let wrong = 0;
-            let blank = 0;
-
+            let correct = 0, wrong = 0, blank = 0;
             currentQuestions.forEach((q, index) => {
-                const answer = userAnswers[index];
-                if (answer === undefined) {
-                    blank++;
-                } else if (answer === q.correct) {
-                    correct++;
-                } else {
-                    wrong++;
-                }
+                const ans = userAnswers[index];
+                if (ans === undefined) blank++;
+                else if (ans === q.correct) correct++;
+                else wrong++;
             });
 
-            // Formula: Aciertos - (Fallos / (n_opciones - 1))
-            // Standard oposiciones: 3 opciones -> fallo resta 0.5 | 4 opciones -> fallo resta 0.33
-            // Aquí usamos 4 opciones
-            const penalty = wrong / 3; 
-            const rawScore = correct - penalty;
-            // Scale to 10
-            const maxRawScore = currentQuestions.length;
-            let finalScore = (rawScore / maxRawScore) * 10;
-            if (finalScore < 0) finalScore = 0;
-
-            // UI Update
+            const score = Math.max(0, ((correct - (wrong / 3)) / currentQuestions.length) * 10).toFixed(2);
+            
             document.getElementById('stat-correct').innerText = correct;
             document.getElementById('stat-wrong').innerText = wrong;
             document.getElementById('stat-blank').innerText = blank;
+            document.getElementById('final-score').innerText = score;
             
-            const scoreEl = document.getElementById('final-score');
-            scoreEl.innerText = finalScore.toFixed(2);
-            
-            // Animate Circle
             const circle = document.getElementById('score-circle');
-            const circumference = 2 * Math.PI * 15.9155;
-            const offset = circumference - ((finalScore / 10) * circumference);
-            
-            // Result Text
-            const resultText = document.getElementById('stat-result');
-            if (finalScore >= 5) {
-                resultText.innerText = "APTO";
-                resultText.className = "text-lg font-bold text-green-600";
-                circle.classList.remove('text-blue-600', 'text-red-600');
+            const offset = 100 - (score * 10);
+            setTimeout(() => circle.style.strokeDashoffset = offset, 100);
+
+            const resText = document.getElementById('stat-result');
+            if (score >= 5) {
+                resText.innerText = "APTO";
+                resText.className = "text-lg font-bold text-green-600";
                 circle.classList.add('text-green-500');
             } else {
-                resultText.innerText = "NO APTO";
-                resultText.className = "text-lg font-bold text-red-600";
-                circle.classList.remove('text-blue-600', 'text-green-500');
+                resText.innerText = "NO APTO";
+                resText.className = "text-lg font-bold text-red-600";
                 circle.classList.add('text-red-500');
             }
-            
-            setTimeout(() => {
-                circle.style.strokeDashoffset = offset;
-            }, 100);
 
             renderReview();
         }
 
         function renderReview() {
-            const reviewList = document.getElementById('review-list');
-            reviewList.innerHTML = '';
-
+            const list = document.getElementById('review-list');
+            list.innerHTML = '';
             currentQuestions.forEach((q, index) => {
                 const userAns = userAnswers[index];
                 const isCorrect = userAns === q.correct;
                 const isBlank = userAns === undefined;
-
-                let borderClass = isCorrect ? 'border-green-200 bg-green-50' : (isBlank ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50');
-                let icon = isCorrect ? '<i data-lucide="check" class="text-green-600 h-5 w-5"></i>' : (isBlank ? '<i data-lucide="circle" class="text-slate-400 h-5 w-5"></i>' : '<i data-lucide="x" class="text-red-600 h-5 w-5"></i>');
-
-                const item = document.createElement('div');
-                item.className = `p-4 rounded-lg border ${borderClass}`;
+                let border = isCorrect ? 'border-green-200 bg-green-50' : (isBlank ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50');
                 
-                let optionsHtml = '';
-                q.options.forEach((opt, optIndex) => {
-                    let optClass = "text-slate-600";
-                    let prefix = "";
-                    
-                    // Logic for highlighting
-                    if (optIndex === q.correct) {
-                        optClass = "text-green-700 font-bold bg-green-100 rounded px-2 py-0.5";
-                        prefix = "✓ ";
-                    } else if (optIndex === userAns && !isCorrect) {
-                        optClass = "text-red-700 font-bold bg-red-100 rounded px-2 py-0.5 line-through decoration-red-500";
-                        prefix = "✗ ";
-                    }
-
-                    optionsHtml += `<div class="text-sm ml-6 mb-1 ${optClass}">${prefix}${opt}</div>`;
+                let html = `<div class="p-4 rounded-lg border ${border}">
+                    <div class="flex gap-3 mb-2"><span class="font-bold">${index+1}.</span><div class="font-medium">${q.q}</div></div>
+                    <div class="space-y-1 mt-2">`;
+                
+                q.options.forEach((opt, idx) => {
+                    let style = "text-slate-600";
+                    let pre = "";
+                    if (idx === q.correct) { style = "text-green-700 font-bold bg-green-100 rounded px-2"; pre = "✓ "; }
+                    else if (idx === userAns && !isCorrect) { style = "text-red-700 font-bold bg-red-100 rounded px-2 line-through"; pre = "✗ "; }
+                    html += `<div class="text-sm ml-6 mb-1 ${style}">${pre}${opt}</div>`;
                 });
-
-                item.innerHTML = `
-                    <div class="flex justify-between items-start mb-2">
-                        <div class="flex items-start gap-3">
-                            <span class="font-bold text-slate-700 mt-0.5">${index+1}.</span>
-                            <div class="font-medium text-slate-800">${q.q}</div>
-                        </div>
-                        <div class="flex-shrink-0 ml-2">${icon}</div>
-                    </div>
-                    <div class="space-y-1 mt-2">
-                        ${optionsHtml}
-                    </div>
-                `;
-                reviewList.appendChild(item);
+                
+                html += `</div></div>`;
+                list.innerHTML += html;
             });
-            lucide.createIcons();
         }
 
-        function resetApp() {
-            document.getElementById('screen-results').classList.add('hidden');
-            document.getElementById('screen-home').classList.remove('hidden');
-            document.getElementById('progress-bar').style.width = '0%';
-            document.getElementById('score-circle').style.strokeDashoffset = 100; // Reset circle
-        }
+        function restartQuiz() { startQuiz(); }
 
-        // Init
         init();
-
     </script>
 </body>
 </html>
