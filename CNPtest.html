@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Test Oposiciones CNP - Depol Resumen&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: 'Inter', sans-serif; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.slide-in { animation: slideIn 0.3s ease-out forwards; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes slideIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(10px); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom scrollbar for question list */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar { width: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-track { background: #f1f1f1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-thumb:hover { background: #1e40af; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-slate-50 text-slate-800 h-screen flex flex-col overflow-hidden"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-blue-900 text-white shadow-lg z-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="shield" class="h-6 w-6 text-yellow-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="font-bold text-lg leading-tight"&gt;Test Oposiciones CNP&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-blue-200"&gt;Basado en Cuaderno Resumen Plus&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="timer-container" class="hidden flex items-center bg-blue-800 px-3 py-1 rounded-full border border-blue-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="clock" class="h-4 w-4 mr-2 text-yellow-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span id="timer" class="font-mono font-bold"&gt;00:00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Main Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="flex-1 overflow-y-auto relative w-full max-w-5xl mx-auto p-4" id="main-container"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Screen: Home --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="screen-home" class="flex flex-col items-center justify-center h-full space-y-8 slide-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center space-y-4 max-w-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-blue-100 p-4 rounded-full inline-block mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="book-open" class="h-12 w-12 text-blue-900"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-slate-900"&gt;Generador de Tests&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-slate-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Preguntas extraídas del temario jurídico y sociológico (Constitución, UE, Interior, Extranjería...).</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm border border-slate-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label class="block text-sm font-medium text-slate-700 mb-2"&gt;Número de preguntas&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-3 gap-2 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="selectQuestionCount(10)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold active-count" data-count="10"&gt;10&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="selectQuestionCount(20)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold" data-count="20"&gt;20&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="selectQuestionCount(50)" class="q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold" data-count="50"&gt;50&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="startQuiz()" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg shadow-lg transform transition hover:-translate-y-0.5 flex justify-center items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="mr-2"&gt;Comenzar Examen&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="arrow-right" class="h-5 w-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-xs text-slate-400 mt-8"&gt;Algoritmo de corrección: A - [E / (n-1)]&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Screen: Quiz --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="screen-quiz" class="hidden h-full flex flex-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Progress Bar --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="w-full bg-slate-200 rounded-full h-2.5 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Questions Container --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="questions-list" class="flex-1 overflow-y-auto space-y-6 pb-20 pr-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Questions injected by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Sticky Footer Action --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-lg z-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="max-w-5xl mx-auto flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Contestadas: &lt;span id="answered-count" class="font-bold text-blue-900"&gt;0&lt;/span&gt; / &lt;span id="total-count"&gt;0&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="requestFinish()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg shadow transition-colors flex items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i data-lucide="check-circle" class="h-5 w-5 mr-2"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Finalizar y Corregir</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Screen: Results --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="screen-results" class="hidden pb-10 slide-in"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Score Card --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-6 mb-8 text-center relative overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-bold text-slate-800 mb-4"&gt;Resultados del Examen&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Donut Chart Simulation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative h-32 w-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="h-full w-full transform -rotate-90" viewBox="0 0 36 36"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Background Circle --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;path class="text-slate-100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Progress Circle --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;path id="score-circle" class="text-blue-600 transition-all duration-1000 ease-out" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="absolute inset-0 flex flex-col items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span id="final-score" class="text-3xl font-extrabold text-slate-800"&gt;0.0&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs text-slate-500 font-semibold"&gt;NOTA&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Stats Grid --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="grid grid-cols-2 gap-4 text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-green-50 p-3 rounded-lg border border-green-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-green-600 font-bold uppercase"&gt;Aciertos&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="stat-correct" class="text-2xl font-bold text-green-700"&gt;0&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-red-50 p-3 rounded-lg border border-red-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-red-600 font-bold uppercase"&gt;Fallos&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="stat-wrong" class="text-2xl font-bold text-red-700"&gt;0&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-slate-50 p-3 rounded-lg border border-slate-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-slate-500 font-bold uppercase"&gt;En Blanco&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="stat-blank" class="text-2xl font-bold text-slate-600"&gt;0&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-blue-50 p-3 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-blue-600 font-bold uppercase"&gt;Resultado&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="stat-result" class="text-lg font-bold text-blue-700"&gt;NO APTO&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="resetApp()" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="refresh-cw" class="h-4 w-4 mr-2"&gt;&lt;/i&gt; Realizar otro test</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Review Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold text-slate-800 px-2 border-l-4 border-blue-600"&gt;Revisión de Preguntas&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="review-list" class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Review items injected by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Custom Modal --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="modal-confirm" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 text-center transform transition-all scale-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="help-circle" class="h-6 w-6 text-blue-600"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-lg leading-6 font-bold text-slate-900 mb-2"&gt;¿Finalizar Examen?&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm text-slate-500 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Si finalizas ahora, se calculará tu nota y no podrás cambiar tus respuestas.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="closeModal()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-medium transition-colors w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Cancelar</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="confirmFinish()" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Finalizar</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Question Data &amp; Logic --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- DATA ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Extracted from "Cuaderno Resumen Plus Depol CNP.pdf"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionBank = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿En quién reside la soberanía nacional según la Constitución Española?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["En el Rey", "En las Cortes Generales", "En el pueblo español", "En el Gobierno"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es la forma política del Estado español?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["República parlamentaria", "Monarquía parlamentaria", "Monarquía constitucional", "Estado federal"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién ratificó la Constitución Española de 1978?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Las Cortes Generales", "El Rey", "El pueblo español", "El Gobierno"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué artículo de la Constitución establece que el castellano es la lengua española oficial del Estado?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Artículo 2", "Artículo 3", "Artículo 4", "Artículo 5"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿A quién corresponde sancionar y promulgar las leyes?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Al Presidente del Gobierno", "Al Presidente del Congreso", "Al Rey", "Al Ministro de Justicia"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Corona"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es el plazo máximo de la detención preventiva según el art. 17 de la CE?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["24 horas", "48 horas", "72 horas", "7 días"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Derechos"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién nombra al Fiscal General del Estado?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Rey, a propuesta del Gobierno, oído el CGPJ", "El Congreso de los Diputados", "El Presidente del Gobierno directamente", "El Consejo General del Poder Judicial"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Poder Judicial"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuántos miembros componen el Consejo General del Poder Judicial (CGPJ)?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["12 miembros más el Presidente", "20 miembros más el Presidente", "25 miembros", "20 miembros elegidos por el Rey"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Poder Judicial"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué mayoría requiere la aprobación de una Ley Orgánica en el Congreso?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Mayoría simple", "Mayoría absoluta", "Mayoría de 3/5", "Mayoría de 2/3"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Elaboración de Leyes"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "El Cuerpo Nacional de Policía es un instituto armado de naturaleza:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Militar", "Civil", "Híbrida", "Administrativa"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Fuerzas y Cuerpos de Seguridad"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿De quién depende el Cuerpo Nacional de Policía?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Del Ministerio de Defensa", "Del Ministerio del Interior", "De las Comunidades Autónomas", "Del Ministerio de Justicia"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Fuerzas y Cuerpos de Seguridad"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es la Escala superior en la estructura del Cuerpo Nacional de Policía?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Escala Ejecutiva", "Escala Superior", "Escala de Mando", "Escala Técnica"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "CNP"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué categorías componen la Escala Básica del CNP?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Policía y Oficial de Policía", "Policía", "Policía y Agente", "Policía de primera y Policía de segunda"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "CNP"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿En qué ciudad tiene su sede el Parlamento Europeo?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Bruselas", "Luxemburgo", "Estrasburgo", "Frankfurt"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Unión Europea"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es la mayoría de edad establecida en la Constitución Española?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["16 años", "18 años", "21 años", "25 años"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Derechos"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "Según la LO 2/1986, el mantenimiento de la seguridad pública corresponde a:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Las Fuerzas y Cuerpos de Seguridad", "El Gobierno", "Los Jueces y Tribunales", "El Ministerio del Interior"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "LOFCS"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué órgano ejerce el mando directo de la Policía Nacional bajo la autoridad del Secretario de Estado de Seguridad?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Director Adjunto Operativo", "El Director General de la Policía", "El Ministro del Interior", "El Comisario General"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Ministerio Interior"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué tratado suprimió los controles en las fronteras interiores de la UE?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Tratado de Maastricht", "Acuerdo de Schengen", "Tratado de Lisboa", "Tratado de Roma"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "UE"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "La nacionalidad española se adquiere, conserva y pierde...",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Según lo establecido por la ley", "Según lo establecido por el Rey", "Según lo establecido en la Constitución", "No se puede perder si es de origen"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Derechos"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué recurso cabe contra las sentencias del Tribunal Constitucional?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Recurso de casación", "Recurso de amparo", "No cabe recurso alguno", "Recurso de súplica"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Tribunal Constitucional"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién preside el Consejo de Política de Seguridad?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Rey", "El Presidente del Gobierno", "El Ministro del Interior", "El Secretario de Estado de Seguridad"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Coordinación"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es el plazo para solicitar la Tarjeta de Identidad de Extranjero tras la entrada en vigor de la autorización?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["15 días", "1 mes", "3 meses", "6 meses"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Extranjería"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué institución europea representa a los ciudadanos de la Unión?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["La Comisión Europea", "El Consejo de la UE", "El Parlamento Europeo", "El Tribunal de Justicia"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Unión Europea"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "Los miembros de las Fuerzas y Cuerpos de Seguridad no podrán ejercer el derecho de:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Voto", "Sindicación (CNP)", "Huelga", "Petición"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "LOFCS"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién propone al candidato a Presidente del Gobierno?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Congreso", "El Presidente saliente", "El Rey", "Los partidos políticos"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Gobierno"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "La suspensión de los derechos de huelga y conflicto colectivo puede producirse en los estados de:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Alarma, Excepción y Sitio", "Excepción y Sitio", "Solo Sitio", "Alarma y Excepción"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Suspensión Derechos"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién nombra a los Delegados del Gobierno en las CCAA?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Rey", "El Presidente de la CA", "El Consejo de Ministros", "El Ministro del Interior"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "AGE"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué rango tiene el Secretario de Estado de Seguridad?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Ministro", "Subsecretario", "Director General", "Órgano Superior"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Ministerio Interior"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "La tarjeta de residencia de familiar de ciudadano de la Unión tiene una validez de:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["1 año", "2 años", "5 años", "10 años"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Extranjería"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "El Tribunal Europeo de Derechos Humanos tiene su sede en:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Luxemburgo", "Estrasburgo", "Bruselas", "La Haya"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Instituciones Internacionales"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// NUEVAS PREGUNTAS AÑADIDAS</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué mayoría se requiere para la reforma constitucional por el procedimiento agravado (art. 168)?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Mayoría absoluta", "3/5 de cada Cámara", "2/3 de cada Cámara", "1/10 de los diputados"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Reforma Constitucional"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es la duración del mandato del Defensor del Pueblo?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["3 años", "4 años", "5 años", "9 años"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Defensor del Pueblo"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién elige al Presidente del Consejo Europeo?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Los ciudadanos europeos", "El propio Consejo Europeo", "El Parlamento Europeo", "La Comisión Europea"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "UE"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué Tratado instituyó la ciudadanía europea?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Tratado de Roma", "Acta Única Europea", "Tratado de Maastricht", "Tratado de Lisboa"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "UE"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿De quién depende orgánicamente el Centro de Inteligencia contra el Terrorismo y el Crimen Organizado (CITCO)?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Del Ministro del Interior", "De la Secretaría de Estado de Seguridad", "De la Dirección General de la Policía", "De la Dirección General de Coordinación y Estudios"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Ministerio Interior"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿A qué edad se produce la jubilación forzosa en la Policía Nacional?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["60 años", "62 años", "65 años", "70 años"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "CNP"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién preside las Juntas Locales de Seguridad?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Jefe de la Policía Local", "El Delegado del Gobierno exclusivamente", "El Alcalde (o compartido con Delegado/Subdelegado)", "El Concejal de Seguridad"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Coordinación"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es el plazo máximo de estancia para extranjeros en régimen de turista sin prórroga?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["30 días", "60 días", "90 días", "6 meses"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Extranjería"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuántos años de residencia continuada se requieren generalmente para obtener la residencia de larga duración?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["2 años", "3 años", "5 años", "10 años"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Extranjería"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué Ley Orgánica regula las medidas de protección integral contra la violencia de género?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["LO 1/2004", "LO 3/2007", "LO 4/2000", "LO 2/1986"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Violencia de Género"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿A qué cuerpo corresponde el control de las entidades y servicios privados de seguridad?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Guardia Civil", "Cuerpo Nacional de Policía", "Policía Local", "Seguridad Privada"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "LOFCS"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuáles son los valores superiores del ordenamiento jurídico según el art. 1.1 CE?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Libertad, justicia, igualdad y fraternidad", "Libertad, justicia, igualdad y pluralismo político", "Libertad, igualdad y solidaridad", "Soberanía, democracia y justicia"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué protege específicamente el recurso de amparo ante el Tribunal Constitucional?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Las leyes orgánicas", "Los derechos y libertades fundamentales (arts. 14-29 y 30.2)", "Los estatutos de autonomía", "Cualquier derecho constitucional"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Garantías Constitucionales"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿De quién son responsables los actos del Rey según la Constitución?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Del propio Rey", "De la Casa Real", "De las personas que los refrenden", "Del Tribunal Supremo"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Corona"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué principio es la base de la organización y funcionamiento de los Tribunales?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Unidad jurisdiccional", "Doble instancia", "Gratuidad", "Oralidad"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Poder Judicial"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿En qué título de la Constitución se regula la Corona?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Título Preliminar", "Título I", "Título II", "Título III"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuántos senadores se eligen por cada provincia peninsular?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["2", "3", "4", "Variable según población"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Cortes Generales"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué órgano aprueba la Oferta de Empleo Público?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Ministerio de Hacienda", "El Congreso", "El Gobierno", "El Ministro de Función Pública"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Funcionarios"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué situación administrativa conlleva la reserva del puesto de trabajo durante los dos primeros años?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Excedencia voluntaria por interés particular", "Excedencia por cuidado de familiares", "Servicios especiales", "Suspensión de funciones"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Funcionarios"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Quién nombra al Director General de la Policía?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Rey", "El Consejo de Ministros a propuesta del Ministro del Interior"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Ministerio Interior"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es la capital del Estado según el artículo 5 de la Constitución?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Madrid", "La villa de Madrid", "La Comunidad de Madrid", "El reino de España"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Constitución"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Se permite la federación de Comunidades Autónomas?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Sí, con autorización de las Cortes", "Sí, si son limítrofes", "No, en ningún caso", "Solo las históricas"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Organización Territorial"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Dónde tiene su sede el Tribunal de Justicia de la Unión Europea?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Estrasburgo", "Bruselas", "La Haya", "Luxemburgo"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "UE"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Cuál es el plazo de detención máximo para identificaciones según la LOPSC 4/2015?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["6 horas", "10 horas", "24 horas", "72 horas"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Seguridad Ciudadana"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "¿Qué mayoría se necesita para aprobar una moción de censura?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Mayoría simple", "Mayoría absoluta", "3/5", "2/3"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Gobierno"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "La renuncia a la condición de funcionario en la Policía Nacional debe ser aceptada en un plazo máximo de:",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["1 mes", "2 meses", "3 meses", "6 meses"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "CNP"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- STATE ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentQuestions = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let userAnswers = {}; // Map question index -&gt; selected option index</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let totalTime = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let timerInterval;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let selectedCount = 10;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- FUNCTIONS ---</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function init() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lucide.createIcons();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateCountButtons();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function selectQuestionCount(count) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>selectedCount = count;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateCountButtons();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateCountButtons() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.q-btn').forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const count = parseInt(btn.dataset.count);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (count === selectedCount) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.remove('border-slate-300');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.remove('bg-blue-100', 'border-blue-500', 'text-blue-700');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('border-slate-300');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startQuiz() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Logic to get random questions</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const shuffled = [...questionBank].sort(() =&gt; 0.5 - Math.random());</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestions = shuffled.slice(0, selectedCount);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>userAnswers = {};</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Switch screens</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-home').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-quiz').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('timer-container').classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Render Questions</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderQuestions();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Start timer</p>
+<p class="p1"><span class="Apple-converted-space">            </span>startTimer();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderQuestions() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const list = document.getElementById('questions-list');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestions.forEach((q, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const qEl = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>qEl.className = 'bg-white p-6 rounded-xl shadow-sm border border-slate-200 mx-4';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>qEl.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-start mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1"&gt;#${index + 1}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-lg font-medium text-slate-900"&gt;${q.q}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs text-slate-400 uppercase tracking-wide"&gt;${q.topic}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-2 ml-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${q.options.map((opt, optIndex) =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label class="flex items-center p-3 rounded-lg border border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="radio" name="q-${index}" value="${optIndex}" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300" onchange="selectAnswer(${index}, ${optIndex})"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="ml-3 text-slate-700 group-hover:text-slate-900 text-sm"&gt;${opt}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>list.appendChild(qEl);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lucide.createIcons();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function selectAnswer(qIndex, optIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>userAnswers[qIndex] = optIndex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateProgress();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateProgress() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const answered = Object.keys(userAnswers).length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const total = currentQuestions.length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const percentage = (answered / total) * 100;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('progress-bar').style.width = `${percentage}%`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('answered-count').innerText = answered;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('total-count').innerText = total;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startTimer() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const timerEl = document.getElementById('timer');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalTime = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timerInterval = setInterval(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>totalTime++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const mins = Math.floor(totalTime / 60).toString().padStart(2, '0');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const secs = (totalTime % 60).toString().padStart(2, '0');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>timerEl.innerText = `${mins}:${secs}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// New Modal Handling</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function requestFinish() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const modal = document.getElementById('modal-confirm');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Triggering reflow for animation if needed, or simply let CSS handle visibility</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function closeModal() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('modal-confirm').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function confirmFinish() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>closeModal();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clearInterval(timerInterval);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>calculateResults();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-quiz').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('timer-container').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-results').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateResults() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let correct = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let wrong = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let blank = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestions.forEach((q, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const answer = userAnswers[index];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (answer === undefined) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>blank++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else if (answer === q.correct) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>correct++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>wrong++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Formula: Aciertos - (Fallos / (n_opciones - 1))</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Standard oposiciones: 3 opciones -&gt; fallo resta 0.5 | 4 opciones -&gt; fallo resta 0.33</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Aquí usamos 4 opciones</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const penalty = wrong / 3;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const rawScore = correct - penalty;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Scale to 10</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const maxRawScore = currentQuestions.length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let finalScore = (rawScore / maxRawScore) * 10;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (finalScore &lt; 0) finalScore = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// UI Update</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('stat-correct').innerText = correct;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('stat-wrong').innerText = wrong;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('stat-blank').innerText = blank;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const scoreEl = document.getElementById('final-score');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreEl.innerText = finalScore.toFixed(2);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Animate Circle</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const circle = document.getElementById('score-circle');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const circumference = 2 * Math.PI * 15.9155;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const offset = circumference - ((finalScore / 10) * circumference);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Result Text</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const resultText = document.getElementById('stat-result');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (finalScore &gt;= 5) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultText.innerText = "APTO";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultText.className = "text-lg font-bold text-green-600";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>circle.classList.remove('text-blue-600', 'text-red-600');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>circle.classList.add('text-green-500');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultText.innerText = "NO APTO";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultText.className = "text-lg font-bold text-red-600";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>circle.classList.remove('text-blue-600', 'text-green-500');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>circle.classList.add('text-red-500');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>circle.style.strokeDashoffset = offset;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 100);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderReview();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderReview() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const reviewList = document.getElementById('review-list');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>reviewList.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestions.forEach((q, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const userAns = userAnswers[index];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const isCorrect = userAns === q.correct;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const isBlank = userAns === undefined;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let borderClass = isCorrect ? 'border-green-200 bg-green-50' : (isBlank ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let icon = isCorrect ? '&lt;i data-lucide="check" class="text-green-600 h-5 w-5"&gt;&lt;/i&gt;' : (isBlank ? '&lt;i data-lucide="circle" class="text-slate-400 h-5 w-5"&gt;&lt;/i&gt;' : '&lt;i data-lucide="x" class="text-red-600 h-5 w-5"&gt;&lt;/i&gt;');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const item = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>item.className = `p-4 rounded-lg border ${borderClass}`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let optionsHtml = '';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q.options.forEach((opt, optIndex) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let optClass = "text-slate-600";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let prefix = "";</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Logic for highlighting</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (optIndex === q.correct) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>optClass = "text-green-700 font-bold bg-green-100 rounded px-2 py-0.5";</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>prefix = "✓ ";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else if (optIndex === userAns &amp;&amp; !isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>optClass = "text-red-700 font-bold bg-red-100 rounded px-2 py-0.5 line-through decoration-red-500";</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>prefix = "✗ ";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>optionsHtml += `&lt;div class="text-sm ml-6 mb-1 ${optClass}"&gt;${prefix}${opt}&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>item.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-between items-start mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-slate-700 mt-0.5"&gt;${index+1}.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="font-medium text-slate-800"&gt;${q.q}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex-shrink-0 ml-2"&gt;${icon}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-1 mt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${optionsHtml}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>reviewList.appendChild(item);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lucide.createIcons();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function resetApp() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-results').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('screen-home').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('progress-bar').style.width = '0%';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('score-circle').style.strokeDashoffset = 100; // Reset circle</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Init</p>
+<p class="p1"><span class="Apple-converted-space">        </span>init();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
