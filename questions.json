@@ -358,7 +358,7 @@
     "options": ["El derecho al voto", "La sujeción al derecho civil común o al especial o foral", "La nacionalidad", "El domicilio fiscal"],
     "correct": 1,
     "topic": "Vecindad Civil"
-  }
+  },
   {
     "q": "¿En qué fecha fue ratificada la Constitución Española por el pueblo español en referéndum?",
     "options": ["31 de octubre de 1978", "6 de diciembre de 1978", "27 de diciembre de 1978", "29 de diciembre de 1978"],
@@ -718,7 +718,7 @@
     "options": ["La unidad de la nación", "El pluralismo político", "La soberanía nacional", "El poder ejecutivo"],
     "correct": 1,
     "topic": "Título Preliminar"
-  }
+  },
     {
     "q": "¿Quién es el Jefe del Estado y símbolo de su unidad y permanencia?",
     "options": ["El Presidente del Gobierno", "El Presidente del Congreso", "El Defensor del Pueblo", "El Rey"],
@@ -1078,7 +1078,7 @@
     "options": ["Sanidad e higiene", "Asistencia social", "Urbanismo", "Relaciones Internacionales"],
     "correct": 3,
     "topic": "Organización Territorial"
-  }
+  },
   {
     "q": "¿Qué tratado instituyó la ciudadanía europea (ciudadanía de la Unión)?",
     "options": ["El Acta Única Europea", "El Tratado de Ámsterdam", "El Tratado de Lisboa", "El Tratado de Maastricht (TUE)"],
