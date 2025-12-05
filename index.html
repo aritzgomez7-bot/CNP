@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Oposiciones CNP - Auto Load</title>
+    <title>Test Oposiciones CNP - Por Temas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -26,14 +26,13 @@
     <header class="bg-blue-900 text-white shadow-lg z-10">
         <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i data-lucide="shield-check" class="h-6 w-6 text-yellow-400"></i>
+                <span class="text-yellow-400 font-bold text-2xl">CNP</span>
                 <div>
-                    <h1 class="font-bold text-lg leading-tight">Test Oposiciones CNP</h1>
-                    <p class="text-xs text-blue-200">Banco de Preguntas Remoto</p>
+                    <h1 class="font-bold text-lg leading-tight">Generador de Test</h1>
+                    <p class="text-xs text-blue-200">Selección por Temas</p>
                 </div>
             </div>
             <div id="timer-container" class="hidden flex items-center bg-blue-800 px-3 py-1 rounded-full border border-blue-700">
-                <i data-lucide="clock" class="h-4 w-4 mr-2 text-yellow-400"></i>
                 <span id="timer" class="font-mono font-bold">00:00</span>
             </div>
         </div>
@@ -42,59 +41,72 @@
     <!-- Main Content -->
     <main class="flex-1 overflow-y-auto relative w-full max-w-5xl mx-auto p-4" id="main-container">
         
-        <!-- Screen: Loading -->
-        <div id="screen-loading" class="flex flex-col items-center justify-center h-full space-y-4">
-            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900"></div>
-            <p class="text-slate-600 font-medium">Cargando banco de preguntas...</p>
-        </div>
+        <!-- Screen 1: Loading / Manual Load -->
+        <div id="screen-loading" class="flex flex-col items-center justify-center h-full space-y-6 slide-in">
+            <div id="loader-spinner" class="text-center space-y-4">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900 mx-auto"></div>
+                <p class="text-slate-600 font-medium">Buscando banco de preguntas...</p>
+            </div>
 
-        <!-- Screen: Error (CORS/File Not Found) -->
-        <div id="screen-error" class="hidden flex flex-col items-center justify-center h-full space-y-6 slide-in text-center px-4">
-            <div class="bg-red-100 p-4 rounded-full inline-block">
-                <i data-lucide="alert-triangle" class="h-10 w-10 text-red-600"></i>
-            </div>
-            <div>
-                <h2 class="text-xl font-bold text-slate-900">Error de Carga</h2>
-                <p class="text-slate-600 mt-2 max-w-md mx-auto">
-                    No se pudo cargar el archivo <code>questions.json</code> automáticamente.
-                </p>
-            </div>
-            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-left text-sm text-yellow-800 max-w-md">
-                <p class="font-bold mb-1"><i data-lucide="info" class="inline h-4 w-4 mr-1"></i> Posible causa:</p>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Estás abriendo el archivo localmente (doble clic) y el navegador bloquea la carga por seguridad (CORS).</li>
-                    <li>El archivo <code>questions.json</code> no está en la misma carpeta.</li>
-                </ul>
-            </div>
-            <button onclick="location.reload()" class="px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors">
-                Reintentar
-            </button>
-        </div>
-
-        <!-- Screen: Setup -->
-        <div id="screen-setup" class="hidden flex flex-col items-center justify-center h-full space-y-8 slide-in">
-            <div class="text-center space-y-2">
-                <div class="bg-green-100 p-3 rounded-full inline-block mb-2">
-                    <i data-lucide="database" class="h-8 w-8 text-green-700"></i>
+            <div id="manual-load-container" class="hidden w-full max-w-md bg-white p-6 rounded-xl shadow-lg border border-slate-200 text-center">
+                <div class="bg-orange-100 text-orange-700 p-3 rounded-lg text-sm mb-4">
+                    <strong>Aviso:</strong> Carga manual requerida.
                 </div>
-                <h2 class="text-2xl font-bold text-slate-900">Configuración del Test</h2>
-                <p class="text-slate-600">Preguntas disponibles: <span id="loaded-count" class="font-bold text-blue-600">0</span></p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Cargar Preguntas</h3>
+                <div class="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors cursor-pointer relative">
+                    <input type="file" id="file-input" accept=".json,.txt" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" onchange="handleFileUpload(this)">
+                    <p class="text-sm text-slate-600">Click para subir archivo JSON</p>
+                </div>
+                <textarea id="json-paste-area" class="w-full h-24 mt-4 p-2 border border-slate-300 rounded-lg text-xs font-mono" placeholder="O pega el texto JSON aquí..."></textarea>
+                <button onclick="parsePastedJSON()" class="w-full mt-2 bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700">Cargar Texto</button>
+                <div id="error-message" class="hidden mt-4 text-left bg-red-50 p-3 rounded text-xs text-red-700 font-mono"></div>
+            </div>
+        </div>
+
+        <!-- Screen 2: Setup (Updated with Topics) -->
+        <div id="screen-setup" class="hidden flex flex-col items-center justify-center h-full space-y-6 slide-in">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-slate-900">Configuración</h2>
+                <p class="text-slate-500 text-sm">Total preguntas: <span id="loaded-count" class="font-bold">0</span></p>
             </div>
 
-            <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm border border-slate-200">
-                <label class="block text-sm font-medium text-slate-700 mb-2">Cantidad a responder</label>
-                <div class="grid grid-cols-3 gap-2 mb-6" id="count-buttons-container">
-                    <!-- Buttons injected by JS -->
+            <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-md border border-slate-200 space-y-6">
+                
+                <!-- Modo de Selección -->
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">1. Modo de Examen</label>
+                    <div class="flex rounded-lg bg-slate-100 p-1">
+                        <button onclick="setMode('general')" id="btn-mode-general" class="flex-1 py-2 text-sm font-medium rounded-md bg-white text-blue-700 shadow-sm transition-all">General (Mix)</button>
+                        <button onclick="setMode('temas')" id="btn-mode-temas" class="flex-1 py-2 text-sm font-medium rounded-md text-slate-500 hover:text-slate-700 transition-all">Por Temas</button>
+                    </div>
+                </div>
+
+                <!-- Selector de Temas (Oculto por defecto) -->
+                <div id="topic-selector-container" class="hidden">
+                    <label class="block text-sm font-bold text-slate-700 mb-2">2. Selecciona un Tema</label>
+                    <select id="topic-select" class="w-full p-2 border border-slate-300 rounded-lg text-sm bg-white focus:ring-2 focus:ring-blue-500 outline-none" onchange="updateAvailableCount()">
+                        <option value="">-- Elige un tema --</option>
+                    </select>
+                    <p class="text-xs text-slate-400 mt-1 text-right">Preguntas disponibles: <span id="topic-count">0</span></p>
+                </div>
+
+                <!-- Cantidad de Preguntas -->
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">3. Número de Preguntas</label>
+                    <div class="grid grid-cols-3 gap-2" id="count-buttons-container">
+                        <!-- Buttons injected via JS -->
+                    </div>
                 </div>
 
                 <button onclick="startQuiz()" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg shadow-lg transform transition hover:-translate-y-0.5 flex justify-center items-center">
-                    <span class="mr-2">Comenzar</span>
-                    <i data-lucide="play" class="h-5 w-5"></i>
+                    Comenzar Examen
                 </button>
             </div>
+            
+            <button onclick="location.reload()" class="text-slate-400 text-sm hover:text-slate-600 underline">Cargar otro archivo</button>
         </div>
 
-        <!-- Screen: Quiz -->
+        <!-- Screen 3: Quiz -->
         <div id="screen-quiz" class="hidden h-full flex flex-col">
             <div class="w-full bg-slate-200 rounded-full h-2.5 mb-6">
                 <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
@@ -105,19 +117,18 @@
                     <div class="text-sm text-slate-500">
                         Contestadas: <span id="answered-count" class="font-bold text-blue-900">0</span> / <span id="total-count">0</span>
                     </div>
-                    <button onclick="requestFinish()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg shadow transition-colors flex items-center">
-                        <i data-lucide="check-circle" class="h-5 w-5 mr-2"></i> Finalizar
+                    <button onclick="requestFinish()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg shadow transition-colors">
+                        Finalizar
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Screen: Results -->
+        <!-- Screen 4: Results -->
         <div id="screen-results" class="hidden pb-10 slide-in">
             <div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-6 mb-8 text-center relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500"></div>
                 <h2 class="text-2xl font-bold text-slate-800 mb-4">Resultados</h2>
-                
                 <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-6">
                     <div class="relative h-32 w-32">
                         <svg class="h-full w-full transform -rotate-90" viewBox="0 0 36 36">
@@ -149,9 +160,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center gap-4">
-                    <button onclick="restartQuiz()" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-semibold hover:bg-slate-200 flex items-center">
-                        <i data-lucide="rotate-ccw" class="h-4 w-4 mr-2"></i> Repetir Test
-                    </button>
+                    <button onclick="restartQuiz()" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-semibold hover:bg-slate-200">Repetir Test</button>
+                    <button onclick="location.reload()" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold hover:bg-blue-200">Nuevo Archivo</button>
                 </div>
             </div>
             <div class="space-y-6">
@@ -161,7 +171,7 @@
         </div>
     </main>
 
-    <!-- Modal -->
+    <!-- Modal Confirm -->
     <div id="modal-confirm" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
         <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 text-center">
             <h3 class="text-lg font-bold text-slate-900 mb-2">¿Finalizar Examen?</h3>
@@ -175,92 +185,168 @@
 
     <script>
         let fullQuestionBank = [];
+        let filteredBank = [];
         let currentQuestions = [];
         let userAnswers = {};
         let totalTime = 0;
         let timerInterval;
-        let selectedCount = 15;
+        let selectedCount = 20;
+        let currentMode = 'general'; // 'general' o 'temas'
 
+        // --- INIT & LOADING ---
         function init() {
-            lucide.createIcons();
-            loadQuestionsFromFile();
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+            const loadTimeout = setTimeout(() => showManualLoad(), 1500);
+            fetch('questions.json')
+                .then(r => { if(!r.ok) throw new Error(); return r.json(); })
+                .then(d => { clearTimeout(loadTimeout); processData(d); })
+                .catch(e => {});
         }
 
-        // --- AUTO LOAD LOGIC ---
-        function loadQuestionsFromFile() {
-            fetch('questions.json')
-                .then(response => {
-                    if (!response.ok) throw new Error("No se encontró el archivo");
-                    return response.json();
-                })
-                .then(data => {
-                    if (Array.isArray(data) && data.length > 0) {
-                        fullQuestionBank = data;
-                        document.getElementById('loaded-count').innerText = fullQuestionBank.length;
-                        setupCountButtons(fullQuestionBank.length);
-                        setTimeout(() => switchScreen('screen-setup'), 500);
-                    } else {
-                        throw new Error("Formato JSON inválido");
-                    }
-                })
-                .catch(error => {
-                    console.error(error);
-                    switchScreen('screen-error');
-                });
+        function showManualLoad() {
+            document.getElementById('loader-spinner').classList.add('hidden');
+            document.getElementById('manual-load-container').classList.remove('hidden');
+        }
+
+        function handleFileUpload(input) {
+            const file = input.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = e => {
+                try { processData(JSON.parse(e.target.result)); } 
+                catch (err) { showError(err); }
+            };
+            reader.readAsText(file);
+        }
+
+        function parsePastedJSON() {
+            try { processData(JSON.parse(document.getElementById('json-paste-area').value)); } 
+            catch (err) { showError(err); }
+        }
+
+        function showError(err) {
+            const errDiv = document.getElementById('error-message');
+            errDiv.classList.remove('hidden');
+            errDiv.innerText = "Error JSON: " + err.message;
+        }
+
+        // --- SETUP LOGIC ---
+        function processData(data) {
+            if (!Array.isArray(data) || data.length === 0) { showError({message: "Lista vacía"}); return; }
+            fullQuestionBank = data;
+            
+            // Extract unique topics
+            const topics = [...new Set(data.map(q => q.topic || 'Sin Tema'))].sort();
+            const select = document.getElementById('topic-select');
+            select.innerHTML = '<option value="">-- Elige un tema --</option>';
+            topics.forEach(t => {
+                const opt = document.createElement('option');
+                opt.value = t;
+                opt.innerText = t;
+                select.appendChild(opt);
+            });
+
+            document.getElementById('loaded-count').innerText = fullQuestionBank.length;
+            
+            // Default to General Mode
+            setMode('general');
+            
+            ['screen-loading', 'manual-load-container'].forEach(id => document.getElementById(id).classList.add('hidden'));
+            document.getElementById('screen-setup').classList.remove('hidden');
+        }
+
+        function setMode(mode) {
+            currentMode = mode;
+            const btnGeneral = document.getElementById('btn-mode-general');
+            const btnTemas = document.getElementById('btn-mode-temas');
+            const topicContainer = document.getElementById('topic-selector-container');
+
+            if (mode === 'general') {
+                btnGeneral.className = "flex-1 py-2 text-sm font-medium rounded-md bg-white text-blue-700 shadow-sm transition-all";
+                btnTemas.className = "flex-1 py-2 text-sm font-medium rounded-md text-slate-500 hover:text-slate-700 transition-all";
+                topicContainer.classList.add('hidden');
+                filteredBank = [...fullQuestionBank]; // Reset to all
+                setupCountButtons(filteredBank.length);
+            } else {
+                btnTemas.className = "flex-1 py-2 text-sm font-medium rounded-md bg-white text-blue-700 shadow-sm transition-all";
+                btnGeneral.className = "flex-1 py-2 text-sm font-medium rounded-md text-slate-500 hover:text-slate-700 transition-all";
+                topicContainer.classList.remove('hidden');
+                // Wait for selection
+                document.getElementById('topic-select').value = ""; // Reset select
+                updateAvailableCount();
+            }
+        }
+
+        function updateAvailableCount() {
+            if (currentMode === 'general') return;
+            
+            const topic = document.getElementById('topic-select').value;
+            if (topic) {
+                filteredBank = fullQuestionBank.filter(q => (q.topic || 'Sin Tema') === topic);
+            } else {
+                filteredBank = [];
+            }
+            
+            document.getElementById('topic-count').innerText = filteredBank.length;
+            setupCountButtons(filteredBank.length);
         }
 
         function setupCountButtons(total) {
             const container = document.getElementById('count-buttons-container');
             container.innerHTML = '';
             
-            // Opciones solicitadas: 15, 30, 50. Se elimina opción "Todo".
-            let steps = [15, 30, 50];
-            
-            // Filtramos las opciones que exceden el total disponible
-            steps = steps.filter(s => s <= total);
-            
-            // Fallback por si hay muy pocas preguntas (menos de 15)
-            if (steps.length === 0 && total > 0) {
-                steps = [total];
+            if (total === 0) {
+                container.innerHTML = '<p class="col-span-3 text-xs text-red-500 text-center">Selecciona un tema válido</p>';
+                return;
             }
+
+            let steps = [15, 20, 30, 50];
+            steps = steps.filter(s => s <= total);
+            // Always ensure "All" or max available is an option if steps are empty or specific needs
+            if (currentMode === 'temas' && total > 0 && !steps.includes(20) && total >= 20) {
+                 // Forcing 20 if available as requested
+            }
+            if (steps.length === 0 || steps[steps.length-1] !== total) steps.push(total);
+            
+            // Deduplicate and sort
+            steps = [...new Set(steps)].sort((a,b) => a-b);
 
             steps.forEach(num => {
                 const btn = document.createElement('button');
                 btn.className = `q-btn py-2 rounded-lg border border-slate-300 hover:bg-blue-50 focus:ring-2 focus:ring-blue-500 transition-all text-sm font-semibold ${num === steps[0] ? 'bg-blue-100 border-blue-500 text-blue-700 active-count' : ''}`;
                 btn.innerText = num;
-                btn.dataset.count = num;
-                btn.onclick = () => selectQuestionCount(num, btn);
+                btn.onclick = () => selectCount(num, btn);
                 container.appendChild(btn);
             });
-            
-            if(steps.length > 0) selectedCount = steps[0];
+            if(steps.length > 0) selectCount(steps[0], container.firstChild);
         }
 
-        function selectQuestionCount(count, btnElement) {
-            selectedCount = count;
+        function selectCount(num, btn) {
+            selectedCount = num;
             document.querySelectorAll('.q-btn').forEach(b => {
                 b.classList.remove('bg-blue-100', 'border-blue-500', 'text-blue-700');
                 b.classList.add('border-slate-300');
             });
-            btnElement.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');
-            btnElement.classList.remove('border-slate-300');
+            if(btn) {
+                btn.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');
+                btn.classList.remove('border-slate-300');
+            }
         }
 
-        function switchScreen(screenId) {
-            ['screen-loading', 'screen-error', 'screen-setup', 'screen-quiz', 'screen-results'].forEach(id => {
-                document.getElementById(id).classList.add('hidden');
-            });
-            document.getElementById(screenId).classList.remove('hidden');
-            lucide.createIcons(); 
-        }
-
+        // --- QUIZ EXECUTION ---
         function startQuiz() {
-            const shuffled = [...fullQuestionBank].sort(() => 0.5 - Math.random());
+            if (filteredBank.length === 0) {
+                alert("Por favor, selecciona un tema con preguntas disponibles.");
+                return;
+            }
+            const shuffled = [...filteredBank].sort(() => 0.5 - Math.random());
             currentQuestions = shuffled.slice(0, selectedCount);
             userAnswers = {};
             
-            switchScreen('screen-quiz');
+            document.getElementById('screen-setup').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.remove('hidden');
             document.getElementById('timer-container').classList.remove('hidden');
+            
             renderQuestions();
             startTimer();
         }
@@ -276,27 +362,26 @@
                         <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">#${index + 1}</span>
                         <div>
                             <h3 class="text-lg font-medium text-slate-900">${q.q}</h3>
-                            <span class="text-xs text-slate-400 uppercase tracking-wide">${q.topic}</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-wide bg-slate-100 px-2 py-0.5 rounded mt-1 inline-block">${q.topic || 'General'}</span>
                         </div>
                     </div>
                     <div class="space-y-2 ml-2">
-                        ${q.options.map((opt, optIndex) => `
+                        ${q.options.map((opt, idx) => `
                             <label class="flex items-center p-3 rounded-lg border border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors group">
-                                <input type="radio" name="q-${index}" value="${optIndex}" class="h-4 w-4 text-blue-600" onchange="selectAnswer(${index}, ${optIndex})">
-                                <span class="ml-3 text-slate-700 group-hover:text-slate-900 text-sm">${opt}</span>
+                                <input type="radio" name="q-${index}" value="${idx}" class="h-4 w-4 text-blue-600" onchange="selectAnswer(${index}, ${idx})">
+                                <span class="ml-3 text-slate-700 text-sm">${opt}</span>
                             </label>
                         `).join('')}
                     </div>
                 `;
                 list.appendChild(qEl);
             });
-            lucide.createIcons();
         }
 
         function selectAnswer(qIndex, optIndex) {
             userAnswers[qIndex] = optIndex;
-            const percentage = (Object.keys(userAnswers).length / currentQuestions.length) * 100;
-            document.getElementById('progress-bar').style.width = `${percentage}%`;
+            const pct = (Object.keys(userAnswers).length / currentQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = `${pct}%`;
             document.getElementById('answered-count').innerText = Object.keys(userAnswers).length;
             document.getElementById('total-count').innerText = currentQuestions.length;
         }
@@ -304,12 +389,14 @@
         function startTimer() {
             const timerEl = document.getElementById('timer');
             totalTime = 0;
+            if(timerInterval) clearInterval(timerInterval);
             timerInterval = setInterval(() => {
                 totalTime++;
                 timerEl.innerText = `${Math.floor(totalTime / 60).toString().padStart(2, '0')}:${(totalTime % 60).toString().padStart(2, '0')}`;
             }, 1000);
         }
 
+        // --- FINISH & RESULTS ---
         function requestFinish() { document.getElementById('modal-confirm').classList.remove('hidden'); }
         function closeModal() { document.getElementById('modal-confirm').classList.add('hidden'); }
         
@@ -317,8 +404,9 @@
             closeModal();
             clearInterval(timerInterval);
             calculateResults();
-            switchScreen('screen-results');
+            document.getElementById('screen-quiz').classList.add('hidden');
             document.getElementById('timer-container').classList.add('hidden');
+            document.getElementById('screen-results').classList.remove('hidden');
         }
 
         function calculateResults() {
@@ -331,7 +419,6 @@
             });
 
             const score = Math.max(0, ((correct - (wrong / 3)) / currentQuestions.length) * 10).toFixed(2);
-            
             document.getElementById('stat-correct').innerText = correct;
             document.getElementById('stat-wrong').innerText = wrong;
             document.getElementById('stat-blank').innerText = blank;
@@ -351,7 +438,6 @@
                 resText.className = "text-lg font-bold text-red-600";
                 circle.classList.add('text-red-500');
             }
-
             renderReview();
         }
 
@@ -375,10 +461,10 @@
                     else if (idx === userAns && !isCorrect) { style = "text-red-700 font-bold bg-red-100 rounded px-2 line-through"; pre = "✗ "; }
                     html += `<div class="text-sm ml-6 mb-1 ${style}">${pre}${opt}</div>`;
                 });
-                
                 html += `</div></div>`;
                 list.innerHTML += html;
             });
+            if (typeof lucide !== 'undefined') lucide.createIcons();
         }
 
         function restartQuiz() { startQuiz(); }
