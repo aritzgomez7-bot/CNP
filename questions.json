@@ -359,4 +359,1084 @@
     "correct": 1,
     "topic": "Vecindad Civil"
   }
+  {
+    "q": "¿En qué fecha fue ratificada la Constitución Española por el pueblo español en referéndum?",
+    "options": ["31 de octubre de 1978", "6 de diciembre de 1978", "27 de diciembre de 1978", "29 de diciembre de 1978"],
+    "correct": 1,
+    "topic": "Estructura y Fechas"
+  },
+  {
+    "q": "¿Cuántas Disposiciones Adicionales tiene la Constitución Española de 1978?",
+    "options": ["Nueve", "Una", "Cuatro", "Diez"],
+    "correct": 2,
+    "topic": "Estructura y Fechas"
+  },
+  {
+    "q": "¿Qué parte de la Constitución abarca los artículos del 10 al 55?",
+    "options": ["Título Preliminar", "Título I", "Título II", "Título III"],
+    "correct": 1,
+    "topic": "Estructura y Fechas"
+  },
+  {
+    "q": "Según el artículo 1.1, ¿cuáles son los valores superiores del ordenamiento jurídico?",
+    "options": ["La libertad, la justicia, la igualdad y la fraternidad", "La libertad, la justicia, la igualdad y el pluralismo político", "La soberanía, la independencia, la unidad y la solidaridad", "La democracia, el estado de derecho y la monarquía"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿En quién reside la soberanía nacional según la Constitución?",
+    "options": ["En el Rey", "En las Cortes Generales", "En el pueblo español", "En el Gobierno"],
+    "correct": 2,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "El artículo 2 de la CE fundamenta la Constitución en:",
+    "options": ["La soberanía popular", "La indisoluble unidad de la Nación española", "El estado de las autonomías", "La monarquía parlamentaria"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Quién tiene el deber de conocer el castellano y el derecho a usarlo?",
+    "options": ["Todos los ciudadanos residentes en España", "Todos los españoles", "Solamente los funcionarios públicos", "Todos los españoles y extranjeros"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Qué misión tienen las Fuerzas Armadas según el artículo 8 de la CE?",
+    "options": ["Garantizar la seguridad ciudadana", "Defender el ordenamiento jurídico", "Garantizar la soberanía e independencia de España", "Proteger los derechos fundamentales"],
+    "correct": 2,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Qué principio NO está garantizado en el artículo 9.3 de la CE?",
+    "options": ["La jerarquía normativa", "La irretroactividad de las disposiciones favorables", "La seguridad jurídica", "La interdicción de la arbitrariedad de los poderes públicos"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "La irretroactividad garantizada en el art. 9.3 se refiere a disposiciones sancionadoras:",
+    "options": ["Favorables", "No favorables o restrictivas de derechos individuales", "De cualquier tipo", "Administrativas solamente"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "¿Según el artículo 10, qué es fundamento del orden político y la paz social?",
+    "options": ["La unidad de España", "La dignidad de la persona y los derechos inviolables que le son inherentes", "La soberanía nacional", "El respeto a la Constitución"],
+    "correct": 1,
+    "topic": "Derechos y Deberes (Título I)"
+  },
+  {
+    "q": "¿Puede un español de origen ser privado de su nacionalidad?",
+    "options": ["Sí, por sentencia judicial firme", "Sí, si comete delito de traición", "No, en ningún caso", "Solo en tiempos de guerra"],
+    "correct": 2,
+    "topic": "Capítulo I (De los españoles y extranjeros)"
+  },
+  {
+    "q": "¿A qué edad se alcanza la mayoría de edad según la Constitución?",
+    "options": ["A los 16 años", "A los 18 años", "A los 21 años", "A los 25 años"],
+    "correct": 1,
+    "topic": "Capítulo I (De los españoles y extranjeros)"
+  },
+  {
+    "q": "Respecto a la extradición, ¿qué delitos quedan excluidos expresamente?",
+    "options": ["Los delitos de terrorismo", "Los delitos políticos, no considerándose como tales los de terrorismo", "Los delitos de sangre", "Los delitos económicos"],
+    "correct": 1,
+    "topic": "Capítulo I (De los españoles y extranjeros)"
+  },
+  {
+    "q": "Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de:",
+    "options": ["Nacimiento, raza, sexo, religión u opinión", "Nacionalidad o vecindad civil", "Capacidad económica o social", "Mérito y capacidad"],
+    "correct": 0,
+    "topic": "Derechos y Libertades (Art. 14)"
+  },
+  {
+    "q": "¿En qué circunstancias se permite la pena de muerte según el texto original del art. 15 (aunque hoy esté abolida)?",
+    "options": ["Para delitos de terrorismo", "Para tiempos de guerra según leyes penales militares", "Para regicidio", "En ningún caso"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Cuál es el plazo máximo de la detención preventiva según el artículo 17?",
+    "options": ["24 horas", "48 horas", "72 horas", "7 días"],
+    "correct": 2,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "El procedimiento de 'Habeas Corpus' sirve para:",
+    "options": ["La inmediata puesta a disposición judicial de toda persona detenida ilegalmente", "Solicitar asistencia letrada", "Recurrir una sentencia firme", "Pedir el indulto"],
+    "correct": 0,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Se necesita autorización judicial para la entrada en un domicilio?",
+    "options": ["Siempre", "No, si lo autoriza la policía", "Sí, salvo consentimiento del titular o flagrante delito", "Sí, salvo estado de alarma"],
+    "correct": 2,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Qué tipo de asociaciones están prohibidas por la Constitución?",
+    "options": ["Las que no se inscriban en el registro", "Las secretas y las de carácter paramilitar", "Las políticas", "Las religiosas"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "El ejercicio del derecho de reunión pacífica y sin armas:",
+    "options": ["Necesita autorización previa siempre", "Necesita autorización si es en lugar de tránsito público", "No necesita autorización previa", "Está prohibido a los extranjeros"],
+    "correct": 2,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "Para las reuniones en lugares de tránsito público y manifestaciones se requiere:",
+    "options": ["Autorización previa", "Comunicación previa a la autoridad", "Permiso del Ayuntamiento", "Aprobación del Consejo de Ministros"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "Las asociaciones solo podrán ser disueltas o suspendidas en sus actividades:",
+    "options": ["Por resolución administrativa", "Por orden del Ministerio del Interior", "En virtud de resolución judicial motivada", "Por decisión del Gobierno"],
+    "correct": 2,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "Nadie puede ser obligado a declarar sobre:",
+    "options": ["Sus bienes patrimoniales", "Su ideología, religión o creencias", "Sus antecedentes penales", "Su estado civil"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Qué derecho NO es susceptible de recurso de amparo ante el Tribunal Constitucional?",
+    "options": ["El derecho a la vida (art. 15)", "El derecho a la propiedad privada (art. 33)", "La objeción de conciencia (art. 30)", "El derecho de asociación (art. 22)"],
+    "correct": 1,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "La enseñanza básica es:",
+    "options": ["Obligatoria y de pago", "Voluntaria y gratuita", "Obligatoria y gratuita", "Universitaria y gratuita"],
+    "correct": 2,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Qué se prohíbe expresamente en el artículo 26 respecto a la Administración Civil?",
+    "options": ["Los sindicatos", "Los Tribunales de Honor", "El derecho de huelga", "La sindicación libre"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "El derecho a la huelga se reconoce a:",
+    "options": ["Los trabajadores para la defensa de sus intereses", "Los empresarios", "Los miembros de las Fuerzas Armadas", "Los jueces y magistrados"],
+    "correct": 0,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "Los miembros de las Fuerzas o Institutos armados podrán ejercer el derecho de petición:",
+    "options": ["Colectivamente", "Solo individualmente", "A través de sus superiores", "No tienen este derecho"],
+    "correct": 1,
+    "topic": "Sección 1ª (Derechos Fundamentales)"
+  },
+  {
+    "q": "¿Qué derechos vinculan a todos los poderes públicos según el art. 53.1?",
+    "options": ["Solo los de la Sección 1ª", "Los del Capítulo II del Título I (arts. 14 a 38)", "Los principios rectores", "Solo los derechos fundamentales"],
+    "correct": 1,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "¿Qué derechos tienen la protección del procedimiento preferente y sumario ante los tribunales ordinarios?",
+    "options": ["Todos los del Título I", "Los del art. 14 y la Sección 1ª del Capítulo II", "Los de la Sección 2ª", "Los Principios Rectores"],
+    "correct": 1,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "El desarrollo de los derechos fundamentales y libertades públicas (Sección 1ª) se debe hacer mediante:",
+    "options": ["Ley Ordinaria", "Ley Orgánica", "Decreto-Ley", "Reglamento"],
+    "correct": 1,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "¿Quién es el Alto Comisionado de las Cortes Generales para la defensa de los derechos del Título I?",
+    "options": ["El Rey", "El Presidente del Gobierno", "El Defensor del Pueblo", "El Fiscal General del Estado"],
+    "correct": 2,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "¿Quién nombra al Defensor del Pueblo?",
+    "options": ["El Rey", "El Gobierno", "Las Cortes Generales", "El Consejo General del Poder Judicial"],
+    "correct": 2,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "¿Cuál es la duración del mandato del Defensor del Pueblo?",
+    "options": ["4 años", "5 años", "3 años", "6 años"],
+    "correct": 1,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "¿Puede el Defensor del Pueblo interponer recurso de inconstitucionalidad?",
+    "options": ["No", "Sí, está legitimado", "Solo a instancia de parte", "Solo recurso de amparo"],
+    "correct": 1,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "Los principios rectores de la política social y económica (Capítulo III) informarán:",
+    "options": ["Solo la práctica judicial", "La legislación positiva, la práctica judicial y la actuación de los poderes públicos", "Solo la actuación administrativa", "No tienen eficacia jurídica"],
+    "correct": 1,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "¿Qué derechos pueden ser suspendidos en caso de estado de excepción o sitio?",
+    "options": ["Todos los derechos del Título I", "Determinados derechos de los arts. 17, 18, 19, 20, 21, 28 y 37", "Solo la libertad de circulación", "Ninguno, los derechos son absolutos"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "La suspensión individual de derechos (bandas armadas o terrorismo) afecta a:",
+    "options": ["Derecho a la vida", "Duración de la detención, inviolabilidad del domicilio y secreto de las comunicaciones", "Derecho de huelga", "Derecho de asociación"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "El estado de alarma se declara por:",
+    "options": ["El Congreso", "El Gobierno, dando cuenta al Congreso", "El Rey", "El Senado"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "La duración máxima del estado de excepción es de:",
+    "options": ["15 días", "30 días", "60 días", "Indefinida"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "¿Quién autoriza la prórroga del estado de alarma?",
+    "options": ["El Gobierno", "El Congreso de los Diputados", "El Senado", "El Rey"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "El estado de sitio es declarado por la mayoría absoluta del Congreso a propuesta de:",
+    "options": ["El Rey", "Exclusiva del Gobierno", "Un grupo parlamentario", "El Senado"],
+    "correct": 1,
+    "topic": "Suspensión de Derechos"
+  },
+  {
+    "q": "¿Qué derecho de la Sección 2ª (Ciudadanos) tiene reserva de Ley (ordinaria)?",
+    "options": ["Derecho al trabajo", "Propiedad privada", "Libertad de empresa", "Todos los de la Sección 2ª"],
+    "correct": 3,
+    "topic": "Garantías de las Libertades"
+  },
+  {
+    "q": "El derecho a contraer matrimonio con plena igualdad jurídica se reconoce en el artículo:",
+    "options": ["Art. 30", "Art. 32", "Art. 35", "Art. 14"],
+    "correct": 1,
+    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
+  },
+  {
+    "q": "La fundación que persiga fines de interés general se reconoce en el artículo:",
+    "options": ["Art. 22", "Art. 34", "Art. 38", "Art. 28"],
+    "correct": 1,
+    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
+  },
+  {
+    "q": "El deber de trabajar y el derecho al trabajo se establece en el artículo:",
+    "options": ["Art. 35", "Art. 37", "Art. 28", "Art. 40"],
+    "correct": 0,
+    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
+  },
+  {
+    "q": "La libertad de empresa se reconoce en el marco de:",
+    "options": ["La economía planificada", "La economía de mercado", "El sector público", "La intervención estatal"],
+    "correct": 1,
+    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
+  },
+  {
+    "q": "Los poderes públicos garantizan la defensa de los consumidores y usuarios en el artículo:",
+    "options": ["Art. 43", "Art. 51", "Art. 49", "Art. 38"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "¿Qué artículo reconoce el derecho a la protección de la salud?",
+    "options": ["Art. 15", "Art. 43", "Art. 41", "Art. 45"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "El artículo 45 trata sobre el derecho a disfrutar de:",
+    "options": ["Una vivienda digna", "Un medio ambiente adecuado", "La cultura", "El patrimonio histórico"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "La conservación y promoción del patrimonio histórico, cultural y artístico (art. 46) corresponde a:",
+    "options": ["Las Comunidades Autónomas exclusivamente", "Los poderes públicos", "El Estado exclusivamente", "Los Ayuntamientos"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "¿Qué artículo fue reformado recientemente para referirse a las personas con discapacidad?",
+    "options": ["Art. 48", "Art. 49", "Art. 50", "Art. 51"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "La tercera edad tiene garantizada su suficiencia económica mediante:",
+    "options": ["Subsidios", "Pensiones adecuadas y periódicamente actualizadas", "Ayudas familiares", "Planes privados"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "¿Qué mayoría se necesita en las Cámaras para proponer al Defensor del Pueblo?",
+    "options": ["Mayoría absoluta", "3/5 de cada Cámara", "2/3 de cada Cámara", "Mayoría simple"],
+    "correct": 1,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "El Defensor del Pueblo da cuenta de su gestión a:",
+    "options": ["El Rey", "El Gobierno", "Las Cortes Generales", "El Tribunal Constitucional"],
+    "correct": 2,
+    "topic": "Defensor del Pueblo"
+  },
+  {
+    "q": "¿Cuál de los siguientes NO es un principio rector de la política social y económica?",
+    "options": ["Protección de la familia", "Derecho a la huelga", "Régimen público de Seguridad Social", "Derecho a una vivienda digna"],
+    "correct": 1,
+    "topic": "Capítulo III (Principios Rectores)"
+  },
+  {
+    "q": "La extradición solo se concederá en cumplimiento de tratado o ley atendiendo al principio de:",
+    "options": ["Solidaridad", "Reciprocidad", "Igualdad", "Legalidad"],
+    "correct": 1,
+    "topic": "Capítulo I (Extranjeros)"
+  },
+  {
+    "q": "¿Qué artículo establece que la capital del Estado es la villa de Madrid?",
+    "options": ["Art. 3", "Art. 4", "Art. 5", "Art. 6"],
+    "correct": 2,
+    "topic": "Título Preliminar"
+  },
+  {
+    "q": "Los partidos políticos expresan:",
+    "options": ["La unidad de la nación", "El pluralismo político", "La soberanía nacional", "El poder ejecutivo"],
+    "correct": 1,
+    "topic": "Título Preliminar"
+  }
+    {
+    "q": "¿Quién es el Jefe del Estado y símbolo de su unidad y permanencia?",
+    "options": ["El Presidente del Gobierno", "El Presidente del Congreso", "El Defensor del Pueblo", "El Rey"],
+    "correct": 3,
+    "topic": "La Corona"
+  },
+  {
+    "q": "La persona del Rey es inviolable y:",
+    "options": ["Está sujeta a responsabilidad política", "Solo responde ante el Tribunal Supremo", "Responde ante las Cortes Generales", "No está sujeta a responsabilidad"],
+    "correct": 3,
+    "topic": "La Corona"
+  },
+  {
+    "q": "¿A quién corresponde la Regencia si el Rey fuere menor de edad?",
+    "options": ["Al padre o madre del Rey y, en su defecto, al pariente mayor de edad más próximo a suceder", "Al Príncipe heredero", "A las Cortes Generales", "Al Presidente del Gobierno"],
+    "correct": 0,
+    "topic": "La Corona"
+  },
+  {
+    "q": "¿Qué tratamiento recibe el Príncipe heredero?",
+    "options": ["Majestad", "Alteza Real y Príncipe de Asturias", "Excelencia", "Alteza Serenísima"],
+    "correct": 1,
+    "topic": "La Corona"
+  },
+  {
+    "q": "Para ejercer la Regencia es preciso ser español y:",
+    "options": ["Tener más de 25 años", "Tener título nobiliario", "Ser diputado o senador", "Mayor de edad"],
+    "correct": 3,
+    "topic": "La Corona"
+  },
+  {
+    "q": "¿Quién nombra a los miembros civiles y militares de la Casa Real?",
+    "options": ["El Presidente del Gobierno", "El Ministro del Interior", "El Rey, libremente", "El Ministro de Defensa"],
+    "correct": 2,
+    "topic": "La Corona"
+  },
+  {
+    "q": "Los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por:",
+    "options": ["Los Ministros competentes", "El Presidente del Senado", "El Jefe de la Casa Real", "El Tribunal Constitucional"],
+    "correct": 0,
+    "topic": "La Corona"
+  },
+  {
+    "q": "¿Quién refrenda la propuesta y nombramiento del Presidente del Gobierno?",
+    "options": ["El Presidente del Gobierno saliente", "El Ministro de Justicia", "El Rey no necesita refrendo en este caso", "El Presidente del Congreso"],
+    "correct": 3,
+    "topic": "La Corona"
+  },
+  {
+    "q": "Las Cortes Generales están formadas por:",
+    "options": ["El Congreso y el Gobierno", "El Congreso de los Diputados y el Senado", "El Senado y las Asambleas Autonómicas", "El Congreso, el Senado y el Rey"],
+    "correct": 1,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Qué circunscripción electoral se utiliza para el Congreso y el Senado?",
+    "options": ["La Comunidad Autónoma", "El Municipio", "La Provincia", "El Estado"],
+    "correct": 2,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Cuántos diputados componen el Congreso según la Constitución (horquilla)?",
+    "options": ["350 fijos", "De 200 a 300", "De 400 a 500", "De 300 a 400"],
+    "correct": 3,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Cuántos senadores eligen las poblaciones de Ceuta y Melilla?",
+    "options": ["1 cada una", "2 cada una", "3 cada una", "4 cada una"],
+    "correct": 1,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Qué cámara ostenta la representación territorial?",
+    "options": ["El Congreso de los Diputados", "El Senado", "Ambas cámaras", "La Asamblea Legislativa Autonómica"],
+    "correct": 1,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "Los miembros de las Cortes Generales gozan de inviolabilidad por:",
+    "options": ["Cualquier acto realizado en su vida privada", "Los delitos cometidos fuera de su mandato", "Las opiniones manifestadas en el ejercicio de sus funciones", "Las deudas civiles"],
+    "correct": 2,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "¿Quién es competente en las causas contra Diputados y Senadores?",
+    "options": ["La Audiencia Nacional", "El Tribunal Superior de Justicia", "El Tribunal Constitucional", "La Sala de lo Penal del Tribunal Supremo"],
+    "correct": 3,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "Las sesiones plenarias de las Cámaras serán:",
+    "options": ["Secretas siempre", "Públicas, salvo acuerdo en contrario", "Reservadas para los miembros del Gobierno", "Públicas solo si lo pide el Rey"],
+    "correct": 1,
+    "topic": "Cortes Generales"
+  },
+  {
+    "q": "La aprobación de una Ley Orgánica requiere:",
+    "options": ["Mayoría simple del Congreso", "Mayoría absoluta del Senado", "Mayoría de 2/3 de ambas Cámaras", "Mayoría absoluta del Congreso en una votación final sobre el conjunto"],
+    "correct": 3,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Qué materias regulan las Leyes Orgánicas?",
+    "options": ["Todas las leyes son orgánicas", "Derechos fundamentales (Sección 1ª Cap II Tit I), Estatutos de Autonomía y Régimen Electoral General", "Presupuestos Generales y Tratados Internacionales", "Impuestos y Hacienda"],
+    "correct": 1,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "La delegación legislativa habrá de otorgarse al Gobierno de forma:",
+    "options": ["Implícita y por tiempo indefinido", "Expresa, para materia concreta y con fijación del plazo", "Verbal en Consejo de Ministros", "General para cualquier materia"],
+    "correct": 1,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Qué norma dicta el Gobierno en caso de extraordinaria y urgente necesidad?",
+    "options": ["Decreto Legislativo", "Ley de Bases", "Reglamento", "Decreto-Ley"],
+    "correct": 3,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "Los Decretos-Leyes deben ser convalidados por el Congreso en el plazo de:",
+    "options": ["15 días", "20 días", "30 días", "60 días"],
+    "correct": 2,
+    "topic": "Elaboración de Leyes"
+  },
+  {
+    "q": "¿Qué mayoría se requiere para la aprobación de la reforma constitucional agravada (total o partes esenciales)?",
+    "options": ["3/5 de cada Cámara", "Mayoría absoluta", "Mayoría simple en referéndum", "2/3 de cada Cámara y disolución de las Cortes"],
+    "correct": 3,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Quién dirige la acción del Gobierno y coordina las funciones de los demás miembros?",
+    "options": ["El Rey", "El Presidente del Gobierno", "El Vicepresidente", "El Ministro de la Presidencia"],
+    "correct": 1,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿Ante quién responde políticamente el Gobierno de su gestión?",
+    "options": ["Ante el Rey", "Ante el Senado", "Ante el Congreso de los Diputados (solidariamente)", "Ante el Tribunal Constitucional"],
+    "correct": 2,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿Qué mayoría necesita el candidato a Presidente del Gobierno en la primera votación de investidura?",
+    "options": ["Mayoría absoluta", "Mayoría simple", "Mayoría de 3/5", "Mayoría de 2/3"],
+    "correct": 0,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "Si en la primera votación de investidura no se alcanza la mayoría requerida, se procederá a nueva votación:",
+    "options": ["24 horas después", "Una semana después", "Al mes siguiente", "48 horas después"],
+    "correct": 3,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿Quién nombra a los Ministros?",
+    "options": ["El Presidente del Gobierno", "El Congreso de los Diputados", "El Rey, a propuesta del Presidente del Gobierno", "El Senado"],
+    "correct": 2,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "La responsabilidad criminal del Presidente y los demás miembros del Gobierno será exigible ante:",
+    "options": ["La Audiencia Nacional", "El Tribunal Constitucional", "La Sala de lo Penal del Tribunal Supremo", "El Tribunal de Cuentas"],
+    "correct": 2,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "Las Fuerzas y Cuerpos de Seguridad, bajo la dependencia del Gobierno, tendrán como misión:",
+    "options": ["Defender la integridad territorial", "Proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana", "Juzgar y ejecutar lo juzgado", "Recaudar tributos"],
+    "correct": 1,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "El Consejo de Estado es:",
+    "options": ["El órgano de gobierno de los jueces", "El tribunal de cuentas del Reino", "El órgano legislativo superior", "El supremo órgano consultivo del Gobierno"],
+    "correct": 3,
+    "topic": "Gobierno y Administración"
+  },
+  {
+    "q": "¿Quién puede plantear la cuestión de confianza?",
+    "options": ["El Rey", "Un grupo parlamentario", "El Presidente del Gobierno, previa deliberación del Consejo de Ministros", "El Senado"],
+    "correct": 2,
+    "topic": "Relaciones Gobierno-Cortes"
+  },
+  {
+    "q": "La moción de censura debe ser propuesta al menos por:",
+    "options": ["La mayoría absoluta de los diputados", "La décima parte de los diputados", "Un grupo parlamentario de 5 miembros", "El Senado"],
+    "correct": 1,
+    "topic": "Relaciones Gobierno-Cortes"
+  },
+  {
+    "q": "¿Qué requisito es indispensable para presentar una moción de censura (constructiva)?",
+    "options": ["Que incluya un candidato a la Presidencia del Gobierno", "Que se apruebe por mayoría simple", "Que la proponga el Rey", "Que dimita el Presidente"],
+    "correct": 0,
+    "topic": "Relaciones Gobierno-Cortes"
+  },
+  {
+    "q": "¿Quién declara el estado de alarma?",
+    "options": ["El Congreso", "El Rey", "El Gobierno mediante decreto acordado en Consejo de Ministros", "El Ministro del Interior"],
+    "correct": 2,
+    "topic": "Relaciones Gobierno-Cortes"
+  },
+  {
+    "q": "El estado de sitio será declarado por:",
+    "options": ["El Gobierno", "El Rey a propuesta de las Cortes", "El Ministro de Defensa", "La mayoría absoluta del Congreso a propuesta exclusiva del Gobierno"],
+    "correct": 3,
+    "topic": "Relaciones Gobierno-Cortes"
+  },
+  {
+    "q": "La justicia emana del pueblo y se administra en nombre de:",
+    "options": ["El Rey", "La Ley", "El Gobierno", "La Constitución"],
+    "correct": 0,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Cuál es el órgano de gobierno del Poder Judicial?",
+    "options": ["El Tribunal Supremo", "El Ministerio de Justicia", "El Consejo General del Poder Judicial", "La Audiencia Nacional"],
+    "correct": 2,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Cuántos miembros (vocales) componen el Consejo General del Poder Judicial (sin contar al Presidente)?",
+    "options": ["12", "21", "25", "20"],
+    "correct": 3,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Cuál es la misión del Ministerio Fiscal?",
+    "options": ["Juzgar a los delincuentes", "Promover la acción de la justicia en defensa de la legalidad y del interés público", "Defender al Gobierno", "Crear las leyes"],
+    "correct": 1,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Quién nombra al Fiscal General del Estado?",
+    "options": ["El Consejo General del Poder Judicial", "El Congreso de los Diputados", "El Ministro de Justicia directamente", "El Rey, a propuesta del Gobierno, oído el CGPJ"],
+    "correct": 3,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "¿Qué se prohíbe expresamente en el artículo 117.6 respecto a los Tribunales?",
+    "options": ["Los Tribunales consuetudinarios", "Los Tribunales de excepción", "Los Tribunales militares", "Los Tribunales superiores de justicia"],
+    "correct": 1,
+    "topic": "Poder Judicial"
+  },
+  {
+    "q": "El Estado se organiza territorialmente en:",
+    "options": ["Municipios, comarcas y regiones", "Municipios, provincias y las Comunidades Autónomas que se constituyan", "Estados federales", "Provincias y regiones"],
+    "correct": 1,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "La Constitución fundamenta la organización territorial en el principio de:",
+    "options": ["Independencia", "Soberanía compartida", "Solidaridad", "Centralismo"],
+    "correct": 2,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Quién ostenta el gobierno y la administración del municipio?",
+    "options": ["El Alcalde exclusivamente", "La Diputación Provincial", "El Delegado del Gobierno", "El Ayuntamiento, integrado por el Alcalde y los Concejales"],
+    "correct": 3,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Qué vía de acceso a la autonomía se conoce como 'vía rápida' o especial (art. 151)?",
+    "options": ["La que requiere referéndum de ratificación de la iniciativa", "La que decide el Gobierno", "La que decide el Rey", "La de los territorios históricos solamente"],
+    "correct": 0,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "El control de la constitucionalidad de las disposiciones normativas con fuerza de ley de las CCAA corresponde a:",
+    "options": ["El Gobierno", "El Tribunal de Cuentas", "El Tribunal Constitucional", "La jurisdicción contencioso-administrativa"],
+    "correct": 2,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Quién nombra al Delegado del Gobierno en las Comunidades Autónomas?",
+    "options": ["El Presidente de la Comunidad Autónoma", "El Rey", "El Gobierno", "El Ministro del Interior"],
+    "correct": 2,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "Según el art. 145, la federación de Comunidades Autónomas:",
+    "options": ["Está permitida con autorización de las Cortes", "Se admitirá en casos históricos", "En ningún caso se admitirá", "Requiere referéndum"],
+    "correct": 2,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Cuántos miembros componen el Tribunal Constitucional?",
+    "options": ["9", "10", "12", "15"],
+    "correct": 2,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Quién propone a los 2 miembros del Tribunal Constitucional designados por el Gobierno?",
+    "options": ["El propio Gobierno", "El Congreso", "El Senado", "El CGPJ"],
+    "correct": 0,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Cuál es la duración del mandato de los miembros del Tribunal Constitucional?",
+    "options": ["5 años", "9 años", "Vitalicia", "4 años"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Quién está legitimado para interponer recurso de inconstitucionalidad?",
+    "options": ["Cualquier ciudadano", "El Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores, órganos ejecutivos y asambleas de CCAA", "Los Jueces y Magistrados", "El Rey"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "El recurso de amparo protege contra la violación de:",
+    "options": ["Cualquier ley", "Los derechos y libertades de los arts. 14 a 29 y 30.2", "Los principios rectores", "Las normas administrativas"],
+    "correct": 1,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Quién preside el Tribunal Constitucional?",
+    "options": ["El Presidente del Tribunal Supremo", "El miembro de mayor edad", "El Ministro de Justicia", "Nombrado por el Rey a propuesta del mismo Tribunal en pleno"],
+    "correct": 3,
+    "topic": "Tribunal Constitucional"
+  },
+  {
+    "q": "¿Qué mayoría se requiere para la reforma constitucional ordinaria (art. 167)?",
+    "options": ["Mayoría absoluta", "Mayoría de 3/5 de cada Cámara", "Mayoría de 2/3", "Unanimidad"],
+    "correct": 1,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "La reforma total de la Constitución o la que afecte al Título Preliminar, Sección 1ª Cap II Tít I o Título II requiere:",
+    "options": ["Procedimiento agravado (art. 168)", "Procedimiento ordinario", "Decreto-Ley", "Solo referéndum"],
+    "correct": 0,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "En el procedimiento agravado de reforma (art. 168) es necesario:",
+    "options": ["Que lo apruebe el Rey", "Que lo pida el pueblo", "Que no haya referéndum", "Disolución inmediata de las Cortes"],
+    "correct": 3,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "¿Se puede iniciar la reforma constitucional en tiempo de guerra?",
+    "options": ["Sí, si es urgente", "No", "Sí, con mayoría de 2/3", "Solo la parcial"],
+    "correct": 1,
+    "topic": "Reforma Constitucional"
+  },
+  {
+    "q": "El Fondo de Compensación Interterritorial (art. 158) tiene como fin:",
+    "options": ["Pagar la deuda pública", "Corregir desequilibrios económicos interterritoriales y hacer efectivo el principio de solidaridad", "Financiar a los partidos políticos", "Pagar a la Corona"],
+    "correct": 1,
+    "topic": "Organización Territorial"
+  },
+  {
+    "q": "¿Qué competencia es exclusiva del Estado según el art. 149?",
+    "options": ["Sanidad e higiene", "Asistencia social", "Urbanismo", "Relaciones Internacionales"],
+    "correct": 3,
+    "topic": "Organización Territorial"
+  }
+  {
+    "q": "¿Qué tratado instituyó la ciudadanía europea (ciudadanía de la Unión)?",
+    "options": ["El Acta Única Europea", "El Tratado de Ámsterdam", "El Tratado de Lisboa", "El Tratado de Maastricht (TUE)"],
+    "correct": 3,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "¿En qué ciudad tiene su sede oficial el Parlamento Europeo para las sesiones plenarias mensuales?",
+    "options": ["Estrasburgo", "Bruselas", "Luxemburgo", "Frankfurt"],
+    "correct": 0,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Tratado de Roma de 1957 constituyó:",
+    "options": ["La CECA", "La CEE y el EURATOM", "La Unión Europea", "El Consejo de Europa"],
+    "correct": 1,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "¿Quién ostenta el monopolio de la iniciativa legislativa en el procedimiento legislativo ordinario de la UE?",
+    "options": ["El Parlamento Europeo", "El Consejo de la UE", "La Comisión Europea", "El Consejo Europeo"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Cuál es la duración del mandato de los miembros de la Comisión Europea?",
+    "options": ["4 años", "5 años", "2 años y medio", "6 años"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Reglamento europeo se caracteriza por:",
+    "options": ["Ser obligatorio solo en cuanto al resultado a conseguir", "Tener alcance general, ser obligatorio en todos sus elementos y directamente aplicable", "No ser vinculante", "Tener alcance individual y ser obligatorio para sus destinatarios"],
+    "correct": 1,
+    "topic": "Derecho Derivado"
+  },
+  {
+    "q": "¿Qué institución representa los intereses de los Estados miembros a nivel ministerial?",
+    "options": ["El Consejo Europeo", "La Comisión Europea", "El Parlamento Europeo", "El Consejo de la Unión Europea (o Consejo de Ministros)"],
+    "correct": 3,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Quién nombra al Alto Representante para Asuntos Exteriores y Política de Seguridad?",
+    "options": ["El Consejo Europeo por mayoría cualificada, con la aprobación del Presidente de la Comisión", "El Parlamento Europeo directamente", "Los ciudadanos mediante sufragio", "El Consejo de Ministros de Asuntos Exteriores"],
+    "correct": 0,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "La Directiva europea:",
+    "options": ["Es directamente aplicable sin necesidad de transposición", "Obliga al Estado miembro en cuanto al resultado, dejando libertad de forma y medios", "Es obligatoria en todos sus elementos para todos los ciudadanos", "No tiene carácter vinculante"],
+    "correct": 1,
+    "topic": "Derecho Derivado"
+  },
+  {
+    "q": "¿Cuál es la sede del Tribunal de Justicia de la Unión Europea (TJUE)?",
+    "options": ["La Haya", "Estrasburgo", "Luxemburgo", "Bruselas"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Consejo Europeo está compuesto por:",
+    "options": ["Los Ministros de Asuntos Exteriores de los Estados miembros", "Los Jefes de Estado o de Gobierno de los Estados miembros, así como por su Presidente y el Presidente de la Comisión", "Un comisario por cada Estado miembro", "Los eurodiputados elegidos por sufragio universal"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Qué tratado introdujo la 'personalidad jurídica propia' de la Unión Europea?",
+    "options": ["Tratado de Niza", "Tratado de Ámsterdam", "Tratado de Lisboa", "Tratado de Maastricht"],
+    "correct": 2,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "¿Qué institución se encarga de la política monetaria de la zona euro?",
+    "options": ["El Banco Europeo de Inversiones", "El Tribunal de Cuentas", "El Banco Central Europeo", "El Eurogrupo"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Dónde tiene su sede Europol?",
+    "options": ["Lyon", "La Haya", "Bruselas", "Budapest"],
+    "correct": 1,
+    "topic": "Cooperación Policial"
+  },
+  {
+    "q": "El Defensor del Pueblo Europeo es elegido por:",
+    "options": ["El Consejo Europeo", "La Comisión Europea", "El Parlamento Europeo", "El Tribunal de Justicia"],
+    "correct": 2,
+    "topic": "Instituciones Secundarias"
+  },
+  {
+    "q": "¿Qué mayoría se requiere generalmente en el Consejo de la UE para la toma de decisiones (procedimiento ordinario)?",
+    "options": ["Unanimidad", "Mayoría simple", "Mayoría cualificada (doble mayoría)", "Consenso"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Comité de las Regiones es:",
+    "options": ["Un órgano con poder legislativo", "Un órgano consultivo que representa a los entes regionales y locales", "Una formación del Consejo", "Una agencia de cooperación policial"],
+    "correct": 1,
+    "topic": "Instituciones Secundarias"
+  },
+  {
+    "q": "¿Qué tratado suprimió los controles en las fronteras interiores (incorporando el acervo Schengen)?",
+    "options": ["Tratado de Roma", "Tratado de Ámsterdam", "Acta Única Europea", "Tratado de París"],
+    "correct": 1,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "¿Cuál es la función principal del Tribunal de Cuentas Europeo?",
+    "options": ["Juzgar a los funcionarios de la UE", "Controlar la legalidad y regularidad de los ingresos y gastos de la UE (fiscalización)", "Dirigir la política económica", "Sancionar a los Estados miembros"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Qué país NO forma parte del Espacio Schengen aunque es miembro de la UE (a fecha de redacción del temario/status quo general)?",
+    "options": ["Francia", "Alemania", "Irlanda", "Italia"],
+    "correct": 2,
+    "topic": "Espacio Schengen"
+  },
+  {
+    "q": "La Orden Europea de Detención y Entrega (OEDE) sustituye al tradicional procedimiento de:",
+    "options": ["Asilo", "Extradición entre Estados miembros", "Expulsión administrativa", "Deportación"],
+    "correct": 1,
+    "topic": "Cooperación Judicial"
+  },
+  {
+    "q": "¿Cuál es el plazo máximo para que el Estado de ejecución resuelva sobre una OEDE si el detenido NO consiente la entrega?",
+    "options": ["10 días", "30 días", "60 días", "90 días"],
+    "correct": 2,
+    "topic": "Cooperación Judicial"
+  },
+  {
+    "q": "Eurojust tiene como misión principal:",
+    "options": ["La cooperación policial operativa", "Apoyar y reforzar la coordinación y cooperación entre las autoridades nacionales encargadas de investigar y perseguir la delincuencia grave (cooperación judicial)", "La formación de policías", "El control de fronteras exteriores"],
+    "correct": 1,
+    "topic": "Cooperación Judicial"
+  },
+  {
+    "q": "¿Quién preside el Consejo de Asuntos Exteriores?",
+    "options": ["El Ministro del país que ostenta la presidencia rotatoria", "El Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad", "El Presidente de la Comisión", "El Presidente del Consejo Europeo"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Cuál es la sede de CEPOL (Agencia de la UE para la Formación Policial)?",
+    "options": ["Bramshill", "Budapest", "La Haya", "Lyon"],
+    "correct": 1,
+    "topic": "Cooperación Policial"
+  },
+  {
+    "q": "En el marco de Schengen, la 'vigilancia transfronteriza' permite a agentes de un Estado continuar una vigilancia en otro Estado. ¿Cuándo debe cesar si no se obtiene autorización previa (urgencia)?",
+    "options": ["A las 2 horas", "A las 12 horas", "A las 24 horas", "A las 5 horas"],
+    "correct": 3,
+    "topic": "Cooperación Policial"
+  },
+  {
+    "q": "El Comité Económico y Social Europeo (CESE) representa a:",
+    "options": ["Los Gobiernos regionales", "La sociedad civil organizada (empresarios, trabajadores y otros grupos de interés)", "Los Parlamentos nacionales", "Los bancos centrales nacionales"],
+    "correct": 1,
+    "topic": "Instituciones Secundarias"
+  },
+  {
+    "q": "¿Qué institución aprueba, junto con el Consejo, el presupuesto anual de la UE?",
+    "options": ["La Comisión Europea", "El Tribunal de Cuentas", "El Parlamento Europeo", "El Banco Central Europeo"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "Los Dictámenes y Recomendaciones en la UE:",
+    "options": ["Son vinculantes para los Estados", "Son vinculantes para los particulares", "Tienen efecto directo", "No son vinculantes"],
+    "correct": 3,
+    "topic": "Derecho Derivado"
+  },
+  {
+    "q": "¿Qué artículo del TUE regula la retirada de un Estado miembro de la Unión?",
+    "options": ["Artículo 7", "Artículo 42", "Artículo 50", "Artículo 49"],
+    "correct": 2,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "¿Cuál es la duración del mandato del Presidente del Consejo Europeo?",
+    "options": ["2 años y medio, renovable una vez", "5 años", "4 años", "6 meses (rotatorio)"],
+    "correct": 0,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El principio de subsidiariedad implica que la UE interviene:",
+    "options": ["Siempre que quiera", "Solo en sus competencias exclusivas", "Solo si los objetivos no pueden ser alcanzados de manera suficiente por los Estados miembros", "Cuando lo autorice la ONU"],
+    "correct": 2,
+    "topic": "Principios Jurídicos"
+  },
+  {
+    "q": "¿Cuántos jueces componen el Tribunal General (Tribunal de Primera Instancia) de la UE?",
+    "options": ["Uno por Estado miembro", "Dos por Estado miembro", "27 en total", "15 en total"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "La iniciativa ciudadana europea requiere un mínimo de firmas de:",
+    "options": ["500.000 ciudadanos", "Un millón de ciudadanos de un número significativo de Estados miembros", "Tres millones de ciudadanos", "El 10% de la población de la UE"],
+    "correct": 1,
+    "topic": "Participación"
+  },
+  {
+    "q": "¿Qué institución tiene poder para plantear una moción de censura contra la Comisión?",
+    "options": ["El Consejo Europeo", "El Consejo de la UE", "El Parlamento Europeo", "El Tribunal de Justicia"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Cuál de los siguientes países NO es miembro de la UE pero SÍ del espacio Schengen?",
+    "options": ["Irlanda", "Noruega", "Chipre", "Bulgaria"],
+    "correct": 1,
+    "topic": "Espacio Schengen"
+  },
+  {
+    "q": "La 'persecución transfronteriza' en caliente por vía terrestre está permitida en Schengen para:",
+    "options": ["Cualquier infracción administrativa", "Delitos flagrantes de cierta gravedad o evasión de detenidos", "Solo delitos de terrorismo", "Control de documentación"],
+    "correct": 1,
+    "topic": "Cooperación Policial"
+  },
+  {
+    "q": "El Sistema de Información Schengen (SIS) es:",
+    "options": ["Una base de datos para el control de fronteras y cooperación policial", "Un sistema de satélites", "Una unidad de intervención especial", "Un tribunal de arbitraje"],
+    "correct": 0,
+    "topic": "Espacio Schengen"
+  },
+  {
+    "q": "¿Cuál es la función principal de FRONTEX (Agencia Europea de la Guardia de Fronteras y Costas)?",
+    "options": ["Emitir visados", "Juzgar delitos transfronterizos", "Gestionar la cooperación operativa en las fronteras exteriores de la UE", "Vigilar las fronteras interiores"],
+    "correct": 2,
+    "topic": "Cooperación Policial"
+  },
+  {
+    "q": "La Carta de los Derechos Fundamentales de la Unión Europea adquirió el mismo valor jurídico que los Tratados con:",
+    "options": ["El Tratado de Niza", "El Tratado de Maastricht", "El Tratado de Lisboa", "No tiene valor jurídico vinculante"],
+    "correct": 2,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "El Tribunal de Justicia de la Unión Europea (TJUE) garantiza:",
+    "options": ["El respeto de los derechos humanos según el Convenio de Roma", "El cumplimiento de la legislación de la UE y la interpretación uniforme del derecho comunitario", "La estabilidad de precios", "La seguridad exterior"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Quién compone el Eurogrupo?",
+    "options": ["Los Jefes de Estado de la zona euro", "Los Ministros de Economía y Finanzas de los Estados de la zona euro", "Todos los Ministros de Economía de la UE", "Los gobernadores de los bancos centrales"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Defensor del Pueblo Europeo investiga reclamaciones relativas a:",
+    "options": ["Mala administración por parte de las instituciones y organismos de la UE", "Violaciones de derechos humanos por los Estados miembros", "Conflictos entre empresas privadas", "Delitos penales de funcionarios"],
+    "correct": 0,
+    "topic": "Instituciones Secundarias"
+  },
+  {
+    "q": "¿Qué tratado creó la Comunidad Europea del Carbón y del Acero (CECA)?",
+    "options": ["Tratado de Roma", "Tratado de Bruselas", "Tratado de París (1951)", "Tratado de Londres"],
+    "correct": 2,
+    "topic": "Historia y Tratados"
+  },
+  {
+    "q": "La sede de la Comisión Europea se encuentra principalmente en:",
+    "options": ["Estrasburgo", "Luxemburgo", "Frankfurt", "Bruselas"],
+    "correct": 3,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Qué es SIRENE en el ámbito de Schengen?",
+    "options": ["Una unidad de policía marítima", "La infraestructura de solicitud de información suplementaria a la entrada nacional del SIS", "Un sistema de alerta de emergencias", "La base de datos de huellas dactilares"],
+    "correct": 1,
+    "topic": "Espacio Schengen"
+  },
+  {
+    "q": "Los actos legislativos de la UE se publican en:",
+    "options": ["El BOE", "El Diario Oficial de la Unión Europea (DOUE)", "El Boletín de las Cortes Generales", "La Gaceta Europea"],
+    "correct": 1,
+    "topic": "Derecho Derivado"
+  },
+  {
+    "q": "¿Qué principio establece que el Derecho de la UE prevalece sobre el Derecho nacional de los Estados miembros?",
+    "options": ["Principio de subsidiariedad", "Principio de proporcionalidad", "Principio de primacía", "Principio de atribución"],
+    "correct": 2,
+    "topic": "Principios Jurídicos"
+  },
+  {
+    "q": "¿Cuál es la mayoría necesaria en el Parlamento Europeo para aprobar una moción de censura a la Comisión?",
+    "options": ["Mayoría simple", "Mayoría absoluta", "Doble mayoría de 2/3 de los votos emitidos y mayoría de los miembros que lo componen", "Unanimidad"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Qué institución tiene la función de definir las orientaciones y prioridades políticas generales de la Unión?",
+    "options": ["La Comisión Europea", "El Consejo Europeo", "El Parlamento Europeo", "El Tribunal de Justicia"],
+    "correct": 1,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "En el Consejo de la UE, la Presidencia es:",
+    "options": ["Permanente por 5 años", "Elegida por sufragio", "Rotatoria por turnos de 6 meses entre los Estados miembros (salvo Asuntos Exteriores)", "Ocupada siempre por Alemania o Francia"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Qué órgano es competente para autorizar una 'entrega vigilada' de droga que atraviese varios países europeos?",
+    "options": ["Europol", "El Tribunal de Cuentas", "Eurojust (o las autoridades nacionales coordinadas por él)", "La Comisión Europea"],
+    "correct": 2,
+    "topic": "Cooperación Judicial"
+  },
+  {
+    "q": "Los miembros del Tribunal de Cuentas son nombrados por:",
+    "options": ["El Parlamento Europeo", "La Comisión", "El Consejo, previa consulta al Parlamento", "El Consejo Europeo"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "¿Cuál es el 'número de emergencia' único europeo?",
+    "options": ["091", "112", "911", "123"],
+    "correct": 1,
+    "topic": "Ciudadanía"
+  },
+  {
+    "q": "La sede del Banco Central Europeo está en:",
+    "options": ["Londres", "París", "Frankfurt", "Zúrich"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "El Convenio Europeo de Derechos Humanos (CEDH) está vinculado a:",
+    "options": ["La Unión Europea", "El Consejo de Europa (organización distinta a la UE)", "La OTAN", "La ONU"],
+    "correct": 1,
+    "topic": "Derechos Humanos"
+  },
+  {
+    "q": "En caso de que el detenido consienta su entrega en una OEDE, la decisión debe tomarse en:",
+    "options": ["10 días", "30 días", "60 días", "90 días"],
+    "correct": 0,
+    "topic": "Cooperación Judicial"
+  },
+  {
+    "q": "¿Qué fondo estructural tiene como objetivo reducir las diferencias de desarrollo entre las regiones de la UE?",
+    "options": ["Fondo Social Europeo", "FEDER (Fondo Europeo de Desarrollo Regional)", "Fondo de Cohesión", "FEOGA"],
+    "correct": 1,
+    "topic": "Políticas UE"
+  },
+  {
+    "q": "¿Quién ejerce el control político sobre la Comisión Europea?",
+    "options": ["El Consejo de la UE", "El Tribunal de Justicia", "El Parlamento Europeo", "El Defensor del Pueblo"],
+    "correct": 2,
+    "topic": "Instituciones"
+  },
+  {
+    "q": "La 'cooperación reforzada' permite:",
+    "options": ["Que todos los países avancen a la misma velocidad", "Que un grupo de al menos 9 Estados avance en una integración mayor sin esperar a los demás", "Que la UE tenga ejército propio", "Que se expulse a un miembro"],
+    "correct": 1,
+    "topic": "Integración Diferenciada"
+  }
 ]
