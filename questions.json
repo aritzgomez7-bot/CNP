@@ -1438,5 +1438,365 @@
     "options": ["Que todos los países avancen a la misma velocidad", "Que un grupo de al menos 9 Estados avance en una integración mayor sin esperar a los demás", "Que la UE tenga ejército propio", "Que se expulse a un miembro"],
     "correct": 1,
     "topic": "Integración Diferenciada"
+  },
+  {
+    "q": "¿Qué tratado instituyó la ciudadanía de la Unión Europea?",
+    "options": ["El Tratado de Ámsterdam", "El Tratado de Niza", "El Tratado de Lisboa", "El Tratado de Maastricht"],
+    "correct": 3,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿En qué ciudad tiene su sede principal el Parlamento Europeo para las sesiones plenarias?",
+    "options": ["Estrasburgo", "Bruselas", "Luxemburgo", "Frankfurt"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El Tratado de Roma de 1957 dio origen a:",
+    "options": ["La CECA", "La CEE y el EURATOM", "La Unión Europea", "El Consejo de Europa"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué institución tiene el monopolio de la iniciativa legislativa en la UE?",
+    "options": ["El Parlamento Europeo", "El Consejo de la UE", "La Comisión Europea", "El Consejo Europeo"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuánto dura el mandato de la Comisión Europea?",
+    "options": ["4 años", "5 años", "3 años", "6 años"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El Reglamento de la UE se caracteriza por:",
+    "options": ["Ser obligatorio solo en cuanto al resultado", "Tener alcance general y ser directamente aplicable", "No ser vinculante", "Necesitar transposición nacional"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué institución representa a los Gobiernos de los Estados miembros a nivel ministerial?",
+    "options": ["El Consejo Europeo", "La Comisión", "El Parlamento", "El Consejo de la Unión Europea"],
+    "correct": 3,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién nombra al Alto Representante para Asuntos Exteriores?",
+    "options": ["El Consejo Europeo por mayoría cualificada (con aprobación del Presidente de la Comisión)", "El Parlamento Europeo", "Los ciudadanos", "El Consejo de Ministros"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La Directiva europea:",
+    "options": ["Es directamente aplicable", "Obliga en cuanto al resultado, dejando libertad de forma a los Estados", "Es obligatoria en todos sus elementos", "Es una recomendación no vinculante"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Dónde tiene su sede el Tribunal de Justicia de la Unión Europea (TJUE)?",
+    "options": ["La Haya", "Estrasburgo", "Luxemburgo", "Bruselas"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién compone el Consejo Europeo?",
+    "options": ["Los Ministros de Exteriores", "Los Jefes de Estado o de Gobierno, su Presidente y el Presidente de la Comisión", "Un comisario por país", "Los eurodiputados"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué tratado otorgó personalidad jurídica propia a la Unión Europea?",
+    "options": ["Maastricht", "Ámsterdam", "Lisboa", "Niza"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué institución dirige la política monetaria de la eurozona?",
+    "options": ["El BEI", "El Tribunal de Cuentas", "El Banco Central Europeo", "El Eurogrupo"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Dónde se encuentra la sede de Europol?",
+    "options": ["Lyon", "La Haya", "Bruselas", "Budapest"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién elige al Defensor del Pueblo Europeo?",
+    "options": ["El Consejo", "La Comisión", "El Parlamento Europeo", "El TJUE"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cómo toma decisiones el Consejo de la UE en el procedimiento legislativo ordinario?",
+    "options": ["Por unanimidad siempre", "Por mayoría simple", "Por mayoría cualificada", "Por consenso"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El Comité de las Regiones es un órgano:",
+    "options": ["Legislativo", "Consultivo que representa a entes locales y regionales", "Judicial", "Ejecutivo"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué tratado integró el acervo Schengen en el marco de la UE?",
+    "options": ["Roma", "Ámsterdam", "Acta Única", "Maastricht"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuál es la función del Tribunal de Cuentas Europeo?",
+    "options": ["Juzgar delitos", "Fiscalizar los ingresos y gastos de la UE", "Legislar", "Dirigir la política exterior"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué país de la UE NO forma parte del Espacio Schengen (status quo general)?",
+    "options": ["Portugal", "Francia", "Irlanda", "Alemania"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La Orden Europea de Detención y Entrega (OEDE) sustituye a la:",
+    "options": ["Expulsión", "Extradición entre Estados miembros", "Deportación", "Asilo"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "Si el detenido NO consiente su entrega en una OEDE, el plazo para resolver es de:",
+    "options": ["10 días", "30 días", "60 días", "90 días"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La misión de Eurojust es:",
+    "options": ["Cooperación policial", "Reforzar la coordinación y cooperación judicial en delincuencia grave", "Controlar fronteras", "Formación policial"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién preside el Consejo de Asuntos Exteriores de la UE?",
+    "options": ["El Ministro de turno", "El Alto Representante", "El Presidente de la Comisión", "El Presidente del Consejo Europeo"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Dónde tiene su sede CEPOL?",
+    "options": ["Viena", "Budapest", "La Haya", "Lyon"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "En vigilancia transfronteriza de urgencia (Schengen), ¿cuándo debe cesar si no hay autorización?",
+    "options": ["A las 12 horas", "A las 24 horas", "Nunca", "A las 5 horas"],
+    "correct": 3,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿A quién representa el Comité Económico y Social Europeo (CESE)?",
+    "options": ["A las regiones", "A la sociedad civil organizada (empresarios, trabajadores)", "A los bancos", "A los jueces"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué institución aprueba el presupuesto de la UE junto con el Consejo?",
+    "options": ["La Comisión", "El Tribunal de Cuentas", "El Parlamento Europeo", "El BCE"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "Las Recomendaciones y Dictámenes en la UE:",
+    "options": ["Son obligatorias", "Tienen efecto directo", "Son leyes", "No son vinculantes"],
+    "correct": 3,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué artículo del TUE regula la retirada de un Estado miembro?",
+    "options": ["Art. 7", "Art. 42", "Art. 50", "Art. 49"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuánto dura el mandato del Presidente del Consejo Europeo?",
+    "options": ["2 años y medio", "5 años", "4 años", "6 meses"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El principio de subsidiariedad se aplica en:",
+    "options": ["Competencias exclusivas", "Competencias compartidas (cuando la UE actúe mejor que los Estados)", "Política monetaria", "Siempre"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuántos jueces por Estado miembro hay en el Tribunal General?",
+    "options": ["Uno", "Dos", "Tres", "Ninguno"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuántas firmas requiere una Iniciativa Ciudadana Europea?",
+    "options": ["500.000", "Un millón", "Tres millones", "El 10% del censo"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién puede presentar una moción de censura contra la Comisión?",
+    "options": ["El Consejo", "El Consejo Europeo", "El Parlamento Europeo", "El TJUE"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Cuál de estos países es miembro de Schengen pero NO de la UE?",
+    "options": ["Irlanda", "Noruega", "Chipre", "Bulgaria"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La persecución transfronteriza en caliente (Schengen) se permite por:",
+    "options": ["Infracciones administrativas", "Delitos graves o evasión de detenidos (según lista)", "Cualquier delito", "Faltas leves"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué es el SIS?",
+    "options": ["Sistema de Información Schengen", "Sistema de Inteligencia Secreta", "Servicio de Intervención Social", "Seguridad Interior Selectiva"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La Agencia Europea de la Guardia de Fronteras y Costas se conoce como:",
+    "options": ["Europol", "Cepol", "Frontex", "Eurojust"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La Carta de los Derechos Fundamentales de la UE adquirió valor vinculante con el tratado de:",
+    "options": ["Niza", "Maastricht", "Lisboa", "Ámsterdam"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El Tribunal de Justicia de la UE tiene su sede en:",
+    "options": ["Bruselas", "Luxemburgo", "Estrasburgo", "La Haya"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quiénes forman el Eurogrupo?",
+    "options": ["Los Jefes de Estado", "Los Ministros de Economía de la zona euro", "Todos los Ministros de Finanzas", "Los Gobernadores centrales"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El Defensor del Pueblo investiga:",
+    "options": ["Casos de mala administración en instituciones de la UE", "Delitos penales", "Conflictos laborales privados", "Violaciones de derechos nacionales"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La CECA fue creada por el Tratado de:",
+    "options": ["Roma", "Bruselas", "París (1951)", "Londres"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La sede principal de la Comisión Europea está en:",
+    "options": ["Estrasburgo", "Luxemburgo", "Frankfurt", "Bruselas"],
+    "correct": 3,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La oficina SIRENE se encarga de:",
+    "options": ["Vigilancia marítima", "Intercambio de información suplementaria del SIS", "Emergencias sanitarias", "Protección de datos"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Dónde se publican los actos legislativos de la UE?",
+    "options": ["En el BOE", "En el DOUE (Diario Oficial de la Unión Europea)", "En el BCG", "En la web del Parlamento"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El principio que establece la superioridad del Derecho de la UE sobre el nacional es:",
+    "options": ["Subsidiariedad", "Proporcionalidad", "Primacía", "Legalidad"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "Para aprobar una moción de censura en el Parlamento se requiere:",
+    "options": ["Mayoría simple", "Mayoría absoluta", "Doble mayoría (2/3 de votos y mayoría de miembros)", "Unanimidad"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién define las orientaciones políticas generales de la Unión?",
+    "options": ["La Comisión", "El Consejo Europeo", "El Parlamento", "El Consejo"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La Presidencia del Consejo de la UE es:",
+    "options": ["Permanente", "Elegida por 5 años", "Rotatoria cada 6 meses", "Ocupada por la Comisión"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué órgano autoriza una entrega vigilada internacional en el marco de la UE?",
+    "options": ["Europol", "El Tribunal de Cuentas", "Eurojust (o autoridades nacionales)", "La Comisión"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién nombra a los miembros del Tribunal de Cuentas?",
+    "options": ["El Parlamento", "La Comisión", "El Consejo (previa consulta al Parlamento)", "El BCE"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El número único de urgencia europeo es el:",
+    "options": ["091", "112", "911", "062"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La sede del Banco Central Europeo está en:",
+    "options": ["Londres", "París", "Frankfurt", "Berlín"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "El CEDH es un convenio vinculado a:",
+    "options": ["La UE", "El Consejo de Europa", "La ONU", "La OTAN"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "Si el detenido consiente su entrega en una OEDE, la decisión debe tomarse en:",
+    "options": ["10 días", "20 días", "30 días", "60 días"],
+    "correct": 0,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Qué fondo busca reducir las diferencias de desarrollo regional?",
+    "options": ["FSE", "FEDER", "Fondo de Cohesión", "FEOGA"],
+    "correct": 1,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "¿Quién ejerce el control político sobre la Comisión?",
+    "options": ["El Consejo", "El TJUE", "El Parlamento Europeo", "El Defensor del Pueblo"],
+    "correct": 2,
+    "topic": "Tema 4"
+  },
+  {
+    "q": "La 'cooperación reforzada' requiere un mínimo de:",
+    "options": ["3 Estados", "9 Estados miembros", "La mitad de los Estados", "Todos los Estados"],
+    "correct": 1,
+    "topic": "Tema 4"
   }
 ]
