@@ -360,6 +360,366 @@
     "topic": "Tema 1: El derecho"
   },
   {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿En qué fecha fue sancionada y promulgada la Constitución Española de 1978?",
+    "options": ["El 6 de diciembre de 1978", "El 31 de octubre de 1978", "El 29 de diciembre de 1978", "El 27 de diciembre de 1978"],
+    "correct": 3
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Cuál de las siguientes NO es una característica de la Constitución Española de 1978 según la doctrina?",
+    "options": ["Flexible", "Escrita", "Monárquica", "Consensuada"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Según el artículo 1 de la Constitución, la soberanía nacional reside en:",
+    "options": ["El Rey", "Las Cortes Generales", "El pueblo español", "La Constitución"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué valores superiores del ordenamiento jurídico propugna el artículo 1.1 de la CE?",
+    "options": ["La libertad, la justicia, la igualdad y el pluralismo político", "La libertad, la seguridad, la igualdad y la solidaridad", "La justicia, la igualdad, el progreso y el bienestar social", "La democracia, la libertad, la justicia y la monarquía"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El castellano es la lengua española oficial del Estado. ¿Qué deber y qué derecho tienen los españoles respecto a ella?",
+    "options": ["El derecho de conocerla y el deber de usarla", "El deber de conocerla y el derecho a usarla", "El deber de estudiarla y el derecho de hablarla", "El derecho de aprenderla y el deber de respetarla"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Según el artículo 8 de la CE, la misión de las Fuerzas Armadas es garantizar la soberanía e independencia de España y defender:",
+    "options": ["Su integridad territorial y el ordenamiento constitucional", "La unidad de la Nación y los derechos históricos", "El pluralismo político y la libertad de los ciudadanos", "La seguridad ciudadana y el orden público"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué principio garantiza la Constitución en su artículo 9.3 respecto a las disposiciones sancionadoras no favorables?",
+    "options": ["La retroactividad", "La irretroactividad", "La publicidad", "La jerarquía normativa"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El Título I de la Constitución se estructura en:",
+    "options": ["Tres capítulos", "Cuatro capítulos", "Cinco capítulos", "Dos capítulos"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿En qué artículo se regula la mayoría de edad?",
+    "options": ["Artículo 11", "Artículo 13", "Artículo 12", "Artículo 14"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Se puede privar de su nacionalidad a un español de origen?",
+    "options": ["Sí, en casos de traición", "Sí, si adquiere otra nacionalidad voluntariamente", "No, en ningún caso", "Solo mediante sentencia judicial firme"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La extradición solo se concederá en cumplimiento de un tratado o de la ley, atendiendo al principio de:",
+    "options": ["Solidaridad", "Reciprocidad", "Legalidad penal", "Territorialidad"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué artículo de la Constitución reconoce el derecho a la vida y a la integridad física y moral?",
+    "options": ["Artículo 14", "Artículo 15", "Artículo 17", "Artículo 10"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El plazo máximo de detención preventiva, antes de poner al detenido a disposición judicial o en libertad, es de:",
+    "options": ["24 horas", "48 horas", "72 horas", "7 días"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Se necesita autorización previa para el ejercicio del derecho de reunión pacífica y sin armas?",
+    "options": ["Sí, siempre", "No", "Solo en lugares de tránsito público", "Solo si es una manifestación"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Las asociaciones que utilicen medios tipificados como delito son:",
+    "options": ["Secretas", "Paramilitares", "Ilegales", "Inconstitucionales"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué tipo de asociaciones están prohibidas expresamente por el artículo 22 de la CE?",
+    "options": ["Las asociaciones con fines de lucro y las secretas", "Las asociaciones secretas y las de carácter paramilitar", "Las asociaciones políticas y las ilegales", "Las asociaciones paramilitares y las religiosas"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Nadie puede ser obligado a declarar sobre:",
+    "options": ["Sus bienes y patrimonio", "Su ideología, religión o creencias", "Sus antecedentes penales", "Su nacionalidad u origen"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué derecho fundamental protege el artículo 18.2 de la CE?",
+    "options": ["El derecho al honor", "El secreto de las comunicaciones", "La inviolabilidad del domicilio", "La propia imagen"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El secuestro de publicaciones y grabaciones solo podrá acordarse:",
+    "options": ["Por el Ministerio Fiscal", "Por la autoridad gubernativa", "En virtud de resolución judicial", "En casos de estado de excepción"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Cuál es el límite máximo de duración de la prisión provisional?",
+    "options": ["72 horas", "2 años", "4 años", "Lo que determine la ley"],
+    "correct": 3
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué derecho fundamental se regula en el artículo 24 de la CE?",
+    "options": ["Derecho a la educación", "Derecho a la tutela judicial efectiva", "Derecho de huelga", "Derecho de petición"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Las penas privativas de libertad estarán orientadas hacia:",
+    "options": ["El castigo y la retribución", "La reeducación y la reinserción social", "La prevención general y especial", "El cumplimiento íntegro de la condena"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Los Tribunales de Honor están prohibidos en el ámbito de:",
+    "options": ["La Administración militar", "Las organizaciones profesionales y la Administración civil", "Los partidos políticos", "La esfera privada"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La enseñanza básica es:",
+    "options": ["Obligatoria y de pago", "Voluntaria y gratuita", "Obligatoria y gratuita", "Voluntaria y de pago"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Quiénes tienen el derecho a sindicarse libremente según el artículo 28?",
+    "options": ["Solo los funcionarios públicos", "Todos", "Todos, excepto las Fuerzas Armadas y Jueces en activo", "Solo los trabajadores por cuenta ajena"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El derecho de petición individual y colectiva se ejercerá siempre:",
+    "options": ["Por escrito", "Verbalmente", "A través de abogado", "Mediante manifestación"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El derecho a contraer matrimonio con plena igualdad jurídica corresponde a:",
+    "options": ["Los españoles mayores de edad", "El hombre y la mujer", "Los ciudadanos empadronados", "Las personas físicas"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué carácter tiene el sistema tributario según el artículo 31?",
+    "options": ["Confiscatorio y proporcional", "Igualitario y regresivo", "Justo, inspirado en la igualdad y progresividad", "Directo y universal"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La propiedad privada y la herencia son derechos reconocidos en:",
+    "options": ["La Sección 1ª del Capítulo II (Art. 15-29)", "La Sección 2ª del Capítulo II (Art. 30-38)", "El Capítulo III (Principios Rectores)", "El Capítulo I (De los españoles)"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El artículo 30 establece que los españoles tienen el derecho y el deber de:",
+    "options": ["Trabajar", "Defender a España", "Pagar impuestos", "Votar"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué tipo de ley regulará las organizaciones profesionales del artículo 52?",
+    "options": ["Una Ley Orgánica", "Una Ley Ordinaria", "Un Real Decreto", "Un Reglamento"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El Defensor del Pueblo es designado por:",
+    "options": ["El Rey", "El Presidente del Gobierno", "Las Cortes Generales", "El Tribunal Constitucional"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué recurso cabe ante el Tribunal Constitucional para la tutela de los derechos fundamentales de los artículos 14 al 29 y 30.2?",
+    "options": ["Recurso de inconstitucionalidad", "Cuestión de confianza", "Recurso de amparo", "Habeas Corpus"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La suspensión individual de derechos (art. 55.2) está prevista para:",
+    "options": ["Delitos comunes graves", "Bandas armadas o elementos terroristas", "Estados de alarma", "Delitos de traición"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "En el estado de excepción, ¿qué derecho NO puede ser suspendido?",
+    "options": ["El derecho de huelga", "El secreto de las comunicaciones", "La libertad de residencia", "El derecho a la asistencia letrada al detenido"],
+    "correct": 3
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué mayoría se requiere en el Congreso para autorizar la prórroga del estado de alarma?",
+    "options": ["Mayoría absoluta", "Mayoría simple", "Dos tercios", "Tres quintos"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El artículo 53.1 establece que los derechos y libertades del Capítulo II vinculan a:",
+    "options": ["Solo a los ciudadanos", "Solo al Poder Judicial", "Todos los poderes públicos", "Solo al Gobierno"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La regulación del ejercicio de los derechos y libertades del Capítulo II debe hacerse por ley, que en todo caso deberá respetar:",
+    "options": ["Su contenido esencial", "La jurisprudencia del Tribunal Supremo", "Los tratados internacionales", "La voluntad del Gobierno"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Cuál de los siguientes principios NO es un principio rector de la política social y económica?",
+    "options": ["Protección de la salud", "Acceso a la cultura", "Derecho a la huelga", "Defensa de los consumidores"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El artículo 49 de la CE, recientemente reformado (2024), se refiere a:",
+    "options": ["La tercera edad", "Las personas con discapacidad", "La juventud", "Los emigrantes"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué estado debe ser declarado por la mayoría absoluta del Congreso a propuesta exclusiva del Gobierno?",
+    "options": ["Estado de alarma", "Estado de excepción", "Estado de sitio", "Estado de guerra"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El Habeas Corpus (art. 17.4) sirve para:",
+    "options": ["Reducir la pena de prisión", "La inmediata puesta a disposición judicial de toda persona detenida ilegalmente", "Solicitar la libertad provisional bajo fianza", "Recurrir una sentencia firme"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La entrada en domicilio sin consentimiento del titular o resolución judicial se permite en caso de:",
+    "options": ["Sospecha fundada", "Delito flagrante", "Investigación policial", "Denuncia anónima"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué artículo reconoce el derecho a la negociación colectiva laboral?",
+    "options": ["Artículo 28", "Artículo 35", "Artículo 37", "Artículo 22"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Los poderes públicos garantizan la defensa de los consumidores y usuarios (art. 51), protegiendo:",
+    "options": ["La seguridad, la salud y los legítimos intereses económicos", "El precio de los productos", "La libre competencia empresarial", "El comercio internacional"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Puede ser suspendido el derecho a la huelga en el estado de excepción?",
+    "options": ["No, nunca", "Sí", "Solo si hay violencia", "Solo para funcionarios"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El derecho a la producción y creación literaria, artística, científica y técnica se encuadra dentro de:",
+    "options": ["La libertad de cátedra", "La libertad de expresión (art. 20)", "El derecho a la cultura", "El derecho a la educación"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué mayoría se requiere en el Congreso para la elección del Defensor del Pueblo en primera votación?",
+    "options": ["Mayoría absoluta", "Dos tercios", "Tres quintos", "Mayoría simple"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El artículo 33 reconoce el derecho a la propiedad privada, pero establece que:",
+    "options": ["Es un derecho absoluto e ilimitado", "Nadie podrá ser privado de sus bienes salvo por causa justificada de utilidad pública o interés social", "Solo los españoles pueden ser titulares", "No puede ser objeto de expropiación"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Cuál es el plazo máximo para la declaración del estado de alarma?",
+    "options": ["30 días", "15 días", "60 días", "No tiene plazo máximo inicial"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Según el artículo 16, ninguna confesión tendrá carácter:",
+    "options": ["Público", "Privado", "Estatal", "Legal"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La Constitución prohíbe expresamente:",
+    "options": ["La censura previa", "La libertad de prensa", "El secuestro judicial de publicaciones", "La cláusula de conciencia"],
+    "correct": 0
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El derecho al trabajo (art. 35) es un derecho de la Sección:",
+    "options": ["1ª del Capítulo II", "2ª del Capítulo II", "Del Capítulo III", "Del Capítulo I"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué artículo garantiza el secreto de las comunicaciones?",
+    "options": ["Artículo 18.2", "Artículo 18.3", "Artículo 19", "Artículo 20"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Los derechos de la Sección 1ª del Capítulo II (Art. 15-29) se desarrollan por:",
+    "options": ["Ley Ordinaria", "Ley Orgánica", "Real Decreto", "Reglamento"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Quién puede interponer recurso de amparo ante el Tribunal Constitucional?",
+    "options": ["Solo el Defensor del Pueblo", "Solo el Ministerio Fiscal", "Cualquier persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y el Ministerio Fiscal", "50 diputados o 50 senadores"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "El artículo 45 reconoce el derecho a disfrutar de:",
+    "options": ["Una vivienda digna", "Un medio ambiente adecuado", "La protección de la salud", "El patrimonio histórico"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "¿Qué figura actúa como Alto Comisionado de las Cortes Generales?",
+    "options": ["El Presidente del Gobierno", "El Defensor del Pueblo", "El Fiscal General del Estado", "El Presidente del Tribunal Constitucional"],
+    "correct": 1
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "La objeción de conciencia se regula en el artículo:",
+    "options": ["16", "24", "30", "20"],
+    "correct": 2
+  },
+  {
+    "topic": "Tema 2: La Constitución Española",
+    "q": "Para la reforma constitucional del Título Preliminar, Sección 1ª del Cap. II del Título I, o Título II, se requiere:",
+    "options": ["Mayoría de 3/5", "Mayoría absoluta", "Mayoría de 2/3 y disolución de las Cortes", "Referéndum consultivo previo"],
+    "correct": 2
+  },
+  {
     "q": "¿Qué tratado supuso la creación oficial de la Unión Europea y la introducción de la ciudadanía europea?",
     "options": ["El Tratado de Ámsterdam", "El Tratado de Niza", "El Tratado de Lisboa", "El Tratado de Maastricht"],
     "correct": 3,
