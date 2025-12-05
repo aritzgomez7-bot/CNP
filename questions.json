@@ -2158,5 +2158,1445 @@
     "options": ["El Rey", "El Ministro del departamento correspondiente o el Secretario de Estado de Función Pública", "El Consejo de Ministros", "El Delegado del Gobierno"],
     "correct": 1,
     "topic": "Tema 6: Los funcionarios públicos"
+  },
+  {
+    "q": "¿A quién corresponde el mando superior de las Fuerzas y Cuerpos de Seguridad del Estado?",
+    "options": ["Al Director General de la Policía", "Al Secretario de Estado de Seguridad", "Al Ministro del Interior", "Al Presidente del Gobierno"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano superior del Ministerio del Interior dirige, coordina y supervisa a las Direcciones Generales de la Policía y de la Guardia Civil?",
+    "options": ["La Subsecretaría del Interior", "La Secretaría de Estado de Seguridad", "El Gabinete del Ministro", "La Secretaría General Técnica"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De quién depende directamente la Dirección General de Tráfico?",
+    "options": ["Del Ministro del Interior", "De la Secretaría de Estado de Seguridad", "De la Subsecretaría del Interior", "De la Dirección General de Protección Civil"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Cuál es la función principal del CITCO (Centro de Inteligencia contra el Terrorismo y el Crimen Organizado)?",
+    "options": ["La gestión de los centros penitenciarios", "La recepción, integración y análisis de información estratégica sobre terrorismo y crimen organizado", "La dirección exclusiva de la Policía Judicial", "El control de tráfico en vías interurbanas"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué rango administrativo tiene el Director General de la Policía?",
+    "options": ["Director General", "Subsecretario", "Secretario de Estado", "Subdirector General"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano se encarga de la gestión de los procesos electorales y el registro de partidos políticos?",
+    "options": ["La Dirección General de Política Interior", "La Secretaría de Estado de Seguridad", "La Junta Electoral Central", "El Gabinete del Ministro"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Secretaría General de Instituciones Penitenciarias tiene rango de:",
+    "options": ["Dirección General", "Secretaría de Estado", "Subsecretaría", "Subdirección General"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De qué órgano depende la Dirección General de Protección Civil y Emergencias?",
+    "options": ["De la Secretaría de Estado de Seguridad", "De la Subsecretaría del Interior", "Del Ministro directamente", "De la Dirección General de la Policía"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién preside el Comité Ejecutivo de Coordinación del Ministerio del Interior?",
+    "options": ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Rey", "El Director General de Coordinación y Estudios"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano directivo se encarga de la representación ordinaria del Ministerio y la dirección de sus servicios comunes?",
+    "options": ["El Secretario de Estado de Seguridad", "El Subsecretario del Interior", "El Secretario General Técnico", "El Director del Gabinete"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Cuál de las siguientes Direcciones Generales depende de la Secretaría de Estado de Seguridad?",
+    "options": ["Dirección General de Tráfico", "Dirección General de Protección Civil y Emergencias", "Dirección General de Relaciones Internacionales y Extranjería", "Dirección General de Apoyo a Víctimas del Terrorismo"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién ejerce la presidencia del Consejo Superior de Tráfico, Seguridad Vial y Movilidad Sostenible?",
+    "options": ["El Director General de Tráfico", "El Subsecretario del Interior", "El Ministro del Interior", "El Secretario de Estado de Seguridad"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Oficina de Coordinación de Ciberseguridad (OCC) se encuadra dentro de:",
+    "options": ["La Dirección General de la Policía", "La Dirección General de la Guardia Civil", "La Secretaría de Estado de Seguridad (DG de Coordinación y Estudios)", "La Subsecretaría del Interior"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano coordina a las Subdirecciones Generales de Recursos Humanos y de Gestión Económica y Patrimonial?",
+    "options": ["La Secretaría de Estado de Seguridad", "La Subsecretaría del Interior", "La Secretaría General de Instituciones Penitenciarias", "El Gabinete Técnico"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Gerencia de Infraestructuras y Equipamiento de la Seguridad del Estado (GIESE) está adscrita a:",
+    "options": ["La Subsecretaría del Interior", "La Secretaría de Estado de Seguridad", "El Ministerio de Hacienda", "La Dirección General de la Policía"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿A quién corresponde la propuesta y ejecución de la política del Gobierno en materia de seguridad ciudadana?",
+    "options": ["Al Ministro de Defensa", "Al Presidente del Gobierno", "Al Ministro del Interior", "Al Consejo de Seguridad Nacional"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué Dirección General gestiona las competencias sobre protección internacional, apátridas y desplazados?",
+    "options": ["Dirección General de Política Interior", "Dirección General de Relaciones Internacionales y Extranjería", "Dirección General de Protección Internacional", "Dirección General de la Policía"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "El mando directo de la Policía Nacional lo ejerce:",
+    "options": ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Director General de la Policía", "El Director Adjunto Operativo"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano actúa como Centro Nacional de Desaparecidos (CNDES)?",
+    "options": ["La Dirección General de la Policía", "El Gabinete de Coordinación y Estudios (dependiente del SES)", "La Secretaría General Técnica", "La Dirección General de Protección Civil"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién nombra a los Directores Generales del Ministerio del Interior?",
+    "options": ["El Ministro del Interior mediante Orden", "El Rey, a propuesta del Ministro del Interior, mediante Real Decreto acordado en Consejo de Ministros", "El Secretario de Estado de Seguridad", "El Congreso de los Diputados"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La inspección de los servicios y del personal de los centros penitenciarios corresponde a:",
+    "options": ["La Secretaría de Estado de Seguridad", "La Subsecretaría del Interior", "La Secretaría General de Instituciones Penitenciarias", "El Defensor del Pueblo"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano es responsable de la relación con los medios de comunicación en el Ministerio?",
+    "options": ["El Gabinete del Ministro", "La Oficina de Comunicación (dependiente del Ministro)", "La Secretaría General Técnica", "El Gabinete Técnico de la Subsecretaría"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De quién depende la Secretaría General Técnica?",
+    "options": ["Del Ministro directamente", "De la Secretaría de Estado de Seguridad", "De la Subsecretaría del Interior", "De ninguna, es un órgano independiente"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Cuál es la función principal de la Dirección General de Apoyo a Víctimas del Terrorismo?",
+    "options": ["La persecución policial de los terroristas", "La asistencia, atención y apoyo a las víctimas del terrorismo", "La inteligencia antiterrorista", "La seguridad de los edificios públicos"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "El Subdirector General de Recursos Humanos del Ministerio depende de:",
+    "options": ["El Secretario de Estado de Seguridad", "El Subsecretario del Interior", "El Director General de la Policía", "El Ministro"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién ejerce las competencias en materia de armas y explosivos?",
+    "options": ["La Dirección General de la Policía", "La Dirección General de la Guardia Civil", "La Dirección General de Protección Civil", "La Secretaría General Técnica"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano se encarga de la expedición del DNI y pasaportes?",
+    "options": ["La Dirección General de Política Interior", "La Dirección General de la Policía", "La Dirección General de la Guardia Civil", "Las Delegaciones del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La gestión del sistema de registro de pasajeros (PNR) corresponde a:",
+    "options": ["La Dirección General de Tráfico", "La Secretaría de Estado de Seguridad (a través del CITCO/ONIP)", "La Dirección General de Relaciones Internacionales", "La Subsecretaría"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De quién depende la Abogacía del Estado en el Ministerio del Interior?",
+    "options": ["Del Ministro directamente", "De la Secretaría de Estado de Seguridad", "De la Subsecretaría del Interior", "De la Secretaría General Técnica"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano coordina la cooperación policial internacional?",
+    "options": ["La Subsecretaría del Interior", "La Secretaría General Técnica", "La Dirección General de Relaciones Internacionales y Extranjería (bajo el SES)", "La Dirección General de Protección Internacional"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién suple al Secretario de Estado de Seguridad en caso de vacante, ausencia o enfermedad?",
+    "options": ["El Subsecretario del Interior", "El Director General de la Policía o de la Guardia Civil, según el orden de prelación", "El Director del Gabinete", "El Director General de Coordinación y Estudios"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Entidad de Derecho Público Trabajo Penitenciario y Formación para el Empleo está adscrita a:",
+    "options": ["La Subsecretaría del Interior", "La Secretaría General de Instituciones Penitenciarias", "El Ministerio de Trabajo", "La Secretaría de Estado de Seguridad"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué rango tiene el Director del Gabinete del Ministro del Interior?",
+    "options": ["Subsecretario", "Director General", "Subdirector General", "Jefe de Servicio"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién preside la Comisión Interministerial de Asilo y Refugio (CIAR)?",
+    "options": ["El Ministro del Interior", "El Director General de Protección Internacional (o titular delegado)", "El Subsecretario del Interior", "El Defensor del Pueblo"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La seguridad privada es competencia de:",
+    "options": ["Las Comunidades Autónomas", "Los Ayuntamientos", "El Ministerio del Interior (Secretaría de Estado de Seguridad)", "El Ministerio de Defensa"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano se encarga del Registro Nacional de Asociaciones?",
+    "options": ["La Secretaría General Técnica (dependiente de la Subsecretaría)", "La Dirección General de Política Interior", "La Secretaría de Estado de Seguridad", "La Dirección General de la Policía"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "El Centro Tecnológico de Seguridad (CETSE) depende de:",
+    "options": ["La Subsecretaría del Interior", "La Subdirección General de Sistemas de Información y Comunicaciones para la Seguridad (SES)", "La Dirección General de la Policía", "La Dirección General de Tráfico"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién dirige la política de personal y formación del Departamento (servicios comunes)?",
+    "options": ["El Ministro", "El Secretario de Estado de Seguridad", "El Subsecretario del Interior", "El Director General de la Policía"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano gestiona las subvenciones estatales anuales a los partidos políticos?",
+    "options": ["La Dirección General de Política Interior", "La Secretaría General Técnica", "La Junta Electoral Central", "El Tribunal de Cuentas"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Comisión Nacional de Protección de Infraestructuras Críticas se coordina a través de:",
+    "options": ["La Dirección General de Protección Civil", "La Secretaría de Estado de Seguridad (CNPIC)", "La Subsecretaría del Interior", "El Ministerio de Defensa"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién ostenta la secretaría del Comité Ejecutivo de Coordinación?",
+    "options": ["El Director del Gabinete del Ministro", "El Director General de Coordinación y Estudios", "El Subsecretario del Interior", "El Director Adjunto Operativo de la Policía"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De qué órgano depende la Subdirección General de Asuntos Europeos?",
+    "options": ["De la Secretaría General Técnica", "De la Dirección General de Relaciones Internacionales y Extranjería", "De la Subsecretaría", "Del Gabinete del Ministro"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La gestión de los Centros de Internamiento de Extranjeros (CIE) corresponde a:",
+    "options": ["La Secretaría General de Instituciones Penitenciarias", "La Dirección General de la Policía", "La Dirección General de Relaciones Internacionales", "La Subdelegación del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano tiene la función de elaborar la estadística nacional de criminalidad?",
+    "options": ["La Dirección General de la Policía", "La Secretaría de Estado de Seguridad (DG de Coordinación y Estudios)", "El Instituto Nacional de Estadística", "La Subsecretaría del Interior"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién aprueba la estructura orgánica de la Dirección General de la Policía?",
+    "options": ["El Director General de la Policía", "El Ministro del Interior mediante Orden", "El Gobierno mediante Real Decreto", "El Secretario de Estado de Seguridad"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Escuela Nacional de Protección Civil depende de:",
+    "options": ["La Dirección General de Protección Civil y Emergencias", "La Dirección General de la Policía", "La Subsecretaría del Interior directamente", "El Ministerio de Defensa"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano asiste al Ministro en el control de eficacia de los servicios?",
+    "options": ["La Secretaría de Estado de Seguridad", "La Subsecretaría del Interior (Inspección de Servicios)", "El Gabinete del Ministro", "La Intervención Delegada"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién ejerce la potestad sancionadora en materia de tráfico (sanciones graves y muy graves)?",
+    "options": ["El Jefe Provincial de Tráfico", "El Director General de Tráfico (o delegados)", "El Ministro del Interior", "Los Agentes de la Agrupación de Tráfico"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Oficina Nacional de Garantía de los Derechos Humanos (ONGADH) está adscrita a:",
+    "options": ["La Subsecretaría del Interior", "La Secretaría de Estado de Seguridad (Inspección de Personal y Servicios)", "El Defensor del Pueblo", "La Dirección General de la Policía"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De quién depende la Subdirección General de Planificación y Gestión de Infraestructuras y Medios para la Seguridad?",
+    "options": ["De la Secretaría de Estado de Seguridad", "De la Subsecretaría del Interior", "De la Dirección General de la Policía", "De la Dirección General de la Guardia Civil"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano se encarga de la publicación de disposiciones generales del Departamento en el BOE?",
+    "options": ["El Gabinete del Ministro", "La Secretaría General Técnica", "La Oficina de Comunicación", "El Secretariado del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "El ejercicio del mando de las Fuerzas y Cuerpos de Seguridad del Estado corresponde bajo la autoridad del Ministro a:",
+    "options": ["El Subsecretario del Interior", "El Secretario de Estado de Seguridad", "El Director General de la Policía", "El Rey"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano coordina la actuación de las Fuerzas y Cuerpos de Seguridad del Estado en materia de violencia de género?",
+    "options": ["El Gabinete de Coordinación y Estudios (Área de Violencia de Género)", "La Dirección General de la Policía", "La Delegación del Gobierno contra la Violencia de Género", "La Subsecretaría"],
+    "correct": 0,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién nombra a los Subdirectores Generales del Ministerio del Interior?",
+    "options": ["El Consejo de Ministros", "El Ministro, Secretario de Estado o Subsecretario del que dependan", "El Rey", "El Director General correspondiente"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Unidad de Igualdad del Ministerio depende de:",
+    "options": ["La Secretaría de Estado de Seguridad", "La Secretaría General Técnica (Subsecretaría)", "El Gabinete del Ministro", "La Dirección General de la Policía"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano es responsable de la administración y régimen de las instituciones penitenciarias?",
+    "options": ["El Ministerio de Justicia", "La Secretaría General de Instituciones Penitenciarias (dependiente del MIR)", "La Secretaría de Estado de Seguridad", "El Consejo General del Poder Judicial"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿De quién depende funcionalmente la Policía Judicial?",
+    "options": ["Del Ministerio del Interior exclusivamente", "De los Jueces, Tribunales y Ministerio Fiscal", "Del Delegado del Gobierno", "Del Consejo General del Poder Judicial"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Qué órgano superior es responsable de la protección civil?",
+    "options": ["La Secretaría de Estado de Seguridad", "La Subsecretaría del Interior", "El Ministerio de Defensa", "El Gabinete del Ministro"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "La Dirección General de la Guardia Civil depende:",
+    "options": ["Exclusivamente del Ministerio de Defensa", "Del Ministerio del Interior y del de Defensa conjuntamente", "Del Secretario de Estado de Seguridad", "De la Subsecretaría del Interior"],
+    "correct": 2,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién tiene la competencia para proponer al Consejo de Ministros la aprobación de los Reales Decretos de oferta de empleo público del Cuerpo Nacional de Policía?",
+    "options": ["El Director General de la Policía", "El Ministro del Interior (a propuesta del SES)", "El Ministro de Hacienda", "El Director de Recursos Humanos"],
+    "correct": 1,
+    "topic": "Tema 7: El ministerio del interior"
+  },
+  {
+    "q": "¿Quién ejerce el mando directo del Cuerpo Nacional de Policía?",
+    "options": ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Director Adjunto Operativo", "El Director General de la Policía"],
+    "correct": 3,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué rango administrativo tiene el Director General de la Policía?",
+    "options": ["Director General", "Subsecretario", "Secretario de Estado", "Subdirector General"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Dirección Adjunta Operativa (DAO) es responsable de:",
+    "options": ["La gestión económica y técnica", "La dirección, impulso y coordinación de las funciones operativas policiales", "La formación y selección del personal", "La expedición de documentación y archivo"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿De qué órgano depende directamente el Grupo Especial de Operaciones (GEO)?",
+    "options": ["De la Comisaría General de Seguridad Ciudadana", "De la Dirección Adjunta Operativa", "De la División de Operaciones", "De la Jefatura Superior de Policía de Madrid"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Cuál de las siguientes unidades NO se integra en la Comisaría General de Policía Judicial?",
+    "options": ["UDYCO (Unidad de Droga y Crimen Organizado)", "UDEF (Unidad de Delincuencia Económica y Fiscal)", "UCRIF (Unidad Central de Redes de Inmigración Ilegal)", "UIT (Unidad de Investigación Tecnológica - ahora Ciberdelincuencia)"],
+    "correct": 2,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La expedición del Documento Nacional de Identidad es competencia de:",
+    "options": ["La División de Documentación", "La Comisaría General de Extranjería y Fronteras", "La Secretaría General de Logística", "La División de Personal"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano se encarga de la colaboración policial internacional (INTERPOL, EUROPOL, SIRENE)?",
+    "options": ["La Comisaría General de Información", "La División de Cooperación Internacional", "La Secretaría de Estado de Seguridad", "La Subdirección General de Logística"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Central de Intervención Policial (UIP) depende de:",
+    "options": ["La Dirección Adjunta Operativa", "La Comisaría General de Seguridad Ciudadana", "La División de Operaciones", "La Jefatura Central de Unidades Especiales"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién preside la Junta de Gobierno de la Policía Nacional?",
+    "options": ["El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Director General de la Policía", "El Director Adjunto Operativo"],
+    "correct": 2,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La escala Superior del Cuerpo Nacional de Policía comprende las categorías de:",
+    "options": ["Comisario y Comisario Principal", "Inspector Jefe y Comisario", "Comisario, Comisario Principal y Jefe Superior", "Inspector y Comisario"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿A qué grupo de clasificación profesional pertenece la Escala Ejecutiva?",
+    "options": ["Subgrupo A1", "Subgrupo A2", "Subgrupo C1", "Subgrupo B"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad de Asuntos Internos depende directamente de:",
+    "options": ["El Director General de la Policía", "La Dirección Adjunta Operativa", "La Subdirección General de Recursos Humanos", "El Consejo de Policía"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad se encarga de la desactivación de explosivos (TEDAX-NRBQ)?",
+    "options": ["Comisaría General de Seguridad Ciudadana", "Comisaría General de Información", "Comisaría General de Policía Científica", "Dirección Adjunta Operativa"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La División de Formación y Perfeccionamiento gestiona:",
+    "options": ["La Escuela Nacional de Policía", "El pago de nóminas", "La asignación de destinos", "El régimen disciplinario"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano tiene nivel orgánico de Subdirección General dentro de la estructura de la DGP?",
+    "options": ["El Gabinete Técnico", "La División de Personal", "La Brigada Provincial", "La Secretaría General de la DAO"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Central de Protección (escoltas) se encuadra en:",
+    "options": ["La Dirección Adjunta Operativa", "La Comisaría General de Seguridad Ciudadana", "La División de Operaciones", "La Secretaría General de la Presidencia"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿De quién depende la Subdirección General de Logística e Innovación?",
+    "options": ["Del Ministro del Interior", "Del Director General de la Policía", "Del Director Adjunto Operativo", "De la Secretaría de Estado de Seguridad"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La investigación de delitos relacionados con el terrorismo es competencia principal de:",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Información", "El CITCO exclusivamente", "La Audiencia Nacional"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad gestiona el DNI electrónico y el Pasaporte?",
+    "options": ["La División de Documentación", "La Fábrica Nacional de Moneda y Timbre", "La Comisaría General de Extranjería", "La Secretaría General Técnica"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "El ascenso a la categoría de Inspector Jefe se realiza por:",
+    "options": ["Antigüedad selectiva exclusivamente", "Concurso-oposición y antigüedad selectiva", "Libre designación", "Oposición libre"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Cuál es la divisa de un Inspector de la Policía Nacional?",
+    "options": ["Dos ramas de laurel", "Tres galones dorados", "Una corona real y dos estrellas", "Dos estrellas de seis puntas (rosetas)"],
+    "correct": 3,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Central de Ciberdelincuencia depende de:",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Información", "La División de Operaciones y Transformación Digital", "La Comisaría General de Policía Científica"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano se encarga de la prevención de riesgos laborales en la Policía Nacional?",
+    "options": ["La División de Personal", "La Subdirección General de Recursos Humanos y Formación (Unidad de PRL)", "La División Económica y Técnica", "El Consejo de Policía"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La UCRIF (Unidad Central de Redes de Inmigración Ilegal y Falsedades Documentales) pertenece a:",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Extranjería y Fronteras", "La Comisaría General de Información", "La División de Documentación"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "Las Jefaturas Superiores de Policía son órganos de:",
+    "options": ["Gestión central", "Mando, gestión, coordinación e inspección a nivel territorial (periférico)", "Formación académica", "Apoyo logístico"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién nombra a los Jefes Superiores de Policía?",
+    "options": ["El Delegado del Gobierno", "El Ministro del Interior, a propuesta del Director General de la Policía", "El Secretario de Estado de Seguridad", "El Rey"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La División Económica y Técnica depende de:",
+    "options": ["La Subdirección General de Logística e Innovación", "La Subdirección General de Recursos Humanos", "La Dirección Adjunta Operativa", "El Gabinete Técnico"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad se encarga de la reseña dactilar y la identificación lofoscópica?",
+    "options": ["La Unidad Central de Identificación (CG de Policía Científica)", "La División de Documentación", "La Comisaría General de Policía Judicial", "El Archivo Central"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "El Centro de Altos Estudios Policiales (CAEP) está adscrito a:",
+    "options": ["La División de Formación y Perfeccionamiento", "La Subdirección General de Recursos Humanos", "La Dirección Adjunta Operativa", "El Gabinete del Director"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué función principal tiene la Unidad de Planificación Estratégica y Coordinación (UPEC)?",
+    "options": ["Coordinar la información operativa y estratégica bajo la DAO", "Gestionar los recursos humanos", "Investigar delitos tecnológicos", "Controlar las fronteras"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La UFAM (Unidad de Atención a la Familia y Mujer) se incardina en:",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Seguridad Ciudadana", "La Comisaría General de Información", "El Gabinete Técnico"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿De quién dependen los Centros de Cooperación Policial y Aduanera (CCPA)?",
+    "options": ["De la División de Cooperación Internacional", "De la Comisaría General de Extranjería y Fronteras", "De la Dirección Adjunta Operativa", "De las Jefaturas Superiores respectivas"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué escala del CNP tiene como misión la dirección, coordinación y mando de las unidades policiales?",
+    "options": ["Escala Superior", "Escala Ejecutiva", "Escala de Subinspección", "Escala Básica"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La categoría de Oficial de Policía pertenece a:",
+    "options": ["La Escala Básica", "La Escala de Subinspección", "La Escala Ejecutiva", "No existe esa categoría"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién compone el Consejo Asesor de la Policía?",
+    "options": ["El Ministro y los sindicatos", "El Director General y consejeros designados (órgano consultivo)", "La Junta de Gobierno y los Jefes Superiores", "Representantes de todos los partidos políticos"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Brigada Móvil (Policía en el transporte) depende de:",
+    "options": ["La Comisaría General de Seguridad Ciudadana", "La Comisaría General de Policía Judicial", "La División de Operaciones", "Las Comisarías Provinciales exclusivamente"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Aérea de la Policía depende de:",
+    "options": ["La División de Operaciones y Transformación Digital", "La Dirección Adjunta Operativa directamente", "La Subdirección de Logística", "La Comisaría General de Seguridad Ciudadana"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano tramita los expedientes disciplinarios por faltas muy graves?",
+    "options": ["La Unidad de Régimen Disciplinario (División de Personal)", "La Unidad de Asuntos Internos", "El Jefe de la Dependencia", "El Consejo de Policía"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Dónde se ubica la Escuela Nacional de Policía?",
+    "options": ["Madrid (Carabanchel)", "Ávila", "Linares", "El Escorial"],
+    "correct": 1,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "El Centro de Actualización y Especialización (CAE) pertenece a:",
+    "options": ["La División de Formación y Perfeccionamiento", "La División de Personal", "La Subdirección de Recursos Humanos", "La DAO"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién ejerce la secretaría de la Junta de Gobierno?",
+    "options": ["El Jefe de la División de Personal", "El Director del Gabinete Técnico", "El Secretario General de la DAO", "El Subdirector General de Recursos Humanos"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La B.C.I.T. (Brigada Central de Investigación Tecnológica) es parte de:",
+    "options": ["La Unidad Central de Ciberdelincuencia", "La Unidad Central de Inteligencia Criminal", "La Comisaría General de Información", "La División de Documentación"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad gestiona la base de datos PERPOL (personas de interés policial)?",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Seguridad Ciudadana", "La División de Documentación", "La Inspección de Personal"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Brigada de Respuesta a la Inmigración Clandestina (BRIC) depende de:",
+    "options": ["La Comisaría General de Extranjería y Fronteras (Unidad Central de Fronteras)", "La Comisaría General de Seguridad Ciudadana", "La Dirección Adjunta Operativa", "Las Jefaturas Superiores de Ceuta y Melilla"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién nombra a los Jefes de las Comisarías Provinciales?",
+    "options": ["El Director General de la Policía", "El Delegado del Gobierno", "El Ministro del Interior", "El Jefe Superior de Policía"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Central de Seguridad Privada está encuadrada en:",
+    "options": ["La Comisaría General de Seguridad Ciudadana", "La Secretaría de Estado de Seguridad", "La Dirección Adjunta Operativa", "La Comisaría General de Información"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué función tiene el Área de Procesos Selectivos?",
+    "options": ["La gestión de las oposiciones de ingreso y ascenso", "La formación continua", "La asignación de destinos", "La evaluación del desempeño"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Oficina Nacional de Deportes (violencia en el deporte) se encuentra en:",
+    "options": ["La Comisaría General de Seguridad Ciudadana", "La Comisaría General de Información", "El Consejo Superior de Deportes", "La DAO"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad se encarga de la protección de altas personalidades extranjeras en visita a España?",
+    "options": ["La Unidad Central de Protección (Brigada de Protecciones Especiales)", "El Grupo Especial de Operaciones", "La Casa Real", "La Brigada Móvil"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La División de Cooperación Internacional tiene nivel orgánico de:",
+    "options": ["División", "Subdirección General", "Comisaría General", "Servicio"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿De quién depende la Oficina Central Nacional de INTERPOL en España?",
+    "options": ["De la División de Cooperación Internacional", "De la Comisaría General de Policía Judicial", "Del Ministerio de Asuntos Exteriores", "De la Secretaría de Estado de Seguridad"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano coordina la actuación operativa de las Comisarías Generales?",
+    "options": ["La Dirección Adjunta Operativa", "El Gabinete Técnico", "La Subdirección de Logística", "El Consejo de Policía"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Escala de Subinspección se clasifica en el Subgrupo:",
+    "options": ["A2", "A1", "C1", "B"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Quién preside el Consejo de Policía?",
+    "options": ["El Ministro del Interior", "El Director General de la Policía", "El Secretario de Estado de Seguridad", "Un representante sindical rotatorio"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad de Prevención y Reacción (UPR) es una unidad de:",
+    "options": ["La Comisaría General de Seguridad Ciudadana", "La Comisaría General de Policía Judicial", "La Comisaría General de Información", "La División de Operaciones"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué unidad se encarga de la investigación de delitos contra el patrimonio histórico?",
+    "options": ["La UDEV (Unidad de Delincuencia Especializada y Violenta)", "La UDEF", "La Comisaría General de Información", "La Policía Científica"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "El Centro de Prácticas Operativas de la Enira (La Enira - Linares) depende de:",
+    "options": ["La División de Formación y Perfeccionamiento", "La Dirección Adjunta Operativa", "La Comisaría General de Seguridad Ciudadana", "La Jefatura Superior de Andalucía Oriental"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué órgano sustituye al Director General en caso de vacante, ausencia o enfermedad?",
+    "options": ["El Director Adjunto Operativo", "El Subdirector General de Recursos Humanos", "El Subdirector General de Logística", "Quien designe el Ministro"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La Unidad Central de Inteligencia Criminal (UCIC) pertenece a:",
+    "options": ["La Comisaría General de Policía Judicial", "La Comisaría General de Información", "La Dirección Adjunta Operativa", "El Gabinete de Estudios"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "¿Qué brigada se encarga de la lucha contra el blanqueo de capitales?",
+    "options": ["La Brigada Central de Investigación de Blanqueo de Capitales y Anticorrupción (UDEF)", "La Brigada Central de Crimen Organizado", "La Brigada de Delitos Monetarios", "La Brigada de Inteligencia Financiera"],
+    "correct": 0,
+    "topic": "Tema 8: La dirección general de la policía"
+  },
+  {
+    "q": "La seguridad pública es competencia exclusiva de:",
+    "options": ["Las Comunidades Autónomas", "El Estado", "Los Municipios", "La Unión Europea"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿A quién corresponde el mantenimiento de la seguridad pública?",
+    "options": ["Al Gobierno de la Nación", "A los Jueces y Tribunales", "Al Ministerio de Defensa", "A las Cortes Generales"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Son Fuerzas y Cuerpos de Seguridad del Estado:",
+    "options": ["El Cuerpo Nacional de Policía, la Guardia Civil y las Policías Autonómicas", "Únicamente el Cuerpo Nacional de Policía", "El Cuerpo Nacional de Policía y la Guardia Civil", "La Guardia Civil y la Policía Local"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Cuál es la naturaleza del Cuerpo Nacional de Policía?",
+    "options": ["Instituto Armado de naturaleza civil", "Instituto Armado de naturaleza militar", "Cuerpo civil sin carácter de instituto armado", "Cuerpo administrativo especial"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La Guardia Civil es un Instituto Armado de naturaleza:",
+    "options": ["Civil", "Militar", "Mixta", "Administrativa"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los miembros de las Fuerzas y Cuerpos de Seguridad deben actuar con:",
+    "options": ["Arbitrariedad justificada", "Absoluta neutralidad política e imparcialidad", "Parcialidad en favor del Estado", "Subjetividad profesional"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "En el cumplimiento de sus funciones, los miembros de las FCS deberán adecuarse al ordenamiento jurídico, especialmente a:",
+    "options": ["Los reglamentos disciplinarios", "La Constitución", "Las órdenes verbales", "La costumbre"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La obediencia debida:",
+    "options": ["Justifica cualquier actuación", "No amparará órdenes que entrañen la ejecución de actos que manifiestamente constituyan delito o sean contrarios a la Constitución o a las Leyes", "Es absoluta en la Guardia Civil pero no en la Policía", "Exime siempre de responsabilidad penal"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Qué principios rigen el uso de las armas por parte de las FCS?",
+    "options": ["Eficacia, rapidez y contundencia", "Congruencia, oportunidad y proporcionalidad", "Libertad, igualdad y fraternidad", "Autoridad, jerarquía y disciplina"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El tratamiento a los detenidos debe asegurar:",
+    "options": ["La confesión rápida", "La incomunicación total", "El respeto a su vida, integridad física y dignidad moral", "El traslado inmediato a prisión"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los miembros de las FCS se considerarán en todo momento:",
+    "options": ["Agentes de la autoridad (cuando ejerzan sus funciones)", "Funcionarios administrativos", "Personal laboral", "Jueces de instrucción"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La jurisdicción competente para conocer los delitos cometidos contra miembros de las FCS en el ejercicio de sus funciones es:",
+    "options": ["La Jurisdicción Militar", "La Jurisdicción Ordinaria", "La Jurisdicción Contencioso-Administrativa", "El Tribunal Constitucional"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El mando superior de las Fuerzas y Cuerpos de Seguridad del Estado corresponde al:",
+    "options": ["Director General de la Policía", "Secretario de Estado de Seguridad", "Ministro del Interior", "Presidente del Gobierno"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La Guardia Civil depende del Ministro de Defensa:",
+    "options": ["En el cumplimiento de las misiones de carácter militar", "Siempre, a todos los efectos", "Solo para el pago de nóminas", "Nunca, solo depende de Interior"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Quién ejerce el mando directo de las Fuerzas y Cuerpos de Seguridad del Estado bajo la autoridad del Ministro?",
+    "options": ["El Subsecretario del Interior", "El Secretario de Estado de Seguridad", "Los Directores Generales", "El Rey"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "En tiempo de guerra y estado de sitio, la Guardia Civil depende de:",
+    "options": ["El Ministro del Interior", "El Ministro de Defensa exclusivamente", "El Presidente del Gobierno", "El Consejo de Seguridad Nacional"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Qué función es común a ambos Cuerpos (CNP y GC)?",
+    "options": ["La expedición del DNI", "La vigilancia del tráfico interurbano", "Velar por el cumplimiento de las Leyes y disposiciones generales", "El resguardo fiscal del Estado"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La expedición del Documento Nacional de Identidad y Pasaportes es competencia exclusiva de:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "Las Policías Autonómicas", "Los Ayuntamientos"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La vigilancia del tráfico, tránsito y transporte en las vías públicas interurbanas corresponde a:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "Las Policías Locales", "Mossos d'Esquadra en todo el territorio"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El control de entrada y salida del territorio nacional de españoles y extranjeros corresponde a:",
+    "options": ["La Guardia Civil", "La Policía Nacional", "Ambos cuerpos indistintamente", "El Servicio de Vigilancia Aduanera"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La conducción interurbana de presos y detenidos es competencia de:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "La Policía Local", "Funcionarios de Prisiones"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El resguardo fiscal del Estado es competencia de:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "La Agencia Tributaria exclusivamente", "Las Policías Autonómicas"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "En las capitales de provincia, las funciones de seguridad ciudadana corresponden a:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "La Policía Local exclusivamente", "La Policía Adscrita"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Pueden las FCSE actuar fuera de su ámbito territorial competente?",
+    "options": ["No, nunca", "Sí, en caso de emergencia o por mandato judicial", "Solo con permiso del Alcalde", "Solo si están fuera de servicio"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las Comunidades Autónomas pueden crear cuerpos de policía propios si:",
+    "options": ["Lo autoriza el Rey", "Está previsto en sus Estatutos de Autonomía", "Tienen más de 2 millones de habitantes", "Lo aprueba el Senado"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los Cuerpos de Policía de las Comunidades Autónomas son institutos armados de naturaleza:",
+    "options": ["Militar", "Civil", "Mixta", "Administrativa"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El órgano colegiado de coordinación entre el Estado y las Comunidades Autónomas en materia de seguridad es:",
+    "options": ["La Junta de Seguridad", "El Consejo de Política de Seguridad", "La Comisión Nacional de Coordinación", "El Consejo de Ministros"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El Consejo de Política de Seguridad está presidido por:",
+    "options": ["El Presidente del Gobierno", "El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Rey"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La Junta de Seguridad es el órgano competente para coordinar la actuación de:",
+    "options": ["La Policía Nacional y la Guardia Civil", "Las Policías Locales", "Las FCSE y los Cuerpos de Policía de las CCAA", "La seguridad privada"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las Juntas Locales de Seguridad se constituyen en:",
+    "options": ["Todos los municipios", "Los municipios que tengan Cuerpo de Policía propio", "Las capitales de provincia solamente", "Las CCAA"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Quién preside la Junta Local de Seguridad?",
+    "options": ["El Comisario de Policía", "El Alcalde (salvo que concurra el Delegado/Subdelegado del Gobierno, presidencia compartida)", "El Juez Decano", "El Concejal de Seguridad"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los Cuerpos de Policía Local son institutos armados de naturaleza:",
+    "options": ["Civil", "Militar", "Depende del municipio", "Auxiliar"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las Policías Locales solo pueden actuar fuera de su término municipal:",
+    "options": ["En situaciones de emergencia y previo requerimiento de las autoridades competentes", "Siempre que quieran", "Para perseguir delitos flagrantes sin límite de distancia", "Si lo autoriza el Alcalde del municipio vecino"],
+    "correct": 0,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La instrucción de atestados por accidentes de circulación en casco urbano corresponde a:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "La Policía Local", "Protección Civil"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Pueden las Policías Locales ejercer funciones de Policía Judicial?",
+    "options": ["No, nunca", "Sí, para la averiguación de delitos y aseguramiento de delincuentes", "Solo en delitos de tráfico", "Solo si son adscritos"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La custodia de las costas y fronteras corresponde a:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "La Armada", "Las Policías Autonómicas"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El control de las entidades y servicios privados de seguridad corresponde a:",
+    "options": ["La Guardia Civil", "La Policía Nacional", "La Policía Local", "El Ministerio de Trabajo"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "En materia de armas y explosivos, la competencia es de:",
+    "options": ["La Policía Nacional", "La Guardia Civil", "El Ejército de Tierra", "Las Delegaciones del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La investigación de los delitos relacionados con la droga es competencia de:",
+    "options": ["Exclusiva de la Policía Nacional", "Exclusiva de la Guardia Civil", "Común a ambos Cuerpos (CNP y GC)", "Del Servicio de Vigilancia Aduanera"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las CCAA que no tienen policía propia pueden solicitar al Gobierno:",
+    "options": ["La creación de una policía militar", "La adscripción de unidades del Cuerpo Nacional de Policía", "La adscripción de unidades de la Guardia Civil", "La contratación de seguridad privada"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las Unidades del CNP adscritas a una CA dependen orgánicamente de:",
+    "options": ["La Comunidad Autónoma", "El Ministerio del Interior", "El Parlamento Autonómico", "El Delegado del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las Unidades del CNP adscritas a una CA dependen funcionalmente de:",
+    "options": ["El Ministerio del Interior", "Las autoridades de la Comunidad Autónoma", "Los Jueces y Tribunales exclusivamente", "El Consejo de Política de Seguridad"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Para la vigilancia de espacios públicos, la competencia prioritaria corresponde a:",
+    "options": ["La Policía Local", "La Guardia Civil", "Las Policías de las CCAA (si existen) y las FCSE", "La seguridad privada"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los miembros de las FCSE tienen prohibido:",
+    "options": ["El derecho de sindicación", "El derecho de huelga", "El derecho a la carrera profesional", "El derecho a la asistencia letrada"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El régimen disciplinario de la Policía Nacional se inspira en:",
+    "options": ["El Estatuto de los Trabajadores", "El Código Penal Militar", "Los principios del ordenamiento jurídico civil", "El respeto a los derechos fundamentales y el cumplimiento de los deberes"],
+    "correct": 3,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Qué órgano resuelve los conflictos de competencia entre las FCSE y los Cuerpos de Policía de las CCAA?",
+    "options": ["El Tribunal Constitucional", "La Junta de Seguridad", "El Consejo de Estado", "El Ministro del Interior"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La protección de altas personalidades es una función:",
+    "options": ["Exclusiva de la Policía Nacional", "Exclusiva de la Guardia Civil", "Común a las FCSE", "Privada"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El principio de proporcionalidad exige:",
+    "options": ["Usar siempre el arma de fuego", "Adecuar los medios a los fines perseguidos", "Detener siempre al sospechoso", "No usar la fuerza nunca"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Los miembros de las FCSE deben guardar secreto riguroso:",
+    "options": ["Solo de los temas de terrorismo", "De todas las informaciones que conozcan por razón de sus funciones", "Salvo para los medios de comunicación", "Solo si se lo ordena el juez"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Qué ley orgánica regula las Fuerzas y Cuerpos de Seguridad?",
+    "options": ["LO 4/2015", "LO 2/1986", "LO 1/1992", "LO 9/2015"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El mando de las Policías Locales corresponde a:",
+    "options": ["El Delegado del Gobierno", "El Alcalde", "El Concejal de Seguridad", "El Jefe de la Policía Local"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "En los municipios sin Policía Local, las funciones de custodia y vigilancia pueden ser ejercidas por:",
+    "options": ["Vigilantes de Seguridad", "Personal que desempeñe funciones de custodia y vigilancia (Guardas, Vigilantes, Agentes, etc.)", "La Guardia Civil exclusivamente", "Voluntarios"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Quién autoriza a los Cuerpos de Policía de las CCAA a actuar fuera de su ámbito territorial para protección de autoridades?",
+    "options": ["El Presidente de la CA", "El Ministro del Interior", "El Parlamento Autonómico", "No necesitan autorización"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La función de vigilar y proteger los edificios e instalaciones públicas es:",
+    "options": ["Exclusiva de la Policía Nacional", "Exclusiva de la Guardia Civil", "Común a las FCSE", "De seguridad privada"],
+    "correct": 2,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "El velar por el cumplimiento de las Leyes y disposiciones generales es función de:",
+    "options": ["Solo los Jueces", "Las Fuerzas y Cuerpos de Seguridad (común)", "Solo la Policía Administrativa", "El Defensor del Pueblo"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las CCAA con cuerpo de policía propio son:",
+    "options": ["País Vasco, Cataluña, Galicia y Andalucía", "País Vasco, Cataluña, Navarra y Canarias", "Todas las CCAA", "Solo País Vasco y Cataluña"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Quién preside el Consejo de Policía (órgano de la Policía Nacional, no de la LOFCS pero relacionado)?",
+    "options": ["El Director General de la Policía", "El Ministro del Interior", "El Secretario de Estado de Seguridad", "El Director Adjunto Operativo"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La investigación de delitos de juego es competencia de:",
+    "options": ["La Guardia Civil", "La Policía Nacional", "Las Policías Locales", "Hacienda"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "La protección del Medio Ambiente es competencia específica de:",
+    "options": ["La Policía Nacional", "La Guardia Civil (SEPRONA)", "La Policía Local", "Los Agentes Forestales únicamente"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "Las FCSE en el ejercicio de sus funciones pueden ser auxiliadas por:",
+    "options": ["Solo por otros policías", "Por cualquier ciudadano (deber de auxilio)", "Solo por funcionarios públicos", "Nadie"],
+    "correct": 1,
+    "topic": "Tema 9: La ley orgánica de fuerzas y cuerpos de seguridad"
+  },
+  {
+    "q": "¿Qué norma regula el régimen de entrada, libre circulación y residencia en España de ciudadanos de la UE?",
+    "options": ["Ley Orgánica 4/2000", "Real Decreto 240/2007", "Reglamento (UE) 2016/399", "Ley 14/2013"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "A efectos del Régimen Comunitario, se consideran familiares del ciudadano de la Unión a:",
+    "options": ["Cualquier pariente hasta el cuarto grado", "El cónyuge, la pareja registrada, los descendientes directos menores de 21 años o a cargo y los ascendientes directos a cargo", "Solo el cónyuge y los hijos menores de edad", "El cónyuge, los hijos y los hermanos si viven a cargo"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Los ciudadanos de la Unión Europea para estancias inferiores a 3 meses necesitan:",
+    "options": ["Pasaporte o documento de identidad en vigor", "Visado de estancia", "Tarjeta de Identidad de Extranjero", "Autorización de regreso"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Para residir en España por un período superior a 3 meses, un ciudadano de la UE debe:",
+    "options": ["Solicitar el visado de residencia", "Solicitar su inscripción en el Registro Central de Extranjeros", "Obtener la TIE en la Comisaría", "Empadronarse únicamente"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Cuál es el plazo para solicitar el Certificado de Registro de ciudadano de la Unión?",
+    "options": ["1 mes desde la entrada", "3 meses desde la entrada", "6 meses desde la entrada", "Antes de la entrada"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Los familiares de un ciudadano de la UE que no sean nacionales de un Estado miembro, para residir más de 3 meses, deben solicitar:",
+    "options": ["El Certificado de Registro", "La Tarjeta de Residencia de Familiar de Ciudadano de la Unión", "El Visado de Larga Duración", "La Autorización de Residencia Temporal"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La validez inicial de la Tarjeta de Residencia de Familiar de Ciudadano de la Unión es de:",
+    "options": ["1 año", "2 años", "5 años", "10 años"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El derecho de residencia permanente en régimen comunitario se adquiere, con carácter general, tras residir legalmente en España durante:",
+    "options": ["3 años continuados", "5 años continuados", "10 años continuados", "2 años continuados"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué ausencia del territorio español conlleva la pérdida del derecho de residencia permanente en régimen comunitario?",
+    "options": ["Superior a 6 meses consecutivos", "Superior a 12 meses consecutivos", "Superior a 2 años consecutivos", "Superior a 5 años consecutivos"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "En el Régimen General, se considera situación de estancia la permanencia en territorio español por un período de tiempo no superior a:",
+    "options": ["30 días por semestre", "60 días por semestre", "90 días por semestre", "180 días por año"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué tipo de visado habilita para transitar por la zona internacional de un aeropuerto sin entrar en territorio nacional?",
+    "options": ["Visado de tránsito aeroportuario (Tipo A)", "Visado de corta duración (Tipo C)", "Visado de larga duración (Tipo D)", "Visado de cortesía"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de residencia temporal tiene una duración:",
+    "options": ["Inferior a 90 días", "Superior a 90 días e inferior a 5 años", "De 5 años", "Indefinida"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Para obtener la residencia de larga duración en el régimen general se requiere haber residido legal y continuadamente durante:",
+    "options": ["3 años", "5 años", "10 años", "2 años"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de residencia de larga duración se renueva:",
+    "options": ["Cada año", "Cada 2 años", "Cada 5 años (la tarjeta)", "Es indefinida, no caduca la autorización"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué documento acredita la situación legal del extranjero en España para periodos superiores a 6 meses?",
+    "options": ["El Pasaporte", "El Visado", "La Tarjeta de Identidad de Extranjero (TIE)", "El Certificado de Empadronamiento"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El plazo para solicitar la Tarjeta de Identidad de Extranjero tras la entrada o concesión de la autorización es de:",
+    "options": ["15 días", "1 mes", "3 meses", "6 meses"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La situación de residencia temporal por reagrupación familiar requiere que el reagrupante haya residido en España:",
+    "options": ["Al menos 6 meses", "Al menos 1 año y tenga autorización para otro año más", "Al menos 5 años", "No se requiere tiempo previo"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Para reagrupar a los ascendientes en el régimen general, el reagrupante debe ser titular de:",
+    "options": ["Una autorización temporal inicial", "Una autorización de residencia de larga duración", "Una autorización de estancia por estudios", "Un visado de corta duración"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué tipo de arraigo requiere una permanencia continuada de 3 años, carecer de antecedentes y contar con un contrato de trabajo?",
+    "options": ["Arraigo Laboral", "Arraigo Social", "Arraigo Familiar", "Arraigo para la Formación"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El arraigo laboral exige acreditar una permanencia en España de:",
+    "options": ["1 año", "2 años", "3 años", "6 meses"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿A quién se concede el arraigo familiar?",
+    "options": ["A quien lleve 3 años en España", "Al padre o madre de un menor de nacionalidad española", "Al extranjero que haya trabajado ilegalmente 6 meses", "A quien inicie una formación reglada"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de estancia por estudios permite trabajar:",
+    "options": ["No, nunca", "Sí, a tiempo completo sin límite", "Sí, a tiempo parcial o completo si no supera las 30 horas semanales y es compatible con los estudios", "Solo en prácticas no laborales"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Los visados de corta duración (Schengen) permiten una estancia máxima de:",
+    "options": ["30 días en un periodo de 60", "90 días en un periodo de 180", "6 meses al año", "1 año"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué consecuencias tiene la salida obligatoria?",
+    "options": ["Deberá abandonar el territorio nacional en el plazo establecido", "Será detenido inmediatamente", "Podrá quedarse si paga una multa", "Se le concede un permiso de residencia provisional"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La prohibición de entrada no podrá exceder, con carácter general, de:",
+    "options": ["3 años", "5 años", "10 años", "Es permanente"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué órgano es competente para determinar la edad de un MENA indocumentado?",
+    "options": ["La Policía Nacional", "El Ministerio Fiscal", "Los Servicios Sociales", "El Juez de Guardia"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El Acuerdo de Schengen suprime:",
+    "options": ["Los controles en las fronteras exteriores", "Los controles en las fronteras interiores", "La necesidad de pasaporte", "Los visados para todos los países"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué países forman parte del Acuerdo sobre el Espacio Económico Europeo (EEE) además de la UE?",
+    "options": ["Suiza, Noruega e Islandia", "Islandia, Liechtenstein y Noruega", "Reino Unido, Suiza y Noruega", "Andorra, Mónaco y San Marino"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "En el régimen comunitario, la pareja de hecho registrada:",
+    "options": ["No tiene derechos", "Se equipara al cónyuge", "Necesita visado siempre", "Solo tiene derecho a estancia, no a residencia"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La Tarjeta Azul-UE está destinada a:",
+    "options": ["Estudiantes", "Trabajadores altamente cualificados", "Refugiados", "Familiares de comunitarios"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué autorización se concede a las mujeres extranjeras víctimas de violencia de género en situación irregular?",
+    "options": ["Una autorización de residencia y trabajo por circunstancias excepcionales", "Un visado de estancia", "Una autorización de regreso", "No se les concede nada hasta que haya sentencia"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La renovación de la autorización de residencia temporal debe solicitarse:",
+    "options": ["Durante los 60 días naturales previos a la caducidad o 90 días posteriores", "Solo el día que caduca", "En cualquier momento", "30 días antes exclusivamente"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El visado de tránsito aeroportuario se exige a:",
+    "options": ["Todos los extranjeros", "Nacionales de determinados países para la zona de tránsito internacional", "Ciudadanos de la UE", "Nadie"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué efecto tiene la presentación de la solicitud de renovación de la autorización de residencia?",
+    "options": ["Prorroga la validez de la anterior hasta la resolución", "No tiene ningún efecto", "Anula la autorización anterior", "Requiere salir del país"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Los extranjeros menores de 16 años para entrar en España:",
+    "options": ["No necesitan documentación", "Pueden hacerlo con el Libro de Familia", "Deben tener documento de identidad o estar incluidos en el pasaporte de sus padres", "Solo pueden entrar con visado"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de regreso permite:",
+    "options": ["Trabajar en España", "Salir de España y retornar en un plazo determinado (mientras se renueva la tarjeta)", "Viajar por todo el espacio Schengen", "Residir indefinidamente"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué requisito es indispensable para la entrada en territorio español según el Código de Fronteras Schengen?",
+    "options": ["Tener billete de vuelta siempre", "Justificar el objeto y las condiciones de la estancia y disponer de medios de subsistencia", "Hablar español", "Tener una carta de invitación policial"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El Código de Fronteras Schengen permite restablecer los controles en fronteras interiores:",
+    "options": ["Nunca", "Solo en caso de guerra", "En caso de amenaza grave para el orden público o la seguridad interior, temporalmente", "Siempre que quiera un Estado miembro"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La duración máxima de la estancia con visado de larga duración es:",
+    "options": ["3 meses", "6 meses", "Igual a la validez del visado (generalmente 1 año)", "5 años"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué organismo expide los visados?",
+    "options": ["Las Comisarías de Policía", "Las Misiones Diplomáticas y Oficinas Consulares", "El Ministerio del Interior", "Las Delegaciones del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Para el cómputo de los 5 años de residencia de larga duración (régimen general), las ausencias no pueden superar:",
+    "options": ["6 meses consecutivos y 10 meses en total", "12 meses consecutivos", "2 años", "3 meses al año"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "En el régimen comunitario, ¿qué ocurre si el ciudadano de la UE fallece?",
+    "options": ["Los familiares pierden siempre la residencia", "Los familiares mantienen la residencia si han residido en España como miembros de la familia antes del fallecimiento", "Deben solicitar asilo", "Tienen 1 mes para salir del país"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La denegación de entrada se realiza mediante:",
+    "options": ["Resolución motivada, con información sobre recursos", "De forma verbal", "Sello en el pasaporte únicamente", "Detención inmediata"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El visado de estancia (tipo C) permite:",
+    "options": ["Residir y trabajar", "El tránsito o estancia hasta 90 días en 180 días", "Estudiar por más de 6 meses", "La reagrupación familiar"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Quién tiene competencia para prohibir la salida de España a un extranjero?",
+    "options": ["Cualquier policía", "El Ministro del Interior (o autoridad judicial)", "El Consulado de su país", "La compañía aérea"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de residencia temporal y trabajo por cuenta ajena tiene una duración inicial de:",
+    "options": ["6 meses", "1 año", "2 años", "3 años"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El 'arraigo para la formación' concede una autorización de residencia válida por:",
+    "options": ["6 meses", "12 meses (prorrogable otros 12)", "2 años", "5 años"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué se entiende por 'frontera exterior' en el espacio Schengen?",
+    "options": ["Las fronteras terrestres con cualquier país", "Las fronteras con terceros países (no Schengen), incluidos aeropuertos y puertos para enlaces exteriores", "Solo las fronteras marítimas", "Las fronteras entre España y Francia"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La tarjeta de residencia permanente de familiar de ciudadano de la UE (no comunitario) se renueva:",
+    "options": ["Cada año", "Cada 5 años", "Cada 10 años", "No caduca"],
+    "correct": 2,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "Los extranjeros en España tienen derecho a la educación obligatoria (hasta los 16 años):",
+    "options": ["Solo si son residentes legales", "En las mismas condiciones que los españoles, sea cual sea su situación", "Solo si sus padres trabajan", "Si pagan las tasas correspondientes"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La asistencia sanitaria de urgencia está garantizada para:",
+    "options": ["Solo residentes legales", "Todos los extranjeros en España, cualquiera que sea su situación", "Solo menores de edad", "Solo mujeres embarazadas"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "El número de identidad de extranjero (NIE) es:",
+    "options": ["Un permiso de residencia", "Un identificador único y exclusivo de carácter personal", "Un visado", "Un documento de viaje"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de residencia por circunstancias excepcionales por colaboración contra redes organizadas:",
+    "options": ["Exime de responsabilidad penal y administrativa", "Requiere 3 años de estancia previa", "No permite trabajar", "Es solo para ciudadanos de la UE"],
+    "correct": 0,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué permiso se concede a los investigadores extranjeros?",
+    "options": ["Visado de estudios", "Autorización de residencia para investigación (Ley 14/2013)", "Permiso de turismo", "Autorización de trabajo de temporada"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "En el régimen comunitario, la inscripción de una pareja de hecho en un registro público:",
+    "options": ["No tiene efectos", "La equipara al matrimonio a efectos de derechos de entrada y residencia", "Solo sirve si tienen hijos", "Requiere visado especial"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La autorización de estancia por voluntariado tiene una duración máxima de:",
+    "options": ["3 meses", "1 año (o duración del programa)", "2 años", "6 meses"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué familiares pueden ser reagrupados por un residente de larga duración?",
+    "options": ["Solo el cónyuge", "Cónyuge, hijos menores y ascendientes a cargo mayores de 65 años", "Cualquier familiar que dependa económicamente", "Hermanos y sobrinos"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La pérdida de la nacionalidad española por un ciudadano de origen permite:",
+    "options": ["La expulsión inmediata", "Solicitar la residencia de larga duración", "Solicitar asilo", "Quedarse como turista 90 días"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "¿Qué supone el 'efecto directo' de las normas comunitarias?",
+    "options": ["Que no se aplican en España", "Que crean derechos y obligaciones para los particulares que pueden invocar ante los tribunales", "Que solo afectan a los Estados", "Que requieren una ley española para aplicarse"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
+  },
+  {
+    "q": "La Carta de Invitación:",
+    "options": ["Sustituye al pasaporte", "Justifica el alojamiento en domicilio particular", "Garantiza medios económicos", "Es un visado"],
+    "correct": 1,
+    "topic": "Tema 10: Entrada, libre circulación y residencia en España"
   }
 ]
