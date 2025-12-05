@@ -720,6 +720,366 @@
     "correct": 2
   },
   {
+    "q": "¿A quién corresponde la sanción y promulgación de las leyes según el Título II de la Constitución?",
+    "options": ["Al Presidente del Gobierno", "Al Rey", "Al Presidente del Congreso", "Al Ministro de Justicia"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La Reina consorte o el consorte de la Reina:",
+    "options": ["Podrán asumir funciones constitucionales de forma general", "Solo podrán asumir funciones constitucionales mediante referéndum", "No podrán asumir funciones constitucionales, salvo lo dispuesto para la Regencia", "Tienen las mismas funciones que el Rey"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién nombra al tutor del Rey menor si este no hubiese sido nombrado en testamento?",
+    "options": ["El Consejo de Ministros", "Las Cortes Generales", "El padre o la madre mientras permanezcan viudos", "El pariente mayor de edad más próximo"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Los actos del Rey serán refrendados por:",
+    "options": ["Siempre por el Presidente del Gobierno", "El Presidente del Gobierno y, en su caso, por los Ministros competentes", "El Presidente del Congreso en todos los casos", "El Consejo de Estado"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué cargo refrenda la propuesta y el nombramiento del Presidente del Gobierno?",
+    "options": ["El Presidente del Gobierno saliente", "El Ministro de Justicia", "El Presidente del Congreso", "El Rey no necesita refrendo para este acto"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quiénes son los miembros de las Cortes Generales?",
+    "options": ["Solo los Diputados", "Solo los Senadores", "Los Diputados y los Senadores", "Los miembros del Gobierno y los Parlamentarios"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Congreso de los Diputados se compone de un mínimo y un máximo de:",
+    "options": ["300 y 400 Diputados", "350 y 400 Diputados", "300 y 350 Diputados", "250 y 300 Diputados"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuál es la circunscripción electoral para la elección de Diputados y Senadores?",
+    "options": ["La Comunidad Autónoma", "El Municipio", "La Provincia", "El Distrito"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuántos senadores elige cada provincia peninsular?",
+    "options": ["3 Senadores", "4 Senadores", "2 Senadores", "Variable según población"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Las Cámaras se reunirán anualmente en dos períodos ordinarios de sesiones:",
+    "options": ["De enero a junio y de septiembre a diciembre", "De febrero a junio y de septiembre a diciembre", "De febrero a julio y de septiembre a noviembre", "De marzo a junio y de octubre a diciembre"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién puede solicitar la reunión de las Cámaras en sesión extraordinaria?",
+    "options": ["El Gobierno, la Diputación Permanente o la mayoría absoluta de los miembros de cualquiera de las Cámaras", "Solo el Gobierno", "El Rey", "El Presidente del Congreso"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Las Leyes Orgánicas requieren para su aprobación:",
+    "options": ["Mayoría simple del Congreso", "Mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto", "Mayoría absoluta del Senado", "Mayoría de 3/5 de ambas Cámaras"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué materias están reservadas a Ley Orgánica?",
+    "options": ["Solo las relativas al régimen electoral general", "Las relativas al desarrollo de los derechos fundamentales y libertades públicas, estatutos de autonomía y régimen electoral general", "Todas las materias si así lo decide el Gobierno", "Los Presupuestos Generales del Estado"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La delegación legislativa deberá otorgarse mediante una ley de bases cuando su objeto sea:",
+    "options": ["La formación de textos articulados", "La refundición de textos legales", "La aprobación de una Ley Orgánica", "La aprobación de un Decreto-Ley"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Los Decretos-Leyes deberán ser sometidos a debate y votación de totalidad al Congreso en el plazo de:",
+    "options": ["15 días", "20 días", "30 días", "60 días"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué institución tiene la iniciativa legislativa?",
+    "options": ["Solo el Gobierno", "El Gobierno, el Congreso y el Senado", "El Gobierno, el Congreso, el Senado y las Asambleas de las CCAA", "El Gobierno, las Cortes Generales y el CGPJ"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Para la iniciativa popular se exigen no menos de:",
+    "options": ["250.000 firmas acreditadas", "500.000 firmas acreditadas", "100.000 firmas acreditadas", "750.000 firmas acreditadas"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué plazo tiene el Senado para vetar o enmendar un proyecto de ley declarado urgente?",
+    "options": ["2 meses", "1 mes", "20 días naturales", "15 días naturales"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El referéndum consultivo será convocado por:",
+    "options": ["El Presidente del Gobierno", "El Rey, a propuesta del Presidente del Gobierno, previamente autorizada por el Congreso", "El Congreso de los Diputados", "El Rey, a propuesta de las Cortes Generales"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La autorización para la celebración de tratados internacionales de carácter militar requiere:",
+    "options": ["Ley Orgánica", "Autorización previa de las Cortes Generales", "Aprobación por el Gobierno", "Referéndum vinculante"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Gobierno responde solidariamente en su gestión política ante:",
+    "options": ["El Rey", "El Congreso de los Diputados", "El Senado", "Las Cortes Generales"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La cuestión de confianza se entenderá otorgada cuando vote a favor:",
+    "options": ["La mayoría absoluta de los Diputados", "La mayoría simple de los Diputados", "La mayoría de 3/5 del Congreso", "La mayoría simple del Senado"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La moción de censura deberá ser propuesta al menos por:",
+    "options": ["La mayoría absoluta de los Diputados", "La décima parte de los Diputados", "Un grupo parlamentario", "50 Diputados"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Si la moción de censura no fuere aprobada, sus signatarios no podrán presentar otra:",
+    "options": ["En el plazo de un año", "Durante el mismo período de sesiones", "En la misma legislatura", "Nunca"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién decreta la disolución de las Cortes Generales a propuesta del Presidente del Gobierno?",
+    "options": ["El propio Presidente del Gobierno", "El Rey", "El Presidente del Congreso", "El Presidente del Senado"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El estado de excepción será declarado por:",
+    "options": ["El Gobierno, previa autorización del Congreso", "El Gobierno, dando cuenta al Congreso", "El Congreso, a propuesta del Gobierno", "El Rey"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El estado de sitio será declarado por:",
+    "options": ["El Gobierno", "La mayoría absoluta del Congreso, a propuesta exclusiva del Gobierno", "El Rey", "Las Cortes Generales"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El principio de unidad jurisdiccional es la base de la organización y funcionamiento de:",
+    "options": ["El Gobierno", "Las Cortes Generales", "Los Tribunales", "La Administración"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuántos miembros componen el Consejo General del Poder Judicial (CGPJ)?",
+    "options": ["12 miembros", "20 miembros más el Presidente", "25 miembros", "15 miembros"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién nombra al Fiscal General del Estado?",
+    "options": ["El CGPJ", "El Rey, a propuesta del Gobierno, oído el CGPJ", "El Congreso de los Diputados", "El Ministro de Justicia"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Tribunal Supremo, con jurisdicción en toda España, es el órgano jurisdiccional superior en todos los órdenes, salvo lo dispuesto en materia de:",
+    "options": ["Garantías constitucionales", "Derecho Civil", "Derecho Penal", "Derecho Administrativo"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién nombra a los 20 vocales del CGPJ?",
+    "options": ["El Rey", "El Gobierno", "El Congreso", "El Senado"],
+    "correct": 0,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué mayoría se requiere en cada Cámara para elegir a los vocales del CGPJ?",
+    "options": ["Mayoría absoluta", "Mayoría simple", "Mayoría de 3/5", "Mayoría de 2/3"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La policía judicial depende de:",
+    "options": ["El Ministerio del Interior", "Los Jueces, los Tribunales y el Ministerio Fiscal", "El Gobierno", "Las Comunidades Autónomas"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué principio garantiza el Estado en relación con la organización territorial?",
+    "options": ["El principio de centralización", "El principio de solidaridad", "El principio de independencia", "El principio de jerarquía"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El gobierno y la administración autónoma de las provincias estarán encomendados a:",
+    "options": ["Los Ayuntamientos", "Las Diputaciones u otras Corporaciones de carácter representativo", "Las Asambleas Legislativas", "Los Delegados del Gobierno"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La iniciativa del proceso autonómico, en caso de no prosperar, solamente podrá reiterarse pasados:",
+    "options": ["1 año", "3 años", "4 años", "5 años"],
+    "correct": 3,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué vía de acceso a la autonomía requiere la ratificación mediante referéndum por el voto afirmativo de la mayoría absoluta de los electores de cada provincia?",
+    "options": ["La vía del artículo 143", "La vía del artículo 151", "La vía del artículo 144", "La vía del artículo 152"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El control de la actividad de los órganos de las Comunidades Autónomas relativo a la constitucionalidad de sus disposiciones normativas con fuerza de ley se ejerce por:",
+    "options": ["El Gobierno", "El Tribunal Constitucional", "La jurisdicción contencioso-administrativa", "El Tribunal de Cuentas"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién nombra al Delegado del Gobierno en las Comunidades Autónomas?",
+    "options": ["El Rey", "El Presidente de la Comunidad Autónoma", "El Gobierno", "El Ministro del Interior"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Si una Comunidad Autónoma no cumpliere las obligaciones que la Constitución u otras leyes le impongan, el Gobierno podrá adoptar medidas con la aprobación de:",
+    "options": ["El Congreso de los Diputados", "La mayoría absoluta del Senado", "El Tribunal Constitucional", "El Rey"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Fondo de Compensación Interterritorial tiene como destino:",
+    "options": ["Gastos de personal", "Gastos de inversión", "Gastos corrientes", "Pago de la deuda"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Tribunal Constitucional se compone de:",
+    "options": ["10 miembros", "12 miembros", "15 miembros", "20 miembros"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuántos miembros del Tribunal Constitucional son propuestos por el Congreso?",
+    "options": ["2", "4", "6", "8"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Los miembros del Tribunal Constitucional son designados por un período de:",
+    "options": ["4 años", "5 años", "6 años", "9 años"],
+    "correct": 3,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién está legitimado para interponer el recurso de inconstitucionalidad?",
+    "options": ["Toda persona natural o jurídica", "El Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores, órganos ejecutivos y Asambleas de CCAA", "Los Jueces y Tribunales", "El Ministerio Fiscal"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El recurso de amparo protege frente a la violación de:",
+    "options": ["Cualquier derecho constitucional", "Los derechos y libertades reconocidos en los artículos 14 a 29 y 30.2", "Los principios rectores", "Las leyes orgánicas"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Las sentencias del Tribunal Constitucional tienen el valor de cosa juzgada a partir de:",
+    "options": ["Su aprobación", "El día siguiente de su publicación en el BOE", "Su notificación a las partes", "20 días tras su publicación"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué mayoría se requiere para la reforma constitucional ordinaria (art. 167)?",
+    "options": ["Mayoría absoluta de ambas Cámaras", "Mayoría de 3/5 de cada una de las Cámaras", "Mayoría de 2/3 de ambas Cámaras", "Mayoría simple"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "En la reforma ordinaria, si no hay acuerdo entre Cámaras pero el texto obtuvo mayoría absoluta en el Senado, el Congreso puede aprobarlo por:",
+    "options": ["Mayoría absoluta", "Mayoría de 3/5", "Mayoría de 2/3", "Mayoría simple"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuándo es obligatorio el referéndum en la reforma ordinaria (art. 167)?",
+    "options": ["Siempre", "Nunca", "Cuando lo soliciten, dentro de los 15 días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras", "Cuando lo solicite el Gobierno"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La reforma total de la Constitución o una parcial que afecte al Título Preliminar, al Capítulo II, Sección 1ª del Título I, o al Título II, requiere:",
+    "options": ["Mayoría de 3/5 y referéndum opcional", "Aprobación por 2/3 de cada Cámara, disolución inmediata de las Cortes, ratificación por las nuevas Cámaras, aprobación por 2/3 y referéndum obligatorio", "Mayoría absoluta y referéndum obligatorio", "Aprobación por el Rey"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "No podrá iniciarse la reforma constitucional en tiempo de:",
+    "options": ["Crisis económica", "Guerra o de vigencia de alguno de los estados previstos en el artículo 116", "Elecciones", "Vacaciones parlamentarias"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Quién nombra al Presidente del Tribunal Constitucional?",
+    "options": ["El Gobierno", "El Rey, a propuesta del mismo Tribunal en pleno", "El Congreso", "El CGPJ"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El Gobierno puede impugnar ante el TC las disposiciones y resoluciones de las CCAA. Esta impugnación produce:",
+    "options": ["La nulidad automática", "La suspensión de la disposición o resolución recurrida", "La derogación de la norma", "Una multa coercitiva"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Cuál es el plazo para que el Senado vete o enmiende un proyecto de ley en el procedimiento ordinario?",
+    "options": ["1 mes", "2 meses", "3 meses", "15 días"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "Las Comisiones de Investigación nombradas por las Cámaras:",
+    "options": ["Tienen sentencias vinculantes para los Tribunales", "Sus conclusiones no serán vinculantes para los Tribunales ni afectarán a las resoluciones judiciales", "Sustituyen a los jueces de instrucción", "Solo pueden crearse en el Senado"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "El voto de Senadores y Diputados es:",
+    "options": ["Delegable en el portavoz", "Personal e indelegable", "Público siempre", "Secreto siempre"],
+    "correct": 1,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "La responsabilidad criminal del Presidente y los demás miembros del Gobierno será exigible ante:",
+    "options": ["La Audiencia Nacional", "El Tribunal Constitucional", "La Sala de lo Penal del Tribunal Supremo", "El Tribunal Superior de Justicia de Madrid"],
+    "correct": 2,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
+    "q": "¿Qué principio NO rige el funcionamiento de la Administración Pública según el art. 103 CE?",
+    "options": ["Eficacia", "Jerarquía", "Descentralización", "Arbitrariedad"],
+    "correct": 3,
+    "topic": "Tema 3: La Constitución Española II"
+  },
+  {
     "q": "¿Qué tratado supuso la creación oficial de la Unión Europea y la introducción de la ciudadanía europea?",
     "options": ["El Tratado de Ámsterdam", "El Tratado de Niza", "El Tratado de Lisboa", "El Tratado de Maastricht"],
     "correct": 3,
