@@ -1,1443 +1,363 @@
 [
   {
-    "q": "¿Qué se entiende por 'Ordenamiento Jurídico'?",
-    "options": ["El conjunto de normas no escritas basadas en la naturaleza humana", "El conjunto de normas jurídicas que rigen en un lugar y tiempo determinado, organizadas jerárquicamente", "La facultad que tiene una persona para defender sus intereses", "El derecho subjetivo de las personas jurídicas"],
+    "q": "¿Qué fuente del derecho tiene carácter subsidiario de primer grado?",
+    "options": ["Los Principios Generales del Derecho", "La Costumbre", "La Jurisprudencia", "Los Tratados Internacionales"],
     "correct": 1,
-    "topic": "Concepto de Derecho"
-  },
-  {
-    "q": "El Derecho que se fundamenta en principios universales, inmutables y justos se denomina:",
-    "options": ["Derecho Positivo", "Derecho Objetivo", "Derecho Natural", "Derecho Adjetivo"],
-    "correct": 2,
-    "topic": "Clasificaciones del Derecho"
-  },
-  {
-    "q": "¿Qué característica de la norma jurídica implica que esta genera obligaciones y facultades (derechos)?",
-    "options": ["Coercibilidad", "Bilateralidad o alteridad", "Abstracción", "Generalidad"],
-    "correct": 1,
-    "topic": "Normas Jurídicas"
-  },
-  {
-    "q": "Según su eficacia frente a la voluntad de los particulares, las normas que permiten ser modificadas por la voluntad de las partes se llaman:",
-    "options": ["Imperativas", "Necesarias", "Dispositivas o supletorias", "Rígidas"],
-    "correct": 2,
-    "topic": "Normas Jurídicas"
-  },
-  {
-    "q": "¿Cuáles son las fuentes del ordenamiento jurídico español según el artículo 1.1 del Código Civil?",
-    "options": ["La ley, la costumbre y los principios generales del derecho", "La ley, la jurisprudencia y la doctrina", "La Constitución, la ley y los reglamentos", "La ley, los tratados internacionales y la costumbre"],
-    "correct": 0,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "¿Qué fuente del derecho se aplica solo en defecto de ley aplicable?",
-    "options": ["Los Principios Generales del Derecho", "La Jurisprudencia", "La Costumbre", "Los Tratados Internacionales"],
-    "correct": 2,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "Para que la costumbre sea aplicable, no debe ser contraria a la moral ni al orden público y además:",
-    "options": ["Debe estar escrita", "Debe resultar probada", "Debe ser publicada en el BOE", "Debe ser validada por el Rey"],
-    "correct": 1,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "¿Qué función cumple la Jurisprudencia en el ordenamiento jurídico español?",
-    "options": ["Crea normas jurídicas directas", "Complementa el ordenamiento jurídico con la doctrina reiterada del Tribunal Supremo", "Deroga leyes anteriores", "Es una fuente primaria del derecho"],
-    "correct": 1,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "¿Cuántas sentencias del Tribunal Supremo con la misma doctrina son necesarias para sentar jurisprudencia?",
-    "options": ["Una sola sentencia", "Al menos dos sentencias", "Tres sentencias consecutivas", "Cinco sentencias en el mismo año"],
-    "correct": 1,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "Según el principio de jerarquía normativa, ¿qué sucede con las disposiciones que contradigan otra de rango superior?",
-    "options": ["Son anulables", "Carecerán de validez", "Se aplicarán subsidiariamente", "Tienen validez temporal"],
-    "correct": 1,
-    "topic": "Jerarquía Normativa"
-  },
-  {
-    "q": "¿Qué mayoría se requiere en el Congreso para la aprobación de una Ley Orgánica?",
-    "options": ["Mayoría simple", "Mayoría absoluta en votación final sobre el conjunto del proyecto", "Mayoría de 3/5", "Mayoría de 2/3"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Qué materias están reservadas exclusivamente a la Ley Orgánica?",
-    "options": ["Derecho mercantil y civil", "Desarrollo de los derechos fundamentales y libertades públicas", "Presupuestos Generales del Estado", "Tributos y Hacienda"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "El Decreto-Ley es una norma con rango de ley dictada por el Gobierno en caso de:",
-    "options": ["Autorización previa de las Cortes", "Extraordinaria y urgente necesidad", "Delegación legislativa", "Vacaciones parlamentarias"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Cuál es el plazo para que el Congreso convalide o derogue un Decreto-Ley?",
-    "options": ["15 días", "20 días", "30 días", "60 días"],
-    "correct": 2,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Qué tipo de norma con rango de ley surge de una delegación de las Cortes en el Gobierno mediante una Ley de Bases?",
-    "options": ["Decreto-Ley", "Decreto Legislativo (Texto Articulado)", "Decreto Legislativo (Texto Refundido)", "Ley Ordinaria"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "La iniciativa legislativa popular requiere un mínimo de:",
-    "options": ["50.000 firmas acreditadas", "150.000 firmas acreditadas", "500.000 firmas acreditadas", "1.000.000 de firmas acreditadas"],
-    "correct": 2,
-    "topic": "La Ley"
-  },
-  {
-    "q": "La 'vacatio legis' general establecida en el Código Civil para la entrada en vigor de las leyes es de:",
-    "options": ["Al día siguiente de su publicación", "15 días", "20 días", "30 días"],
-    "correct": 2,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Cuándo se adquiere la personalidad jurídica en las personas físicas?",
-    "options": ["En el momento de la concepción", "En el momento del nacimiento con vida, una vez producido el entero desprendimiento del seno materno", "A las 24 horas del nacimiento", "Al inscribirse en el Registro Civil"],
-    "correct": 1,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué es la capacidad de obrar?",
-    "options": ["La aptitud para ser titular de derechos y obligaciones", "La aptitud para gobernar bienes ajenos", "La aptitud para realizar eficazmente actos jurídicos (ejercicio de derechos)", "La capacidad que se tiene desde el nacimiento"],
-    "correct": 2,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿A qué edad comienza la mayoría de edad según el Código Civil?",
-    "options": ["A los 16 años", "A los 18 años cumplidos", "A los 21 años", "A los 25 años"],
-    "correct": 1,
-    "topic": "La Persona"
-  },
-  {
-    "q": "La emancipación por concesión de quienes ejercen la patria potestad requiere que el menor tenga al menos:",
-    "options": ["14 años", "15 años", "16 años", "17 años"],
-    "correct": 2,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué limitación tiene el menor emancipado respecto a sus bienes inmuebles?",
-    "options": ["No puede administrarlos", "No puede gravarlos ni enajenarlos sin consentimiento de sus padres o defensor", "No puede alquilarlos", "No tiene ninguna limitación"],
-    "correct": 1,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué se entiende por 'nacionalidad de origen' por ius soli?",
-    "options": ["Los nacidos de padre o madre españoles", "Los nacidos en España de padres extranjeros si uno de ellos también nació en España", "Los que obtienen la nacionalidad por residencia", "Los adoptados mayores de 18 años"],
-    "correct": 1,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "El plazo general de residencia para adquirir la nacionalidad española es de:",
-    "options": ["1 año", "2 años", "5 años", "10 años"],
-    "correct": 3,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿Cuál es el plazo de residencia reducido para nacionales de países iberoamericanos, Andorra, Filipinas, Guinea Ecuatorial o Portugal?",
-    "options": ["1 año", "2 años", "5 años", "No requieren plazo"],
-    "correct": 1,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿Quién otorga la nacionalidad por Carta de Naturaleza?",
-    "options": ["El Ministro de Justicia", "El Rey a propuesta de las Cortes", "El Gobierno mediante Real Decreto", "El encargado del Registro Civil"],
-    "correct": 2,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "Para la validez de la adquisición de la nacionalidad por opción, carta de naturaleza o residencia, el interesado debe:",
-    "options": ["Renunciar a su anterior nacionalidad (salvo excepciones)", "Pagar una tasa administrativa", "Haber nacido en territorio español", "Tener un contrato de trabajo indefinido"],
-    "correct": 0,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿En qué plazo caduca la concesión de nacionalidad por residencia si no se comparece para cumplir los requisitos?",
-    "options": ["30 días", "90 días", "180 días", "1 año"],
-    "correct": 2,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "Un español de origen, ¿puede ser privado de su nacionalidad?",
-    "options": ["Sí, por sentencia judicial firme", "Sí, si comete traición", "No, ningún español de origen puede ser privado de su nacionalidad", "Sí, si adquiere otra nacionalidad"],
-    "correct": 2,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿Cuándo pierden la nacionalidad los españoles emancipados que residan habitualmente en el extranjero y adquieran voluntariamente otra nacionalidad?",
-    "options": ["Inmediatamente", "A los 3 años, si no declaran su voluntad de conservarla", "A los 5 años", "Nunca la pierden"],
-    "correct": 1,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿Cómo se adquiere la vecindad civil por residencia continuada de 2 años?",
-    "options": ["Automáticamente", "Si el interesado manifiesta esa voluntad ante el encargado del Registro Civil", "Solo si ha nacido en dicha comunidad", "Si se casa con alguien de esa vecindad"],
-    "correct": 1,
-    "topic": "Vecindad Civil"
-  },
-  {
-    "q": "¿Qué ocurre con la vecindad civil por residencia continuada de 10 años si no hay declaración en contrario?",
-    "options": ["No se adquiere", "Se adquiere automáticamente", "Se necesita autorización judicial", "Se pierde la vecindad anterior pero no se gana la nueva"],
-    "correct": 1,
-    "topic": "Vecindad Civil"
-  },
-  {
-    "q": "El domicilio de las personas físicas es:",
-    "options": ["El lugar donde tengan sus bienes", "El lugar de su residencia habitual", "El lugar donde nacieron", "El lugar donde trabajan"],
-    "correct": 1,
-    "topic": "Domicilio"
-  },
-  {
-    "q": "¿Qué tipo de interpretación de las normas atiende al espíritu y finalidad de aquellas?",
-    "options": ["Interpretación gramatical", "Interpretación histórica", "Interpretación teleológica", "Interpretación sistemática"],
-    "correct": 2,
-    "topic": "Interpretación de las Normas"
-  },
-  {
-    "q": "¿Qué consecuencia tiene la realización de actos contrarios a las normas imperativas y prohibitivas?",
-    "options": ["Son anulables", "Son nulos de pleno derecho", "Son válidos pero sancionables", "Son válidos si hay buena fe"],
-    "correct": 1,
-    "topic": "Eficacia de las Normas"
-  },
-  {
-    "q": "Los actos realizados al amparo del texto de una norma que persigan un resultado prohibido por el ordenamiento jurídico se consideran:",
-    "options": ["Fraude de ley", "Abuso de derecho", "Desviación de poder", "Error de derecho"],
-    "correct": 0,
-    "topic": "Eficacia de las Normas"
-  },
-  {
-    "q": "¿Qué plazo de residencia se exige para la nacionalidad a quien haya obtenido la condición de refugiado?",
-    "options": ["1 año", "2 años", "5 años", "10 años"],
-    "correct": 2,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "En el cómputo de plazos civiles, si los plazos están señalados por días:",
-    "options": ["Se excluyen los días inhábiles", "Se cuentan todos los días (naturales) y se excluye el día inicial", "Se incluyen el día inicial y el final", "Solo cuentan los días laborables"],
-    "correct": 1,
-    "topic": "Cómputo de Plazos"
-  },
-  {
-    "q": "¿Qué rango tiene el reglamento emanado del Gobierno?",
-    "options": ["Rango de Ley", "Rango superior a la Ley", "Rango inferior a la Ley", "El mismo rango que la Constitución"],
-    "correct": 2,
-    "topic": "Jerarquía Normativa"
-  },
-  {
-    "q": "¿Quién sanciona y promulga las leyes aprobadas por las Cortes Generales?",
-    "options": ["El Presidente del Gobierno", "El Presidente del Congreso", "El Rey", "El Ministro de Justicia"],
-    "correct": 2,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Qué es la 'vacatio legis'?",
-    "options": ["El periodo de vacaciones de los jueces", "El periodo entre la publicación de una ley y su entrada en vigor", "La derogación de una ley", "La nulidad de una norma"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "Las Leyes de Bases no podrán en ningún caso:",
-    "options": ["Regular materias de competencia autonómica", "Facultar para dictar normas con carácter retroactivo", "Ser aprobadas por mayoría simple", "Regular materias fiscales"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Qué implica el principio de irretroactividad de las disposiciones sancionadoras no favorables?",
-    "options": ["Que no se pueden aplicar a hechos pasados", "Que se aplican siempre a hechos futuros y pasados", "Que solo se aplican si favorecen a la Administración", "Que no pueden ser derogadas"],
-    "correct": 0,
-    "topic": "Principios Constitucionales"
-  },
-  {
-    "q": "¿Qué tipo de personas jurídicas son las 'corporaciones'?",
-    "options": ["De interés privado", "De interés público creadas por la ley", "Asociaciones civiles", "Sociedades mercantiles"],
-    "correct": 1,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué es la 'premoriencia'?",
-    "options": ["La muerte simultánea de dos personas", "La necesidad de probar quién ha muerto primero entre dos personas llamadas a sucederse", "La presunción de muerte por ausencia", "La muerte antes del nacimiento"],
-    "correct": 1,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Cuándo se produce la 'ausencia legal' de una persona desaparecida que no ha dejado apoderado?",
-    "options": ["Pasado 1 año desde las últimas noticias", "Pasados 3 años", "Pasados 5 años", "Inmediatamente"],
-    "correct": 0,
-    "topic": "Ausencia y Fallecimiento"
-  },
-  {
-    "q": "La declaración de fallecimiento procede transcurridos ___ años desde las últimas noticias o desaparición (plazo general).",
-    "options": ["5 años", "10 años", "15 años", "20 años"],
-    "correct": 1,
-    "topic": "Ausencia y Fallecimiento"
-  },
-  {
-    "q": "¿Qué plazo de residencia se exige al viudo/a de español/a para solicitar la nacionalidad (si no hubo separación)?",
-    "options": ["1 año", "2 años", "5 años", "10 años"],
-    "correct": 0,
-    "topic": "Nacionalidad"
-  },
-  {
-    "q": "¿Quién tiene la iniciativa legislativa según la Constitución?",
-    "options": ["Solo el Gobierno", "El Gobierno, el Congreso, el Senado, las Asambleas de CCAA y la iniciativa popular", "El Rey y el Gobierno", "Los Jueces y Tribunales"],
-    "correct": 1,
-    "topic": "La Ley"
-  },
-  {
-    "q": "¿Qué tipo de normas aprueban los Estatutos de Autonomía?",
-    "options": ["Leyes Ordinarias", "Leyes Orgánicas", "Decretos Legislativos", "Reglamentos"],
-    "correct": 1,
-    "topic": "La Ley"
+    "topic": "Tema 1: El derecho"
   },
   {
     "q": "La ignorancia de las leyes:",
-    "options": ["Exime de su cumplimiento", "No excusa de su cumplimiento", "Atenúa la responsabilidad", "Es causa de nulidad"],
-    "correct": 1,
-    "topic": "Eficacia de las Normas"
+    "options": ["Exime de su cumplimiento si se demuestra buena fe", "Permite su incumplimiento en casos de error invencible", "No excusa de su cumplimiento", "Atenúa la responsabilidad penal"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Qué es la analogía en la aplicación de las normas?",
-    "options": ["Aplicar una norma a un supuesto no contemplado pero semejante", "Aplicar la norma literalmente", "No aplicar la norma por ser antigua", "Aplicar la costumbre en lugar de la ley"],
+    "q": "¿Qué característica de la norma jurídica se refiere a que el mandato no va dirigido a una persona concreta, sino a casos abstractos?",
+    "options": ["Generalidad", "Abstracción", "Bilateralidad", "Imperatividad"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "Según el Código Civil, las leyes entrarán en vigor a los 20 días de su completa publicación en el BOE...",
+    "options": ["Siempre", "Salvo que sean Leyes Orgánicas", "Si en ellas no se dispone otra cosa", "Salvo en los casos de urgente necesidad"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Quién tiene la iniciativa legislativa para presentar un Proyecto de Ley?",
+    "options": ["El Congreso y el Senado", "El Gobierno", "Las Asambleas Legislativas de las CCAA", "El pueblo a través de 500.000 firmas"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué rango normativo tiene un Real Decreto Legislativo?",
+    "options": ["Rango de Reglamento", "Rango de Ley", "Inferior a la Ley y superior al Reglamento", "Rango constitucional"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La capacidad jurídica:",
+    "options": ["Es la aptitud para gobernar los propios bienes", "Se adquiere con la mayoría de edad", "Es la aptitud para ser titular de derechos y obligaciones", "Puede ser limitada por sentencia judicial"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Cuál es el plazo de residencia para obtener la nacionalidad española para un refugiado?",
+    "options": ["1 año", "2 años", "5 años", "10 años"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "El nacido en España de padres extranjeros, si ambos carecieren de nacionalidad, es:",
+    "options": ["Apátrida hasta los 18 años", "Español de origen", "Español por opción", "Extranjero residente"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué se requiere para la validez de los actos realizados contra norma imperativa?",
+    "options": ["Que no causen perjuicio a terceros", "Que se realicen de buena fe", "Son nulos de pleno derecho, salvo que la norma establezca otro efecto", "Son anulables a instancia de parte"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Quién sanciona y promulga las leyes?",
+    "options": ["El Presidente del Gobierno", "El Rey", "El Presidente del Congreso", "El Ministro de Justicia"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La costumbre 'contra legem' (contraria a la ley):",
+    "options": ["Es fuente del derecho en Navarra", "No es aceptada en nuestro ordenamiento jurídico", "Deroga la ley anterior", "Se aplica si es probada"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué mayoría requiere el Senado para vetar un proyecto de ley?",
+    "options": ["Mayoría simple", "Mayoría absoluta", "Mayoría de 3/5", "Mayoría de 2/3"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La nacionalidad española por Carta de Naturaleza se otorga:",
+    "options": ["Por el Rey", "Discrecionalmente por el Gobierno mediante Real Decreto", "Por el Ministro de Justicia", "Por las Cortes Generales"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué recurso cabe contra las Leyes Orgánicas?",
+    "options": ["Recurso de casación", "Recurso de amparo", "Recurso de inconstitucionalidad", "Cuestión de confianza"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "Los Decretos-Leyes no pueden afectar a:",
+    "options": ["El ordenamiento de las instituciones básicas del Estado", "Materias fiscales", "Derecho laboral", "Normas de tráfico"],
     "correct": 0,
-    "topic": "Aplicación de las Normas"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Las leyes penales pueden aplicarse por analogía?",
-    "options": ["Sí, siempre", "Sí, si favorecen al reo", "No, nunca", "No, salvo que la ley lo autorice expresamente"],
-    "correct": 2,
-    "topic": "Aplicación de las Normas"
-  },
-  {
-    "q": "El Código Civil se publicó por Real Decreto en el año:",
-    "options": ["1978", "1889", "1812", "1931"],
+    "q": "¿Cuándo se extingue la personalidad civil?",
+    "options": ["Con la incapacitación", "Con la declaración de fallecimiento o la muerte física", "Con la ausencia legal", "Con la pérdida de la nacionalidad"],
     "correct": 1,
-    "topic": "Código Civil"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Qué se requiere para que un Tratado Internacional forme parte del ordenamiento interno?",
-    "options": ["Su firma por el Rey", "Su ratificación por las Cortes", "Su publicación oficial en España", "Su aprobación por la ONU"],
-    "correct": 2,
-    "topic": "Fuentes del Derecho"
-  },
-  {
-    "q": "La capacidad jurídica se extingue con:",
-    "options": ["La incapacitación judicial", "La mayoría de edad", "La muerte de la persona", "La pérdida de la nacionalidad"],
-    "correct": 2,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué efecto produce la inscripción de nacimiento en el Registro Civil?",
-    "options": ["Constitutivo (da la personalidad)", "Declarativo (prueba el hecho)", "Sancionador", "Fiscal"],
+    "q": "La vecindad civil se pierde:",
+    "options": ["Por residir 2 años en otra comunidad sin declarar nada", "Por perder la nacionalidad española", "Por matrimonio con extranjero", "Nunca se pierde"],
     "correct": 1,
-    "topic": "La Persona"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Puede un menor de 16 años emanciparse?",
-    "options": ["Sí, por concesión judicial", "Sí, si se casa", "No, la edad mínima es 16 años", "Sí, con permiso de los padres"],
-    "correct": 2,
-    "topic": "La Persona"
-  },
-  {
-    "q": "¿Qué tipo de sufragio se ejerce en el referéndum de reforma constitucional?",
-    "options": ["Censitario", "Universal, libre, igual, directo y secreto", "Indirecto", "Público"],
+    "q": "¿Qué se entiende por fraude de ley?",
+    "options": ["Incumplir una norma directa", "Realizar un acto al amparo de una norma persiguiendo un resultado prohibido", "Desconocer la ley aplicable", "Aplicar una ley derogada"],
     "correct": 1,
-    "topic": "Constitución"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "La vecindad civil determina:",
-    "options": ["El derecho al voto", "La sujeción al derecho civil común o al especial o foral", "La nacionalidad", "El domicilio fiscal"],
+    "q": "Las leyes penales, las excepcionales y las de ámbito temporal:",
+    "options": ["Se aplicarán a supuestos distintos de los comprendidos en ellas si hay identidad de razón", "No se aplicarán a supuestos ni en momentos distintos de los comprendidos expresamente en ellas", "Tienen efecto retroactivo siempre", "Son fuentes indirectas del derecho"],
     "correct": 1,
-    "topic": "Vecindad Civil"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿En qué fecha fue ratificada la Constitución Española por el pueblo español en referéndum?",
-    "options": ["31 de octubre de 1978", "6 de diciembre de 1978", "27 de diciembre de 1978", "29 de diciembre de 1978"],
+    "q": "¿Cuál es el domicilio de las personas jurídicas si la ley no lo fija?",
+    "options": ["Donde tengan sus inmuebles", "Donde esté establecida su representación legal o ejerzan sus principales funciones", "En la capital del Estado", "En el Registro Mercantil"],
     "correct": 1,
-    "topic": "Estructura y Fechas"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Cuántas Disposiciones Adicionales tiene la Constitución Española de 1978?",
-    "options": ["Nueve", "Una", "Cuatro", "Diez"],
-    "correct": 2,
-    "topic": "Estructura y Fechas"
-  },
-  {
-    "q": "¿Qué parte de la Constitución abarca los artículos del 10 al 55?",
-    "options": ["Título Preliminar", "Título I", "Título II", "Título III"],
-    "correct": 1,
-    "topic": "Estructura y Fechas"
-  },
-  {
-    "q": "Según el artículo 1.1, ¿cuáles son los valores superiores del ordenamiento jurídico?",
-    "options": ["La libertad, la justicia, la igualdad y la fraternidad", "La libertad, la justicia, la igualdad y el pluralismo político", "La soberanía, la independencia, la unidad y la solidaridad", "La democracia, el estado de derecho y la monarquía"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "¿En quién reside la soberanía nacional según la Constitución?",
-    "options": ["En el Rey", "En las Cortes Generales", "En el pueblo español", "En el Gobierno"],
-    "correct": 2,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "El artículo 2 de la CE fundamenta la Constitución en:",
-    "options": ["La soberanía popular", "La indisoluble unidad de la Nación española", "El estado de las autonomías", "La monarquía parlamentaria"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "¿Quién tiene el deber de conocer el castellano y el derecho a usarlo?",
-    "options": ["Todos los ciudadanos residentes en España", "Todos los españoles", "Solamente los funcionarios públicos", "Todos los españoles y extranjeros"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "¿Qué misión tienen las Fuerzas Armadas según el artículo 8 de la CE?",
-    "options": ["Garantizar la seguridad ciudadana", "Defender el ordenamiento jurídico", "Garantizar la soberanía e independencia de España", "Proteger los derechos fundamentales"],
-    "correct": 2,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "¿Qué principio NO está garantizado en el artículo 9.3 de la CE?",
-    "options": ["La jerarquía normativa", "La irretroactividad de las disposiciones favorables", "La seguridad jurídica", "La interdicción de la arbitrariedad de los poderes públicos"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "La irretroactividad garantizada en el art. 9.3 se refiere a disposiciones sancionadoras:",
-    "options": ["Favorables", "No favorables o restrictivas de derechos individuales", "De cualquier tipo", "Administrativas solamente"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "¿Según el artículo 10, qué es fundamento del orden político y la paz social?",
-    "options": ["La unidad de España", "La dignidad de la persona y los derechos inviolables que le son inherentes", "La soberanía nacional", "El respeto a la Constitución"],
-    "correct": 1,
-    "topic": "Derechos y Deberes (Título I)"
-  },
-  {
-    "q": "¿Puede un español de origen ser privado de su nacionalidad?",
-    "options": ["Sí, por sentencia judicial firme", "Sí, si comete delito de traición", "No, en ningún caso", "Solo en tiempos de guerra"],
-    "correct": 2,
-    "topic": "Capítulo I (De los españoles y extranjeros)"
-  },
-  {
-    "q": "¿A qué edad se alcanza la mayoría de edad según la Constitución?",
-    "options": ["A los 16 años", "A los 18 años", "A los 21 años", "A los 25 años"],
-    "correct": 1,
-    "topic": "Capítulo I (De los españoles y extranjeros)"
-  },
-  {
-    "q": "Respecto a la extradición, ¿qué delitos quedan excluidos expresamente?",
-    "options": ["Los delitos de terrorismo", "Los delitos políticos, no considerándose como tales los de terrorismo", "Los delitos de sangre", "Los delitos económicos"],
-    "correct": 1,
-    "topic": "Capítulo I (De los españoles y extranjeros)"
-  },
-  {
-    "q": "Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de:",
-    "options": ["Nacimiento, raza, sexo, religión u opinión", "Nacionalidad o vecindad civil", "Capacidad económica o social", "Mérito y capacidad"],
-    "correct": 0,
-    "topic": "Derechos y Libertades (Art. 14)"
-  },
-  {
-    "q": "¿En qué circunstancias se permite la pena de muerte según el texto original del art. 15 (aunque hoy esté abolida)?",
-    "options": ["Para delitos de terrorismo", "Para tiempos de guerra según leyes penales militares", "Para regicidio", "En ningún caso"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Cuál es el plazo máximo de la detención preventiva según el artículo 17?",
-    "options": ["24 horas", "48 horas", "72 horas", "7 días"],
-    "correct": 2,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "El procedimiento de 'Habeas Corpus' sirve para:",
-    "options": ["La inmediata puesta a disposición judicial de toda persona detenida ilegalmente", "Solicitar asistencia letrada", "Recurrir una sentencia firme", "Pedir el indulto"],
-    "correct": 0,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Se necesita autorización judicial para la entrada en un domicilio?",
-    "options": ["Siempre", "No, si lo autoriza la policía", "Sí, salvo consentimiento del titular o flagrante delito", "Sí, salvo estado de alarma"],
-    "correct": 2,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Qué tipo de asociaciones están prohibidas por la Constitución?",
-    "options": ["Las que no se inscriban en el registro", "Las secretas y las de carácter paramilitar", "Las políticas", "Las religiosas"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "El ejercicio del derecho de reunión pacífica y sin armas:",
-    "options": ["Necesita autorización previa siempre", "Necesita autorización si es en lugar de tránsito público", "No necesita autorización previa", "Está prohibido a los extranjeros"],
-    "correct": 2,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "Para las reuniones en lugares de tránsito público y manifestaciones se requiere:",
-    "options": ["Autorización previa", "Comunicación previa a la autoridad", "Permiso del Ayuntamiento", "Aprobación del Consejo de Ministros"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "Las asociaciones solo podrán ser disueltas o suspendidas en sus actividades:",
-    "options": ["Por resolución administrativa", "Por orden del Ministerio del Interior", "En virtud de resolución judicial motivada", "Por decisión del Gobierno"],
-    "correct": 2,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "Nadie puede ser obligado a declarar sobre:",
-    "options": ["Sus bienes patrimoniales", "Su ideología, religión o creencias", "Sus antecedentes penales", "Su estado civil"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Qué derecho NO es susceptible de recurso de amparo ante el Tribunal Constitucional?",
-    "options": ["El derecho a la vida (art. 15)", "El derecho a la propiedad privada (art. 33)", "La objeción de conciencia (art. 30)", "El derecho de asociación (art. 22)"],
-    "correct": 1,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "La enseñanza básica es:",
-    "options": ["Obligatoria y de pago", "Voluntaria y gratuita", "Obligatoria y gratuita", "Universitaria y gratuita"],
-    "correct": 2,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Qué se prohíbe expresamente en el artículo 26 respecto a la Administración Civil?",
-    "options": ["Los sindicatos", "Los Tribunales de Honor", "El derecho de huelga", "La sindicación libre"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "El derecho a la huelga se reconoce a:",
-    "options": ["Los trabajadores para la defensa de sus intereses", "Los empresarios", "Los miembros de las Fuerzas Armadas", "Los jueces y magistrados"],
-    "correct": 0,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "Los miembros de las Fuerzas o Institutos armados podrán ejercer el derecho de petición:",
-    "options": ["Colectivamente", "Solo individualmente", "A través de sus superiores", "No tienen este derecho"],
-    "correct": 1,
-    "topic": "Sección 1ª (Derechos Fundamentales)"
-  },
-  {
-    "q": "¿Qué derechos vinculan a todos los poderes públicos según el art. 53.1?",
-    "options": ["Solo los de la Sección 1ª", "Los del Capítulo II del Título I (arts. 14 a 38)", "Los principios rectores", "Solo los derechos fundamentales"],
-    "correct": 1,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "¿Qué derechos tienen la protección del procedimiento preferente y sumario ante los tribunales ordinarios?",
-    "options": ["Todos los del Título I", "Los del art. 14 y la Sección 1ª del Capítulo II", "Los de la Sección 2ª", "Los Principios Rectores"],
-    "correct": 1,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "El desarrollo de los derechos fundamentales y libertades públicas (Sección 1ª) se debe hacer mediante:",
-    "options": ["Ley Ordinaria", "Ley Orgánica", "Decreto-Ley", "Reglamento"],
-    "correct": 1,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "¿Quién es el Alto Comisionado de las Cortes Generales para la defensa de los derechos del Título I?",
-    "options": ["El Rey", "El Presidente del Gobierno", "El Defensor del Pueblo", "El Fiscal General del Estado"],
-    "correct": 2,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "¿Quién nombra al Defensor del Pueblo?",
-    "options": ["El Rey", "El Gobierno", "Las Cortes Generales", "El Consejo General del Poder Judicial"],
-    "correct": 2,
-    "topic": "Defensor del Pueblo"
-  },
-  {
-    "q": "¿Cuál es la duración del mandato del Defensor del Pueblo?",
-    "options": ["4 años", "5 años", "3 años", "6 años"],
-    "correct": 1,
-    "topic": "Defensor del Pueblo"
-  },
-  {
-    "q": "¿Puede el Defensor del Pueblo interponer recurso de inconstitucionalidad?",
-    "options": ["No", "Sí, está legitimado", "Solo a instancia de parte", "Solo recurso de amparo"],
-    "correct": 1,
-    "topic": "Defensor del Pueblo"
-  },
-  {
-    "q": "Los principios rectores de la política social y económica (Capítulo III) informarán:",
-    "options": ["Solo la práctica judicial", "La legislación positiva, la práctica judicial y la actuación de los poderes públicos", "Solo la actuación administrativa", "No tienen eficacia jurídica"],
-    "correct": 1,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "¿Qué derechos pueden ser suspendidos en caso de estado de excepción o sitio?",
-    "options": ["Todos los derechos del Título I", "Determinados derechos de los arts. 17, 18, 19, 20, 21, 28 y 37", "Solo la libertad de circulación", "Ninguno, los derechos son absolutos"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "La suspensión individual de derechos (bandas armadas o terrorismo) afecta a:",
-    "options": ["Derecho a la vida", "Duración de la detención, inviolabilidad del domicilio y secreto de las comunicaciones", "Derecho de huelga", "Derecho de asociación"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "El estado de alarma se declara por:",
-    "options": ["El Congreso", "El Gobierno, dando cuenta al Congreso", "El Rey", "El Senado"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "La duración máxima del estado de excepción es de:",
-    "options": ["15 días", "30 días", "60 días", "Indefinida"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "¿Quién autoriza la prórroga del estado de alarma?",
-    "options": ["El Gobierno", "El Congreso de los Diputados", "El Senado", "El Rey"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "El estado de sitio es declarado por la mayoría absoluta del Congreso a propuesta de:",
-    "options": ["El Rey", "Exclusiva del Gobierno", "Un grupo parlamentario", "El Senado"],
-    "correct": 1,
-    "topic": "Suspensión de Derechos"
-  },
-  {
-    "q": "¿Qué derecho de la Sección 2ª (Ciudadanos) tiene reserva de Ley (ordinaria)?",
-    "options": ["Derecho al trabajo", "Propiedad privada", "Libertad de empresa", "Todos los de la Sección 2ª"],
-    "correct": 3,
-    "topic": "Garantías de las Libertades"
-  },
-  {
-    "q": "El derecho a contraer matrimonio con plena igualdad jurídica se reconoce en el artículo:",
-    "options": ["Art. 30", "Art. 32", "Art. 35", "Art. 14"],
-    "correct": 1,
-    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
-  },
-  {
-    "q": "La fundación que persiga fines de interés general se reconoce en el artículo:",
-    "options": ["Art. 22", "Art. 34", "Art. 38", "Art. 28"],
-    "correct": 1,
-    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
-  },
-  {
-    "q": "El deber de trabajar y el derecho al trabajo se establece en el artículo:",
-    "options": ["Art. 35", "Art. 37", "Art. 28", "Art. 40"],
-    "correct": 0,
-    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
-  },
-  {
-    "q": "La libertad de empresa se reconoce en el marco de:",
-    "options": ["La economía planificada", "La economía de mercado", "El sector público", "La intervención estatal"],
-    "correct": 1,
-    "topic": "Sección 2ª (Deberes y Derechos de los Ciudadanos)"
-  },
-  {
-    "q": "Los poderes públicos garantizan la defensa de los consumidores y usuarios en el artículo:",
-    "options": ["Art. 43", "Art. 51", "Art. 49", "Art. 38"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "¿Qué artículo reconoce el derecho a la protección de la salud?",
-    "options": ["Art. 15", "Art. 43", "Art. 41", "Art. 45"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "El artículo 45 trata sobre el derecho a disfrutar de:",
-    "options": ["Una vivienda digna", "Un medio ambiente adecuado", "La cultura", "El patrimonio histórico"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "La conservación y promoción del patrimonio histórico, cultural y artístico (art. 46) corresponde a:",
-    "options": ["Las Comunidades Autónomas exclusivamente", "Los poderes públicos", "El Estado exclusivamente", "Los Ayuntamientos"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "¿Qué artículo fue reformado recientemente para referirse a las personas con discapacidad?",
-    "options": ["Art. 48", "Art. 49", "Art. 50", "Art. 51"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "La tercera edad tiene garantizada su suficiencia económica mediante:",
-    "options": ["Subsidios", "Pensiones adecuadas y periódicamente actualizadas", "Ayudas familiares", "Planes privados"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "¿Qué mayoría se necesita en las Cámaras para proponer al Defensor del Pueblo?",
-    "options": ["Mayoría absoluta", "3/5 de cada Cámara", "2/3 de cada Cámara", "Mayoría simple"],
-    "correct": 1,
-    "topic": "Defensor del Pueblo"
-  },
-  {
-    "q": "El Defensor del Pueblo da cuenta de su gestión a:",
-    "options": ["El Rey", "El Gobierno", "Las Cortes Generales", "El Tribunal Constitucional"],
-    "correct": 2,
-    "topic": "Defensor del Pueblo"
-  },
-  {
-    "q": "¿Cuál de los siguientes NO es un principio rector de la política social y económica?",
-    "options": ["Protección de la familia", "Derecho a la huelga", "Régimen público de Seguridad Social", "Derecho a una vivienda digna"],
-    "correct": 1,
-    "topic": "Capítulo III (Principios Rectores)"
-  },
-  {
-    "q": "La extradición solo se concederá en cumplimiento de tratado o ley atendiendo al principio de:",
-    "options": ["Solidaridad", "Reciprocidad", "Igualdad", "Legalidad"],
-    "correct": 1,
-    "topic": "Capítulo I (Extranjeros)"
-  },
-  {
-    "q": "¿Qué artículo establece que la capital del Estado es la villa de Madrid?",
-    "options": ["Art. 3", "Art. 4", "Art. 5", "Art. 6"],
-    "correct": 2,
-    "topic": "Título Preliminar"
-  },
-  {
-    "q": "Los partidos políticos expresan:",
-    "options": ["La unidad de la nación", "El pluralismo político", "La soberanía nacional", "El poder ejecutivo"],
-    "correct": 1,
-    "topic": "Título Preliminar"
-  },
-    {
-    "q": "¿Quién es el Jefe del Estado y símbolo de su unidad y permanencia?",
-    "options": ["El Presidente del Gobierno", "El Presidente del Congreso", "El Defensor del Pueblo", "El Rey"],
-    "correct": 3,
-    "topic": "La Corona"
-  },
-  {
-    "q": "La persona del Rey es inviolable y:",
-    "options": ["Está sujeta a responsabilidad política", "Solo responde ante el Tribunal Supremo", "Responde ante las Cortes Generales", "No está sujeta a responsabilidad"],
-    "correct": 3,
-    "topic": "La Corona"
-  },
-  {
-    "q": "¿A quién corresponde la Regencia si el Rey fuere menor de edad?",
-    "options": ["Al padre o madre del Rey y, en su defecto, al pariente mayor de edad más próximo a suceder", "Al Príncipe heredero", "A las Cortes Generales", "Al Presidente del Gobierno"],
-    "correct": 0,
-    "topic": "La Corona"
-  },
-  {
-    "q": "¿Qué tratamiento recibe el Príncipe heredero?",
-    "options": ["Majestad", "Alteza Real y Príncipe de Asturias", "Excelencia", "Alteza Serenísima"],
-    "correct": 1,
-    "topic": "La Corona"
-  },
-  {
-    "q": "Para ejercer la Regencia es preciso ser español y:",
-    "options": ["Tener más de 25 años", "Tener título nobiliario", "Ser diputado o senador", "Mayor de edad"],
-    "correct": 3,
-    "topic": "La Corona"
-  },
-  {
-    "q": "¿Quién nombra a los miembros civiles y militares de la Casa Real?",
-    "options": ["El Presidente del Gobierno", "El Ministro del Interior", "El Rey, libremente", "El Ministro de Defensa"],
-    "correct": 2,
-    "topic": "La Corona"
-  },
-  {
-    "q": "Los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por:",
-    "options": ["Los Ministros competentes", "El Presidente del Senado", "El Jefe de la Casa Real", "El Tribunal Constitucional"],
-    "correct": 0,
-    "topic": "La Corona"
-  },
-  {
-    "q": "¿Quién refrenda la propuesta y nombramiento del Presidente del Gobierno?",
-    "options": ["El Presidente del Gobierno saliente", "El Ministro de Justicia", "El Rey no necesita refrendo en este caso", "El Presidente del Congreso"],
-    "correct": 3,
-    "topic": "La Corona"
-  },
-  {
-    "q": "Las Cortes Generales están formadas por:",
-    "options": ["El Congreso y el Gobierno", "El Congreso de los Diputados y el Senado", "El Senado y las Asambleas Autonómicas", "El Congreso, el Senado y el Rey"],
-    "correct": 1,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "¿Qué circunscripción electoral se utiliza para el Congreso y el Senado?",
-    "options": ["La Comunidad Autónoma", "El Municipio", "La Provincia", "El Estado"],
-    "correct": 2,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "¿Cuántos diputados componen el Congreso según la Constitución (horquilla)?",
-    "options": ["350 fijos", "De 200 a 300", "De 400 a 500", "De 300 a 400"],
-    "correct": 3,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "¿Cuántos senadores eligen las poblaciones de Ceuta y Melilla?",
-    "options": ["1 cada una", "2 cada una", "3 cada una", "4 cada una"],
-    "correct": 1,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "¿Qué cámara ostenta la representación territorial?",
-    "options": ["El Congreso de los Diputados", "El Senado", "Ambas cámaras", "La Asamblea Legislativa Autonómica"],
-    "correct": 1,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "Los miembros de las Cortes Generales gozan de inviolabilidad por:",
-    "options": ["Cualquier acto realizado en su vida privada", "Los delitos cometidos fuera de su mandato", "Las opiniones manifestadas en el ejercicio de sus funciones", "Las deudas civiles"],
-    "correct": 2,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "¿Quién es competente en las causas contra Diputados y Senadores?",
-    "options": ["La Audiencia Nacional", "El Tribunal Superior de Justicia", "El Tribunal Constitucional", "La Sala de lo Penal del Tribunal Supremo"],
-    "correct": 3,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "Las sesiones plenarias de las Cámaras serán:",
-    "options": ["Secretas siempre", "Públicas, salvo acuerdo en contrario", "Reservadas para los miembros del Gobierno", "Públicas solo si lo pide el Rey"],
-    "correct": 1,
-    "topic": "Cortes Generales"
-  },
-  {
-    "q": "La aprobación de una Ley Orgánica requiere:",
-    "options": ["Mayoría simple del Congreso", "Mayoría absoluta del Senado", "Mayoría de 2/3 de ambas Cámaras", "Mayoría absoluta del Congreso en una votación final sobre el conjunto"],
-    "correct": 3,
-    "topic": "Elaboración de Leyes"
-  },
-  {
-    "q": "¿Qué materias regulan las Leyes Orgánicas?",
-    "options": ["Todas las leyes son orgánicas", "Derechos fundamentales (Sección 1ª Cap II Tit I), Estatutos de Autonomía y Régimen Electoral General", "Presupuestos Generales y Tratados Internacionales", "Impuestos y Hacienda"],
-    "correct": 1,
-    "topic": "Elaboración de Leyes"
-  },
-  {
-    "q": "La delegación legislativa habrá de otorgarse al Gobierno de forma:",
-    "options": ["Implícita y por tiempo indefinido", "Expresa, para materia concreta y con fijación del plazo", "Verbal en Consejo de Ministros", "General para cualquier materia"],
-    "correct": 1,
-    "topic": "Elaboración de Leyes"
-  },
-  {
-    "q": "¿Qué norma dicta el Gobierno en caso de extraordinaria y urgente necesidad?",
-    "options": ["Decreto Legislativo", "Ley de Bases", "Reglamento", "Decreto-Ley"],
-    "correct": 3,
-    "topic": "Elaboración de Leyes"
-  },
-  {
-    "q": "Los Decretos-Leyes deben ser convalidados por el Congreso en el plazo de:",
+    "q": "¿Qué plazo tiene el Congreso para convalidar o derogar un Decreto-Ley?",
     "options": ["15 días", "20 días", "30 días", "60 días"],
     "correct": 2,
-    "topic": "Elaboración de Leyes"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Qué mayoría se requiere para la aprobación de la reforma constitucional agravada (total o partes esenciales)?",
-    "options": ["3/5 de cada Cámara", "Mayoría absoluta", "Mayoría simple en referéndum", "2/3 de cada Cámara y disolución de las Cortes"],
-    "correct": 3,
-    "topic": "Reforma Constitucional"
-  },
-  {
-    "q": "¿Quién dirige la acción del Gobierno y coordina las funciones de los demás miembros?",
-    "options": ["El Rey", "El Presidente del Gobierno", "El Vicepresidente", "El Ministro de la Presidencia"],
-    "correct": 1,
-    "topic": "Gobierno y Administración"
-  },
-  {
-    "q": "¿Ante quién responde políticamente el Gobierno de su gestión?",
-    "options": ["Ante el Rey", "Ante el Senado", "Ante el Congreso de los Diputados (solidariamente)", "Ante el Tribunal Constitucional"],
+    "q": "La iniciativa popular para presentar proposiciones de ley requiere:",
+    "options": ["50.000 firmas", "150.000 firmas", "500.000 firmas acreditadas", "Un millón de firmas"],
     "correct": 2,
-    "topic": "Gobierno y Administración"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Qué mayoría necesita el candidato a Presidente del Gobierno en la primera votación de investidura?",
-    "options": ["Mayoría absoluta", "Mayoría simple", "Mayoría de 3/5", "Mayoría de 2/3"],
+    "q": "¿Puede un español de origen perder la nacionalidad?",
+    "options": ["Sí, si es sancionado penalmente", "No puede ser privado de ella, pero puede perderla voluntariamente", "Sí, si reside en el extranjero", "No, bajo ninguna circunstancia"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué tipo de norma aprueba los Presupuestos Generales del Estado?",
+    "options": ["Ley Orgánica", "Ley Ordinaria", "Decreto-Ley", "Reglamento"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La emancipación habilita al menor para:",
+    "options": ["Regir su persona y bienes como si fuera mayor, con las limitaciones legales", "Votar en las elecciones generales", "Ser juez o magistrado", "Ignorar la patria potestad sin restricciones"],
     "correct": 0,
-    "topic": "Gobierno y Administración"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "Si en la primera votación de investidura no se alcanza la mayoría requerida, se procederá a nueva votación:",
-    "options": ["24 horas después", "Una semana después", "Al mes siguiente", "48 horas después"],
-    "correct": 3,
-    "topic": "Gobierno y Administración"
-  },
-  {
-    "q": "¿Quién nombra a los Ministros?",
-    "options": ["El Presidente del Gobierno", "El Congreso de los Diputados", "El Rey, a propuesta del Presidente del Gobierno", "El Senado"],
+    "q": "¿Qué fuente del derecho complementa el ordenamiento jurídico?",
+    "options": ["La costumbre", "Los principios generales", "La jurisprudencia", "La doctrina científica"],
     "correct": 2,
-    "topic": "Gobierno y Administración"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "La responsabilidad criminal del Presidente y los demás miembros del Gobierno será exigible ante:",
-    "options": ["La Audiencia Nacional", "El Tribunal Constitucional", "La Sala de lo Penal del Tribunal Supremo", "El Tribunal de Cuentas"],
-    "correct": 2,
-    "topic": "Gobierno y Administración"
-  },
-  {
-    "q": "Las Fuerzas y Cuerpos de Seguridad, bajo la dependencia del Gobierno, tendrán como misión:",
-    "options": ["Defender la integridad territorial", "Proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana", "Juzgar y ejecutar lo juzgado", "Recaudar tributos"],
-    "correct": 1,
-    "topic": "Gobierno y Administración"
-  },
-  {
-    "q": "El Consejo de Estado es:",
-    "options": ["El órgano de gobierno de los jueces", "El tribunal de cuentas del Reino", "El órgano legislativo superior", "El supremo órgano consultivo del Gobierno"],
-    "correct": 3,
-    "topic": "Gobierno y Administración"
-  },
-  {
-    "q": "¿Quién puede plantear la cuestión de confianza?",
-    "options": ["El Rey", "Un grupo parlamentario", "El Presidente del Gobierno, previa deliberación del Consejo de Ministros", "El Senado"],
-    "correct": 2,
-    "topic": "Relaciones Gobierno-Cortes"
-  },
-  {
-    "q": "La moción de censura debe ser propuesta al menos por:",
-    "options": ["La mayoría absoluta de los diputados", "La décima parte de los diputados", "Un grupo parlamentario de 5 miembros", "El Senado"],
-    "correct": 1,
-    "topic": "Relaciones Gobierno-Cortes"
-  },
-  {
-    "q": "¿Qué requisito es indispensable para presentar una moción de censura (constructiva)?",
-    "options": ["Que incluya un candidato a la Presidencia del Gobierno", "Que se apruebe por mayoría simple", "Que la proponga el Rey", "Que dimita el Presidente"],
+    "q": "Las normas se interpretarán según:",
+    "options": ["El sentido propio de sus palabras, en relación con el contexto, los antecedentes y la realidad social", "Exclusivamente el tenor literal", "La voluntad subjetiva del juez", "La opinión pública"],
     "correct": 0,
-    "topic": "Relaciones Gobierno-Cortes"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Quién declara el estado de alarma?",
-    "options": ["El Congreso", "El Rey", "El Gobierno mediante decreto acordado en Consejo de Ministros", "El Ministro del Interior"],
-    "correct": 2,
-    "topic": "Relaciones Gobierno-Cortes"
-  },
-  {
-    "q": "El estado de sitio será declarado por:",
-    "options": ["El Gobierno", "El Rey a propuesta de las Cortes", "El Ministro de Defensa", "La mayoría absoluta del Congreso a propuesta exclusiva del Gobierno"],
-    "correct": 3,
-    "topic": "Relaciones Gobierno-Cortes"
-  },
-  {
-    "q": "La justicia emana del pueblo y se administra en nombre de:",
-    "options": ["El Rey", "La Ley", "El Gobierno", "La Constitución"],
+    "q": "¿Qué plazo de residencia se pide al nacido en territorio español para la nacionalidad?",
+    "options": ["1 año", "2 años", "5 años", "Ninguno, es automático"],
     "correct": 0,
-    "topic": "Poder Judicial"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Cuál es el órgano de gobierno del Poder Judicial?",
-    "options": ["El Tribunal Supremo", "El Ministerio de Justicia", "El Consejo General del Poder Judicial", "La Audiencia Nacional"],
-    "correct": 2,
-    "topic": "Poder Judicial"
-  },
-  {
-    "q": "¿Cuántos miembros (vocales) componen el Consejo General del Poder Judicial (sin contar al Presidente)?",
-    "options": ["12", "21", "25", "20"],
-    "correct": 3,
-    "topic": "Poder Judicial"
-  },
-  {
-    "q": "¿Cuál es la misión del Ministerio Fiscal?",
-    "options": ["Juzgar a los delincuentes", "Promover la acción de la justicia en defensa de la legalidad y del interés público", "Defender al Gobierno", "Crear las leyes"],
+    "q": "El derecho subjetivo es:",
+    "options": ["El conjunto de normas", "La facultad reconocida a una persona para exigir una conducta a otra", "El derecho penal", "El derecho administrativo"],
     "correct": 1,
-    "topic": "Poder Judicial"
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿A qué edad se puede solicitar la emancipación por concesión de los padres?",
+    "options": ["A los 14 años", "A los 15 años", "A los 16 años", "A los 17 años"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La Ley Orgánica se aprueba por:",
+    "options": ["Mayoría simple", "Mayoría absoluta del Congreso en votación final", "Mayoría cualificada del Senado", "Unanimidad"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué ocurre si una disposición administrativa contradice una Ley?",
+    "options": ["Prevalece la administrativa si es posterior", "Es nula de pleno derecho", "Se aplica la más favorable", "Depende del juez"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "El Código Civil español fue publicado en el año:",
+    "options": ["1812", "1978", "1889", "1995"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué es la 'vacatio legis'?",
+    "options": ["El periodo en que la ley está vigente", "El periodo entre la publicación y la entrada en vigor", "La derogación de la ley", "La nulidad de la ley"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La nacionalidad por opción caduca a los:",
+    "options": ["18 años", "20 años (o 2 años tras la emancipación)", "21 años", "25 años"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Quién ejerce la iniciativa legislativa en las Comunidades Autónomas?",
+    "options": ["El Gobierno de la Nación", "Sus Asambleas Legislativas", "El Senado", "Los Ayuntamientos"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La conmoriencia presume:",
+    "options": ["Que ha muerto primero el más débil", "Que han muerto al mismo tiempo y no hay transmisión de derechos", "Que ha muerto primero el de mayor edad", "Que ha muerto primero el de menor edad"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué plazo de ausencia sin noticias es necesario para la declaración de fallecimiento genérica?",
+    "options": ["5 años", "10 años", "15 años", "20 años"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La equidad:",
+    "options": ["Es fuente directa del derecho", "Habrá de ponderarse en la aplicación de las normas", "Sustituye a la ley", "Es contraria al derecho"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué tipo de leyes son las Leyes de Armonización (art. 150.3 CE)?",
+    "options": ["Leyes Orgánicas", "Leyes Ordinarias", "Decretos-Leyes", "Reglamentos"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La delegación legislativa para refundir textos legales se hace mediante:",
+    "options": ["Ley de Bases", "Ley Ordinaria", "Decreto-Ley", "Reglamento"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La renuncia a los derechos reconocidos por las leyes:",
+    "options": ["Es válida siempre", "Es válida si no contraría el interés público ni perjudica a terceros", "Nunca es válida", "Solo es válida en derecho penal"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué plazo de residencia se pide para la nacionalidad a los sefardíes originarios de España?",
+    "options": ["1 año", "2 años", "5 años", "10 años"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La inscripción del nacimiento da fe del:",
+    "options": ["Hecho, fecha, hora y lugar, identidad, sexo y filiación", "Solo del nombre", "Solo de la nacionalidad", "Domicilio"],
+    "correct": 0,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué es el Derecho Adjetivo?",
+    "options": ["El derecho de fondo (sustantivo)", "El derecho procesal o de forma", "El derecho natural", "El derecho subjetivo"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La costumbre 'extra legem' o 'praeter legem':",
+    "options": ["Regula situaciones no contempladas por la ley", "Va en contra de la ley", "Interpreta la ley", "Es nula"],
+    "correct": 0,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué carácter tienen las normas del Título Preliminar del Código Civil?",
+    "options": ["Privado", "Público", "Cuasi-constitucional", "Reglamentario"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "El derecho a la nacionalidad española está regulado fundamentalmente en:",
+    "options": ["El Código Penal", "El Código Civil", "La Ley de Enjuiciamiento Civil", "El Código de Comercio"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué sucede con la nacionalidad de los hijos bajo patria potestad si los padres la pierden?",
+    "options": ["La pierden automáticamente", "No les afecta", "La pierden si residen fuera", "Pasan a ser apátridas"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La vecindad civil se adquiere por residencia de 10 años:",
+    "options": ["Si hay declaración expresa de quererla", "Automáticamente, si no hay declaración en contrario", "Solo con autorización judicial", "No se adquiere por 10 años"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La sanción de las leyes por el Rey es un acto:",
+    "options": ["Discrecional", "Debido y obligatorio", "Político", "Judicial"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "Los Tratados Internacionales forman parte del ordenamiento interno:",
+    "options": ["Desde su firma", "Una vez publicados oficialmente en España", "Cuando lo aprueba el Gobierno", "Nunca"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué leyes aprueban los Estatutos de Autonomía?",
+    "options": ["Leyes de Bases", "Leyes Marco", "Leyes Orgánicas", "Leyes de Armonización"],
+    "correct": 2,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "El menor emancipado puede comparecer en juicio:",
+    "options": ["Por sí solo", "Solo con sus padres", "Solo con abogado del Estado", "No puede"],
+    "correct": 0,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "¿Qué tipo de personas jurídicas son las Fundaciones?",
+    "options": ["De base asociativa", "De base patrimonial (conjunto de bienes)", "Corporaciones públicas", "Sociedades anónimas"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
+  },
+  {
+    "q": "La analogía no se puede aplicar a:",
+    "options": ["Leyes civiles", "Leyes penales, excepcionales y de ámbito temporal", "Leyes administrativas", "Leyes mercantiles"],
+    "correct": 1,
+    "topic": "Tema 1: El derecho"
   },
   {
     "q": "¿Quién nombra al Fiscal General del Estado?",
-    "options": ["El Consejo General del Poder Judicial", "El Congreso de los Diputados", "El Ministro de Justicia directamente", "El Rey, a propuesta del Gobierno, oído el CGPJ"],
-    "correct": 3,
-    "topic": "Poder Judicial"
-  },
-  {
-    "q": "¿Qué se prohíbe expresamente en el artículo 117.6 respecto a los Tribunales?",
-    "options": ["Los Tribunales consuetudinarios", "Los Tribunales de excepción", "Los Tribunales militares", "Los Tribunales superiores de justicia"],
-    "correct": 1,
-    "topic": "Poder Judicial"
-  },
-  {
-    "q": "El Estado se organiza territorialmente en:",
-    "options": ["Municipios, comarcas y regiones", "Municipios, provincias y las Comunidades Autónomas que se constituyan", "Estados federales", "Provincias y regiones"],
-    "correct": 1,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "La Constitución fundamenta la organización territorial en el principio de:",
-    "options": ["Independencia", "Soberanía compartida", "Solidaridad", "Centralismo"],
+    "options": ["El CGPJ", "El Gobierno", "El Rey a propuesta del Gobierno, oído el CGPJ", "El Congreso"],
     "correct": 2,
-    "topic": "Organización Territorial"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "¿Quién ostenta el gobierno y la administración del municipio?",
-    "options": ["El Alcalde exclusivamente", "La Diputación Provincial", "El Delegado del Gobierno", "El Ayuntamiento, integrado por el Alcalde y los Concejales"],
-    "correct": 3,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "¿Qué vía de acceso a la autonomía se conoce como 'vía rápida' o especial (art. 151)?",
-    "options": ["La que requiere referéndum de ratificación de la iniciativa", "La que decide el Gobierno", "La que decide el Rey", "La de los territorios históricos solamente"],
+    "q": "La nacionalidad por posesión de estado requiere:",
+    "options": ["10 años de posesión y utilización continuada con buena fe", "5 años de residencia", "Ser hijo de español", "Carta de naturaleza"],
     "correct": 0,
-    "topic": "Organización Territorial"
+    "topic": "Tema 1: El derecho"
   },
   {
-    "q": "El control de la constitucionalidad de las disposiciones normativas con fuerza de ley de las CCAA corresponde a:",
-    "options": ["El Gobierno", "El Tribunal de Cuentas", "El Tribunal Constitucional", "La jurisdicción contencioso-administrativa"],
-    "correct": 2,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "¿Quién nombra al Delegado del Gobierno en las Comunidades Autónomas?",
-    "options": ["El Presidente de la Comunidad Autónoma", "El Rey", "El Gobierno", "El Ministro del Interior"],
-    "correct": 2,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "Según el art. 145, la federación de Comunidades Autónomas:",
-    "options": ["Está permitida con autorización de las Cortes", "Se admitirá en casos históricos", "En ningún caso se admitirá", "Requiere referéndum"],
-    "correct": 2,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "¿Cuántos miembros componen el Tribunal Constitucional?",
-    "options": ["9", "10", "12", "15"],
-    "correct": 2,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "¿Quién propone a los 2 miembros del Tribunal Constitucional designados por el Gobierno?",
-    "options": ["El propio Gobierno", "El Congreso", "El Senado", "El CGPJ"],
-    "correct": 0,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "¿Cuál es la duración del mandato de los miembros del Tribunal Constitucional?",
-    "options": ["5 años", "9 años", "Vitalicia", "4 años"],
+    "q": "El domicilio de los diplomáticos residentes en el extranjero por razón de su cargo es:",
+    "options": ["El de la embajada", "El último que hubieren tenido en territorio español", "Madrid", "No tienen domicilio en España"],
     "correct": 1,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "¿Quién está legitimado para interponer recurso de inconstitucionalidad?",
-    "options": ["Cualquier ciudadano", "El Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores, órganos ejecutivos y asambleas de CCAA", "Los Jueces y Magistrados", "El Rey"],
-    "correct": 1,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "El recurso de amparo protege contra la violación de:",
-    "options": ["Cualquier ley", "Los derechos y libertades de los arts. 14 a 29 y 30.2", "Los principios rectores", "Las normas administrativas"],
-    "correct": 1,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "¿Quién preside el Tribunal Constitucional?",
-    "options": ["El Presidente del Tribunal Supremo", "El miembro de mayor edad", "El Ministro de Justicia", "Nombrado por el Rey a propuesta del mismo Tribunal en pleno"],
-    "correct": 3,
-    "topic": "Tribunal Constitucional"
-  },
-  {
-    "q": "¿Qué mayoría se requiere para la reforma constitucional ordinaria (art. 167)?",
-    "options": ["Mayoría absoluta", "Mayoría de 3/5 de cada Cámara", "Mayoría de 2/3", "Unanimidad"],
-    "correct": 1,
-    "topic": "Reforma Constitucional"
-  },
-  {
-    "q": "La reforma total de la Constitución o la que afecte al Título Preliminar, Sección 1ª Cap II Tít I o Título II requiere:",
-    "options": ["Procedimiento agravado (art. 168)", "Procedimiento ordinario", "Decreto-Ley", "Solo referéndum"],
-    "correct": 0,
-    "topic": "Reforma Constitucional"
-  },
-  {
-    "q": "En el procedimiento agravado de reforma (art. 168) es necesario:",
-    "options": ["Que lo apruebe el Rey", "Que lo pida el pueblo", "Que no haya referéndum", "Disolución inmediata de las Cortes"],
-    "correct": 3,
-    "topic": "Reforma Constitucional"
-  },
-  {
-    "q": "¿Se puede iniciar la reforma constitucional en tiempo de guerra?",
-    "options": ["Sí, si es urgente", "No", "Sí, con mayoría de 2/3", "Solo la parcial"],
-    "correct": 1,
-    "topic": "Reforma Constitucional"
-  },
-  {
-    "q": "El Fondo de Compensación Interterritorial (art. 158) tiene como fin:",
-    "options": ["Pagar la deuda pública", "Corregir desequilibrios económicos interterritoriales y hacer efectivo el principio de solidaridad", "Financiar a los partidos políticos", "Pagar a la Corona"],
-    "correct": 1,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "¿Qué competencia es exclusiva del Estado según el art. 149?",
-    "options": ["Sanidad e higiene", "Asistencia social", "Urbanismo", "Relaciones Internacionales"],
-    "correct": 3,
-    "topic": "Organización Territorial"
-  },
-  {
-    "q": "¿Qué tratado instituyó la ciudadanía europea (ciudadanía de la Unión)?",
-    "options": ["El Acta Única Europea", "El Tratado de Ámsterdam", "El Tratado de Lisboa", "El Tratado de Maastricht (TUE)"],
-    "correct": 3,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "¿En qué ciudad tiene su sede oficial el Parlamento Europeo para las sesiones plenarias mensuales?",
-    "options": ["Estrasburgo", "Bruselas", "Luxemburgo", "Frankfurt"],
-    "correct": 0,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Tratado de Roma de 1957 constituyó:",
-    "options": ["La CECA", "La CEE y el EURATOM", "La Unión Europea", "El Consejo de Europa"],
-    "correct": 1,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "¿Quién ostenta el monopolio de la iniciativa legislativa en el procedimiento legislativo ordinario de la UE?",
-    "options": ["El Parlamento Europeo", "El Consejo de la UE", "La Comisión Europea", "El Consejo Europeo"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Cuál es la duración del mandato de los miembros de la Comisión Europea?",
-    "options": ["4 años", "5 años", "2 años y medio", "6 años"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Reglamento europeo se caracteriza por:",
-    "options": ["Ser obligatorio solo en cuanto al resultado a conseguir", "Tener alcance general, ser obligatorio en todos sus elementos y directamente aplicable", "No ser vinculante", "Tener alcance individual y ser obligatorio para sus destinatarios"],
-    "correct": 1,
-    "topic": "Derecho Derivado"
-  },
-  {
-    "q": "¿Qué institución representa los intereses de los Estados miembros a nivel ministerial?",
-    "options": ["El Consejo Europeo", "La Comisión Europea", "El Parlamento Europeo", "El Consejo de la Unión Europea (o Consejo de Ministros)"],
-    "correct": 3,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Quién nombra al Alto Representante para Asuntos Exteriores y Política de Seguridad?",
-    "options": ["El Consejo Europeo por mayoría cualificada, con la aprobación del Presidente de la Comisión", "El Parlamento Europeo directamente", "Los ciudadanos mediante sufragio", "El Consejo de Ministros de Asuntos Exteriores"],
-    "correct": 0,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "La Directiva europea:",
-    "options": ["Es directamente aplicable sin necesidad de transposición", "Obliga al Estado miembro en cuanto al resultado, dejando libertad de forma y medios", "Es obligatoria en todos sus elementos para todos los ciudadanos", "No tiene carácter vinculante"],
-    "correct": 1,
-    "topic": "Derecho Derivado"
-  },
-  {
-    "q": "¿Cuál es la sede del Tribunal de Justicia de la Unión Europea (TJUE)?",
-    "options": ["La Haya", "Estrasburgo", "Luxemburgo", "Bruselas"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Consejo Europeo está compuesto por:",
-    "options": ["Los Ministros de Asuntos Exteriores de los Estados miembros", "Los Jefes de Estado o de Gobierno de los Estados miembros, así como por su Presidente y el Presidente de la Comisión", "Un comisario por cada Estado miembro", "Los eurodiputados elegidos por sufragio universal"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Qué tratado introdujo la 'personalidad jurídica propia' de la Unión Europea?",
-    "options": ["Tratado de Niza", "Tratado de Ámsterdam", "Tratado de Lisboa", "Tratado de Maastricht"],
-    "correct": 2,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "¿Qué institución se encarga de la política monetaria de la zona euro?",
-    "options": ["El Banco Europeo de Inversiones", "El Tribunal de Cuentas", "El Banco Central Europeo", "El Eurogrupo"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Dónde tiene su sede Europol?",
-    "options": ["Lyon", "La Haya", "Bruselas", "Budapest"],
-    "correct": 1,
-    "topic": "Cooperación Policial"
-  },
-  {
-    "q": "El Defensor del Pueblo Europeo es elegido por:",
-    "options": ["El Consejo Europeo", "La Comisión Europea", "El Parlamento Europeo", "El Tribunal de Justicia"],
-    "correct": 2,
-    "topic": "Instituciones Secundarias"
-  },
-  {
-    "q": "¿Qué mayoría se requiere generalmente en el Consejo de la UE para la toma de decisiones (procedimiento ordinario)?",
-    "options": ["Unanimidad", "Mayoría simple", "Mayoría cualificada (doble mayoría)", "Consenso"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Comité de las Regiones es:",
-    "options": ["Un órgano con poder legislativo", "Un órgano consultivo que representa a los entes regionales y locales", "Una formación del Consejo", "Una agencia de cooperación policial"],
-    "correct": 1,
-    "topic": "Instituciones Secundarias"
-  },
-  {
-    "q": "¿Qué tratado suprimió los controles en las fronteras interiores (incorporando el acervo Schengen)?",
-    "options": ["Tratado de Roma", "Tratado de Ámsterdam", "Acta Única Europea", "Tratado de París"],
-    "correct": 1,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "¿Cuál es la función principal del Tribunal de Cuentas Europeo?",
-    "options": ["Juzgar a los funcionarios de la UE", "Controlar la legalidad y regularidad de los ingresos y gastos de la UE (fiscalización)", "Dirigir la política económica", "Sancionar a los Estados miembros"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Qué país NO forma parte del Espacio Schengen aunque es miembro de la UE (a fecha de redacción del temario/status quo general)?",
-    "options": ["Francia", "Alemania", "Irlanda", "Italia"],
-    "correct": 2,
-    "topic": "Espacio Schengen"
-  },
-  {
-    "q": "La Orden Europea de Detención y Entrega (OEDE) sustituye al tradicional procedimiento de:",
-    "options": ["Asilo", "Extradición entre Estados miembros", "Expulsión administrativa", "Deportación"],
-    "correct": 1,
-    "topic": "Cooperación Judicial"
-  },
-  {
-    "q": "¿Cuál es el plazo máximo para que el Estado de ejecución resuelva sobre una OEDE si el detenido NO consiente la entrega?",
-    "options": ["10 días", "30 días", "60 días", "90 días"],
-    "correct": 2,
-    "topic": "Cooperación Judicial"
-  },
-  {
-    "q": "Eurojust tiene como misión principal:",
-    "options": ["La cooperación policial operativa", "Apoyar y reforzar la coordinación y cooperación entre las autoridades nacionales encargadas de investigar y perseguir la delincuencia grave (cooperación judicial)", "La formación de policías", "El control de fronteras exteriores"],
-    "correct": 1,
-    "topic": "Cooperación Judicial"
-  },
-  {
-    "q": "¿Quién preside el Consejo de Asuntos Exteriores?",
-    "options": ["El Ministro del país que ostenta la presidencia rotatoria", "El Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad", "El Presidente de la Comisión", "El Presidente del Consejo Europeo"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Cuál es la sede de CEPOL (Agencia de la UE para la Formación Policial)?",
-    "options": ["Bramshill", "Budapest", "La Haya", "Lyon"],
-    "correct": 1,
-    "topic": "Cooperación Policial"
-  },
-  {
-    "q": "En el marco de Schengen, la 'vigilancia transfronteriza' permite a agentes de un Estado continuar una vigilancia en otro Estado. ¿Cuándo debe cesar si no se obtiene autorización previa (urgencia)?",
-    "options": ["A las 2 horas", "A las 12 horas", "A las 24 horas", "A las 5 horas"],
-    "correct": 3,
-    "topic": "Cooperación Policial"
-  },
-  {
-    "q": "El Comité Económico y Social Europeo (CESE) representa a:",
-    "options": ["Los Gobiernos regionales", "La sociedad civil organizada (empresarios, trabajadores y otros grupos de interés)", "Los Parlamentos nacionales", "Los bancos centrales nacionales"],
-    "correct": 1,
-    "topic": "Instituciones Secundarias"
-  },
-  {
-    "q": "¿Qué institución aprueba, junto con el Consejo, el presupuesto anual de la UE?",
-    "options": ["La Comisión Europea", "El Tribunal de Cuentas", "El Parlamento Europeo", "El Banco Central Europeo"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "Los Dictámenes y Recomendaciones en la UE:",
-    "options": ["Son vinculantes para los Estados", "Son vinculantes para los particulares", "Tienen efecto directo", "No son vinculantes"],
-    "correct": 3,
-    "topic": "Derecho Derivado"
-  },
-  {
-    "q": "¿Qué artículo del TUE regula la retirada de un Estado miembro de la Unión?",
-    "options": ["Artículo 7", "Artículo 42", "Artículo 50", "Artículo 49"],
-    "correct": 2,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "¿Cuál es la duración del mandato del Presidente del Consejo Europeo?",
-    "options": ["2 años y medio, renovable una vez", "5 años", "4 años", "6 meses (rotatorio)"],
-    "correct": 0,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El principio de subsidiariedad implica que la UE interviene:",
-    "options": ["Siempre que quiera", "Solo en sus competencias exclusivas", "Solo si los objetivos no pueden ser alcanzados de manera suficiente por los Estados miembros", "Cuando lo autorice la ONU"],
-    "correct": 2,
-    "topic": "Principios Jurídicos"
-  },
-  {
-    "q": "¿Cuántos jueces componen el Tribunal General (Tribunal de Primera Instancia) de la UE?",
-    "options": ["Uno por Estado miembro", "Dos por Estado miembro", "27 en total", "15 en total"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "La iniciativa ciudadana europea requiere un mínimo de firmas de:",
-    "options": ["500.000 ciudadanos", "Un millón de ciudadanos de un número significativo de Estados miembros", "Tres millones de ciudadanos", "El 10% de la población de la UE"],
-    "correct": 1,
-    "topic": "Participación"
-  },
-  {
-    "q": "¿Qué institución tiene poder para plantear una moción de censura contra la Comisión?",
-    "options": ["El Consejo Europeo", "El Consejo de la UE", "El Parlamento Europeo", "El Tribunal de Justicia"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Cuál de los siguientes países NO es miembro de la UE pero SÍ del espacio Schengen?",
-    "options": ["Irlanda", "Noruega", "Chipre", "Bulgaria"],
-    "correct": 1,
-    "topic": "Espacio Schengen"
-  },
-  {
-    "q": "La 'persecución transfronteriza' en caliente por vía terrestre está permitida en Schengen para:",
-    "options": ["Cualquier infracción administrativa", "Delitos flagrantes de cierta gravedad o evasión de detenidos", "Solo delitos de terrorismo", "Control de documentación"],
-    "correct": 1,
-    "topic": "Cooperación Policial"
-  },
-  {
-    "q": "El Sistema de Información Schengen (SIS) es:",
-    "options": ["Una base de datos para el control de fronteras y cooperación policial", "Un sistema de satélites", "Una unidad de intervención especial", "Un tribunal de arbitraje"],
-    "correct": 0,
-    "topic": "Espacio Schengen"
-  },
-  {
-    "q": "¿Cuál es la función principal de FRONTEX (Agencia Europea de la Guardia de Fronteras y Costas)?",
-    "options": ["Emitir visados", "Juzgar delitos transfronterizos", "Gestionar la cooperación operativa en las fronteras exteriores de la UE", "Vigilar las fronteras interiores"],
-    "correct": 2,
-    "topic": "Cooperación Policial"
-  },
-  {
-    "q": "La Carta de los Derechos Fundamentales de la Unión Europea adquirió el mismo valor jurídico que los Tratados con:",
-    "options": ["El Tratado de Niza", "El Tratado de Maastricht", "El Tratado de Lisboa", "No tiene valor jurídico vinculante"],
-    "correct": 2,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "El Tribunal de Justicia de la Unión Europea (TJUE) garantiza:",
-    "options": ["El respeto de los derechos humanos según el Convenio de Roma", "El cumplimiento de la legislación de la UE y la interpretación uniforme del derecho comunitario", "La estabilidad de precios", "La seguridad exterior"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Quién compone el Eurogrupo?",
-    "options": ["Los Jefes de Estado de la zona euro", "Los Ministros de Economía y Finanzas de los Estados de la zona euro", "Todos los Ministros de Economía de la UE", "Los gobernadores de los bancos centrales"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Defensor del Pueblo Europeo investiga reclamaciones relativas a:",
-    "options": ["Mala administración por parte de las instituciones y organismos de la UE", "Violaciones de derechos humanos por los Estados miembros", "Conflictos entre empresas privadas", "Delitos penales de funcionarios"],
-    "correct": 0,
-    "topic": "Instituciones Secundarias"
-  },
-  {
-    "q": "¿Qué tratado creó la Comunidad Europea del Carbón y del Acero (CECA)?",
-    "options": ["Tratado de Roma", "Tratado de Bruselas", "Tratado de París (1951)", "Tratado de Londres"],
-    "correct": 2,
-    "topic": "Historia y Tratados"
-  },
-  {
-    "q": "La sede de la Comisión Europea se encuentra principalmente en:",
-    "options": ["Estrasburgo", "Luxemburgo", "Frankfurt", "Bruselas"],
-    "correct": 3,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Qué es SIRENE en el ámbito de Schengen?",
-    "options": ["Una unidad de policía marítima", "La infraestructura de solicitud de información suplementaria a la entrada nacional del SIS", "Un sistema de alerta de emergencias", "La base de datos de huellas dactilares"],
-    "correct": 1,
-    "topic": "Espacio Schengen"
-  },
-  {
-    "q": "Los actos legislativos de la UE se publican en:",
-    "options": ["El BOE", "El Diario Oficial de la Unión Europea (DOUE)", "El Boletín de las Cortes Generales", "La Gaceta Europea"],
-    "correct": 1,
-    "topic": "Derecho Derivado"
-  },
-  {
-    "q": "¿Qué principio establece que el Derecho de la UE prevalece sobre el Derecho nacional de los Estados miembros?",
-    "options": ["Principio de subsidiariedad", "Principio de proporcionalidad", "Principio de primacía", "Principio de atribución"],
-    "correct": 2,
-    "topic": "Principios Jurídicos"
-  },
-  {
-    "q": "¿Cuál es la mayoría necesaria en el Parlamento Europeo para aprobar una moción de censura a la Comisión?",
-    "options": ["Mayoría simple", "Mayoría absoluta", "Doble mayoría de 2/3 de los votos emitidos y mayoría de los miembros que lo componen", "Unanimidad"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Qué institución tiene la función de definir las orientaciones y prioridades políticas generales de la Unión?",
-    "options": ["La Comisión Europea", "El Consejo Europeo", "El Parlamento Europeo", "El Tribunal de Justicia"],
-    "correct": 1,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "En el Consejo de la UE, la Presidencia es:",
-    "options": ["Permanente por 5 años", "Elegida por sufragio", "Rotatoria por turnos de 6 meses entre los Estados miembros (salvo Asuntos Exteriores)", "Ocupada siempre por Alemania o Francia"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Qué órgano es competente para autorizar una 'entrega vigilada' de droga que atraviese varios países europeos?",
-    "options": ["Europol", "El Tribunal de Cuentas", "Eurojust (o las autoridades nacionales coordinadas por él)", "La Comisión Europea"],
-    "correct": 2,
-    "topic": "Cooperación Judicial"
-  },
-  {
-    "q": "Los miembros del Tribunal de Cuentas son nombrados por:",
-    "options": ["El Parlamento Europeo", "La Comisión", "El Consejo, previa consulta al Parlamento", "El Consejo Europeo"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "¿Cuál es el 'número de emergencia' único europeo?",
-    "options": ["091", "112", "911", "123"],
-    "correct": 1,
-    "topic": "Ciudadanía"
-  },
-  {
-    "q": "La sede del Banco Central Europeo está en:",
-    "options": ["Londres", "París", "Frankfurt", "Zúrich"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "El Convenio Europeo de Derechos Humanos (CEDH) está vinculado a:",
-    "options": ["La Unión Europea", "El Consejo de Europa (organización distinta a la UE)", "La OTAN", "La ONU"],
-    "correct": 1,
-    "topic": "Derechos Humanos"
-  },
-  {
-    "q": "En caso de que el detenido consienta su entrega en una OEDE, la decisión debe tomarse en:",
-    "options": ["10 días", "30 días", "60 días", "90 días"],
-    "correct": 0,
-    "topic": "Cooperación Judicial"
-  },
-  {
-    "q": "¿Qué fondo estructural tiene como objetivo reducir las diferencias de desarrollo entre las regiones de la UE?",
-    "options": ["Fondo Social Europeo", "FEDER (Fondo Europeo de Desarrollo Regional)", "Fondo de Cohesión", "FEOGA"],
-    "correct": 1,
-    "topic": "Políticas UE"
-  },
-  {
-    "q": "¿Quién ejerce el control político sobre la Comisión Europea?",
-    "options": ["El Consejo de la UE", "El Tribunal de Justicia", "El Parlamento Europeo", "El Defensor del Pueblo"],
-    "correct": 2,
-    "topic": "Instituciones"
-  },
-  {
-    "q": "La 'cooperación reforzada' permite:",
-    "options": ["Que todos los países avancen a la misma velocidad", "Que un grupo de al menos 9 Estados avance en una integración mayor sin esperar a los demás", "Que la UE tenga ejército propio", "Que se expulse a un miembro"],
-    "correct": 1,
-    "topic": "Integración Diferenciada"
+    "topic": "Tema 1: El derecho"
   },
   {
     "q": "¿Qué tratado supuso la creación oficial de la Unión Europea y la introducción de la ciudadanía europea?",
