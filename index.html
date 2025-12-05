@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Oposiciones CNP - Por Temas</title>
+    <title>Test Oposiciones CNP - Opciones Aleatorias</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -302,10 +302,7 @@
 
             let steps = [15, 20, 30, 50];
             steps = steps.filter(s => s <= total);
-            // Always ensure "All" or max available is an option if steps are empty or specific needs
-            if (currentMode === 'temas' && total > 0 && !steps.includes(20) && total >= 20) {
-                 // Forcing 20 if available as requested
-            }
+            
             if (steps.length === 0 || steps[steps.length-1] !== total) steps.push(total);
             
             // Deduplicate and sort
@@ -355,6 +352,10 @@
             const list = document.getElementById('questions-list');
             list.innerHTML = '';
             currentQuestions.forEach((q, index) => {
+                // MODIFICACIÓN: Crear opciones con índice original y desordenarlas
+                const indexedOptions = q.options.map((opt, originalIdx) => ({opt, originalIdx}));
+                const shuffledOptions = indexedOptions.sort(() => Math.random() - 0.5);
+
                 const qEl = document.createElement('div');
                 qEl.className = 'bg-white p-6 rounded-xl shadow-sm border border-slate-200 mx-4';
                 qEl.innerHTML = `
@@ -366,10 +367,12 @@
                         </div>
                     </div>
                     <div class="space-y-2 ml-2">
-                        ${q.options.map((opt, idx) => `
+                        <!-- Iteramos sobre las opciones mezcladas (shuffledOptions) -->
+                        ${shuffledOptions.map((item) => `
                             <label class="flex items-center p-3 rounded-lg border border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors group">
-                                <input type="radio" name="q-${index}" value="${idx}" class="h-4 w-4 text-blue-600" onchange="selectAnswer(${index}, ${idx})">
-                                <span class="ml-3 text-slate-700 text-sm">${opt}</span>
+                                <!-- El VALUE sigue siendo el índice original (item.originalIdx) para corregir bien -->
+                                <input type="radio" name="q-${index}" value="${item.originalIdx}" class="h-4 w-4 text-blue-600" onchange="selectAnswer(${index}, ${item.originalIdx})">
+                                <span class="ml-3 text-slate-700 text-sm">${item.opt}</span>
                             </label>
                         `).join('')}
                     </div>
